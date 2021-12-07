@@ -2163,6 +2163,9 @@ input[type="number"] {
   .all-product .list-content .product-single .product-thumb {
     height: 130px !important;
   }
+  .adver-slider img {
+    max-height: 85px !important;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2238,6 +2241,9 @@ input[type="number"] {
   }
   .all-product .list-content .product-single .product-thumb {
     height: 140px !important;
+  }
+  .adver-slider img {
+    max-height: 75px !important;
   }
 }
 
@@ -2349,6 +2355,9 @@ input[type="number"] {
   .all-product .list-content .product-single .product-thumb {
     height: 140px !important;
   }
+  .adver-details{
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -2428,6 +2437,9 @@ input[type="number"] {
     position: relative;
     right: 5% !important;
   }*/
+  .adver-slider img {
+    max-height: 96px !important;
+  }
 }
 
 
@@ -2608,6 +2620,62 @@ input[type="number"] {
 }
 .padding-price{
   padding-right: 25px;
+}
+
+/* product details */
+.product-details{
+  margin: 40px 0 20px;
+}
+.adver-img{
+  max-width: 100%;
+}
+.thumbnail-container{
+  max-height: 280px;
+  overflow: hidden;
+}
+.adver-slider img {
+  max-height: 108px;
+  /*border: 3px solid #ad997d;*/
+}
+.product-info .title {
+  font-size: 18px;
+  color: #5f6b74;
+  font-family: 'hacen';
+  margin-bottom: 15px;
+}
+.product-info .category {
+  display: block;
+}
+.product-info .category i {
+  display: inline-block;
+  margin-left: 5px;
+  color: #ad997d;
+}
+.product-info .category a {
+  color: #5f6b74;
+  font-size: 15px;
+  font-family: 'univers';
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.product-info .info-text {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  line-height: 24px;
+}
+.mr-5{
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.btn-view.ml-0{
+  margin-left: 0 !important;
+  cursor: pointer;
+}
+.location-list{
+  margin-bottom: 20px;
 }
 .btn-view.ml-0{
   cursor: pointer;
