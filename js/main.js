@@ -223,6 +223,34 @@
     }
   });
 
+  // company Profile Carousel
+  $('.product-carousel-rtl').owlCarousel({
+    loop:true, 
+    nav: false, 
+    rtl: true,
+    margin:30,
+    navSpeed: 1500,
+    autoplay: true,
+		smartSpeed: 1500,
+    responsive:{
+      0: {
+        items: 2
+      },
+      576: {
+          items: 2
+      },
+      768: {
+          items: 3
+      },
+      990:{
+        items:4
+      },
+      1140:{
+        items:5
+      }
+    }
+  });
+
 
   // Smooth scroll animation
 	$('.mainmenu li a, .nav-link').on('click', function () {
