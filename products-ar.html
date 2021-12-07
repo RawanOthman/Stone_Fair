@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>المنتجات</title>
+	<link rel="icon" type="image/png" href="./images/com-img.png">
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+
+	<!-- Slick -->
+	<link rel="stylesheet" href="css/slick.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/ar-style.css" />
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header>
+		<div id="header">
+			<div class="container">
+				<div class="row">
+					<!-- Logo -->
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="header-logo">
+							<a class="logo" href="#">
+								<img src="./images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="nav-toggle">
+							<button class="nav-toggle-btn main-btn1 icon-btn"><i class="fa fa-bars"></i></button>
+						</div>
+					</div>
+					<!-- /Logo -->
+					
+					<!-- Search -->
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="header-search">
+							<form>
+								<input class="input search-input" type="text" placeholder="البحث عن شركة أو منتج..">
+								<button class="search-btn"><i class="fa fa-search"></i></button>
+							</form>
+						</div>
+					<!-- /Search -->
+					</div>
+
+					<!-- Login -->
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="header-dropdown-link">
+                            <a href="#0" class="login-link">
+                                <img src="./images/Login.png">
+                                <span class="login-txt">تسجيل الدخول</span>
+                            </a>
+
+                            <a href="#0" class="suggestions-link">
+                                <img src="./images/Suggestions.png">
+                                <span class="login-txt">تسجيل</span>
+                            </a>
+
+                            <div class="lan-selector languages_dropdown d-flex">
+                                <div class="dropdown">
+                                    <a href="javascript:void(0)" class="dropdown-toggle language_drop" id="dropdownMenuButton countries" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="./images/ArFlag.png" width="30px"> AR
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="index.html" style="text-align: right;"><img src="./images/EnFlag.png" width="30px">En</a>
+                                        <a class="dropdown-item" href="#0" style="text-align: right;"><img src="./images/ArFlag.png" width="30px">AR</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+					</div>
+					<!-- /Login -->
+				</div>
+
+				<div id="navigation">
+					<div class="row">
+						<div class="col-lg-4 col-md-4">
+							<div id="responsive-nav">
+								<div class="menu-nav">
+									<span class="menu-header">القائمة <i class="fa fa-close"></i></span>
+									<ul class="menu-list">
+										<li><a href="#">الرئيسية</a></li>
+										<li><a href="#">الموردين</a></li>
+										<li><a href="#">طلبات الشراء </a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="header-bottom-link">
+								<a href="#0" class="quick-link">
+									<img src="./images/1.png">
+									<span class="quick-txt">إضافة شركة</span>
+								</a>
+				
+								<a href="#0" class="quick-link">
+									<img src="./images/2.png">
+									<span class="quick-txt">إضافة طلبية</span>
+								</a>
+				
+								<a href="#0" class="quick-link">
+									<img src="./images/3.png">
+									<span class="quick-txt">إضافة إعلان</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- header -->
+		</div>
+	</header>
+	<!-- /HEADER -->
+
+	<div class="breadcumb_area bg-img" style="background-image: url(images/breadcumb.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="page-title">
+                        <h2>المنتجات</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<div class="search-bar">
+		<div class="container"> 
+
+			<form id="seach" name="search" action="#0" method="Post"> 
+				<div class="row"> 
+					<div class="col-lg-3 col-md-6 col-sm-12"> 
+						<select name="c" id="catSearch" class="form-control" aria-hidden="true"> 
+							<option value="">جميع التصنيفات </option> 
+							<option value="stone-granite"> رخام وغرانيت </option> 
+							<option value="manufacturing-materials-and-tools">  آليات المصانع و المقالع  </option> 
+							<option value="Factories and Quarries Machinery">  معارض الرخام و الحجر  </option>
+							<option value="Mosaics and Sculptues"> الفسيفساء والمنحوتات  </option>
+						</select>
+					</div> 
+					
+					<div class="col-lg-3 col-md-6 col-sm-12"> 
+						<select name="MyCountry" id="MyCountry" class="form-control" aria-hidden="true"> 
+							<option value="all"> جميع البلدان </option> 
+							<option value=""> تركيا </option> 
+							<option value=""> السعودية </option> 
+							<option value=""> الإمارات </option> 
+						</select>
+					</div> 
+						
+					<div class="col-lg-3 col-md-6 col-sm-12"> 
+						<select name="MyCity" id="MyCity" class="form-control" aria-hidden="true"> 
+							<option value="all"> جميع المدن </option> 
+							<option value=""> اسطنبول </option> 
+							<option value=""> جدة </option> 
+							<option value=""> الرياض </option> 
+						</select>
+					</div> 
+
+					<div class="col-lg-3 col-md-6 col-sm-12 search-container"> 
+						<input class="input search-input" type="text" placeholder="اكتب ما تريد البحث عنه">
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+					</div> 
+
+					
+				</div> 
+			</form> 
+		</div>
+	</div>
+
+	<div class="all-product">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="shop-sidebar-wrapper">
+						<div class="shop-widget">
+							<div class="header-name">تصنيف حسب المنتجات</div>
+						</div>
+
+						<div class="shop-catigory">
+							<div class="header-title">نوع التصنيف</div>
+							<div class="widget widget-collapsible">
+								<h6 class="widget-title">
+									<a data-toggle="collapse" href="#Stone" role="button" aria-expanded="true" aria-controls="CateProduct" class="">
+										حجر 
+									</a>
+								</h6>
+								<!--<div class="collapse show" id="Stone">-->
+								<div class="collapse show" id="Stone">
+									<div class="widget-body">
+										<ul class="list-items">
+											<li class="categ-item"><a href="#0">رخام وغرانيت</a></li>
+										<li class="categ-item"><a href="#0">الفسيفساء والمنحوتات </a></li>
+										<li class="categ-item"><a href="#0">حجر</a></li>
+										<li class="categ-item"><a href="#0">رخام</a></li>
+										<li class="categ-item"><a href="#0">الفسيفساء والمنحوتات </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="widget widget-collapsible">
+								<h6 class="widget-title">
+									<a data-toggle="collapse" href="#Slabs" role="button" aria-expanded="true" aria-controls="CateProduct" class="">
+										الفسيفساء والمنحوتات  
+									</a>
+								</h6>
+								<div class="collapse" id="Slabs">
+									<div class="widget-body">
+										<ul class="list-items">
+											<li class="categ-item"><a href="#0">رخام وغرانيت</a></li>
+											<li class="categ-item"><a href="#0">الفسيفساء والمنحوتات </a></li>
+											<li class="categ-item"><a href="#0">حجر</a></li>
+											<li class="categ-item"><a href="#0">رخام</a></li>
+											<li class="categ-item"><a href="#0">الفسيفساء والمنحوتات </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="widget widget-collapsible">
+								<h6 class="widget-title">
+									<a data-toggle="collapse" href="#Tiles" role="button" aria-expanded="true" aria-controls="CateProduct" class="">
+										رخام وغرانيت
+									</a>
+								</h6>
+								<div class="collapse" id="Tiles">
+									<div class="widget-body">
+										<ul class="list-items">
+											<li class="categ-item"><a href="#0">رخام وغرانيت</a></li>
+											<li class="categ-item"><a href="#0">الفسيفساء والمنحوتات </a></li>
+											<li class="categ-item"><a href="#0">حجر</a></li>
+											<li class="categ-item"><a href="#0">رخام</a></li>
+											<li class="categ-item"><a href="#0">الفسيفساء والمنحوتات </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="price-range">
+							<div class="header-title">مجال السعر</div>
+							<div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+							<div style="margin:15px auto 0; display: flex;">
+								<div class="max">
+									<input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field" />
+								</div>
+								<div class="min">
+									<input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" />
+								</div>
+							</div>
+						</div>
+
+						<div class="datePosted">
+							<div class="header-title">تاريخ النشر</div>
+								<ul>
+									<li> 
+										<input type="radio" name="postedDate" value="24h" id="H24"> 
+										<label for="H24">24 ساعة</label> 
+									</li>
+									<li> 
+										<input type="radio" name="postedDate" value="threeday" id="threeday"> 
+										<label for="threeday">3 أيام</label> 
+									</li>
+									<li> 
+										<input type="radio" name="postedDate" value="oneweek" id="oneweek"> 
+										<label for="oneweek">أسبوع واحد</label> 
+									</li>
+									<li> 
+										<input type="radio" name="postedDate" value="onemonth" id="onemonth"> 
+										<label for="onemonth">شهر واحد</label> 
+									</li>
+								</ul>
+						</div>
+
+						<div class="location">
+							<div class="header-title">الموقع</div>
+							<ul class="location-list">
+								<li><a href="#">الهند</a></li>
+								<li><a href="#">كندا</a></li>
+								<li><a href="#">ماليزيا</a></li>
+								<li><a href="#">تركيا</a></li>
+								<li><a href="#">إيطاليا</a></li>
+								<li><a href="#">فرنسا</a></li>
+								<li><a href="#">السعودية</a></li>
+								<li><a href="#">كندا</a></li>
+								<li><a href="#">الهند</a></li>
+								<li><a href="#">كندا</a></li>
+								<li><a href="#">ماليزيا</a></li>
+								<li><a href="#">تركيا</a></li>
+								<li><a href="#">إيطاليا</a></li>
+								<li><a href="#">فرنسا</a></li>
+								<li><a href="#">السعودية</a></li>
+								<li><a href="#">كندا</a></li>
+							</ul>
+							<a id="next" class="btn-view ml-0">عرض المزيد</a>
+							
+							
+							<!--<button onclick="toggleLocation1()" class="btn-view">View More</button>-->
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="company-topbar mb-3">
+						<div class="header-name">معلومات المنتجات</div>
+						<div class="shop-topbar-left">
+							<ul class="view-mode">
+								<li class="active">
+									<a href="#item-list" data-view="item-list">
+										<i class="fa fa-list-ul"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#item-grid" data-view="item-grid">
+										<i class="fa fa-th"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="product-content">
+						<div class="item-list item-view">
+								
+						<div class="list-content">
+							<div class="all-company product product-single">
+								<div class="row border-product">
+									<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+										<div class="product-thumb">
+											<a href="#0" class="product-img"><img src="./images/product1.jpg" alt=""></a>
+											<div class="marker"><img src="./images/diamond-gold.png"></div>
+										</div>
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-7 col-xs-12">
+										<div class="product-body">
+											<h5 class="catetgory-name"><a href="#0" title="">اسم التصنيف</a></h5>
+											<h2 class="product-name"><a href="#">اسم المنتج</a></h2>
+											<div class="info">
+												<div class="country">
+													<img class="ml-2" src="./images/Suppliers/5.png">
+													<span>إيطاليا</span>
+												</div>
+												<div class="product-price padding-price">$32.50</div>
+											</div>
+											<div class="product-btns">
+												<button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+												<button class="primary-btn">إرسال طلب</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row border-product">
+									<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+										<div class="product-thumb">
+											<a href="#0" class="product-img"><img src="./images/product2.jpg" alt=""></a>
+											<div class="marker"><img src="./images/diamond-silver.png"></div>
+										</div>
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-7 col-xs-12">
+										<div class="product-body">
+											<h5 class="catetgory-name"><a href="#0" title="">اسم التصنيف</a></h5>
+											<h2 class="product-name"><a href="#">اسم المنتج</a></h2>
+											<div class="info">
+												<div class="country">
+													<img class="ml-2" src="./images/Suppliers/5.png">
+													<span>إيطاليا</span>
+												</div>
+												<div class="product-price padding-price">$32.50</div>
+											</div>
+											<div class="product-btns">
+												<button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+												<button class="primary-btn">إرسال طلب</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row border-product">
+									<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+										<div class="product-thumb">
+											<a href="#0" class="product-img"><img src="./images/product3.jpg" alt=""></a>
+										</div>
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-7 col-xs-12">
+										<div class="product-body">
+											<h5 class="catetgory-name"><a href="#0" title="">اسم التصنيف</a></h5>
+											<h2 class="product-name"><a href="#">اسم المنتج</a></h2>
+											<div class="info">
+												<div class="country">
+													<img class="ml-2" src="./images/Suppliers/5.png">
+													<span>إيطاليا</span>
+												</div>
+												<div class="product-price padding-price">$32.50</div>
+											</div>
+											<div class="product-btns">
+												<button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+												<button class="primary-btn">إرسال طلب</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row border-product">
+									<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+										<div class="product-thumb">
+											<a href="#0" class="product-img"><img src="./images/product4.jpg" alt=""></a>
+										</div>
+									</div>
+									<div class="col-lg-9 col-md-8 col-sm-7 col-xs-12">
+										<div class="product-body">
+											<h5 class="catetgory-name"><a href="#0" title="">اسم التصنيف</a></h5>
+											<h2 class="product-name"><a href="#">اسم المنتج</a></h2>
+											<div class="info">
+												<div class="country">
+													<img class="ml-2" src="./images/Suppliers/5.png">
+													<span>إيطاليا</span>
+												</div>
+												<div class="product-price padding-price">$32.50</div>
+											</div>
+											<div class="product-btns">
+												<button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+												<button class="primary-btn">إرسال طلب</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+	
+	
+													
+							</div>
+							<div class="pagination-option">
+								<a href="#0" class="arrow-pagination left-arrow">السابق</a>
+								<a href="#0" class="number-pagination">1</a>
+								<a href="#0" class="number-pagination">2</a>
+								<a href="#0" class="arrow-pagination right-arrow">التالي</a>
+							</div>
+						</div>
+
+						<div class="grid-content list-none">
+							<div class="row">
+								<!-- Product Single -->
+								<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+									<div class="product product-single">
+										<div class="product-thumb">
+											<a href="#0" class="product-img"><img src="./images/product5.jpg" alt=""></a>
+										</div>
+										<div class="product-body">
+											<h5 class="catetgory-name"><a href="#0" title="">اسم التصنيف</a></h5>
+											<h2 class="product-name"><a href="#">اسم المنتج</a></h2>
+											<div class="info justify-content-between">
+												<div class="country">
+													<img class="ml-2" src="./images/Suppliers/5.png">
+													<span>إيطاليا</span>
+												</div>
+												<div class="product-price">$32.50</div>
+											</div>
+											<div class="product-btns">
+												<button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+												<button class="primary-btn">إرسال طلب</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Product Single -->
+		
+								<!-- Product Single -->
+								<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+									<div class="product product-single">
+										<div class="product-thumb">
+											<a href="#0" class="product-img"><img src="./images/product6.jpg" alt=""></a>
+										</div>
+										<div class="product-body">
+											<h5 class="catetgory-name"><a href="#0" title="">اسم التصنيف</a></h5>
+											<h2 class="product-name"><a href="#">اسم المنتج</a></h2>
+											<div class="info justify-content-between">
+												<div class="country">
+													<img class="ml-2" src="./images/Suppliers/5.png">
+													<span>إيطاليا</span>
+												</div>
+												<div class="product-price">$32.50</div>
+											</div>
+											<div class="product-btns">
+												<button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+												<button class="primary-btn">إرسال طلب</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Product Single -->
+		
+								<!-- Product Single -->
+								<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+									<div class="product product-single">
+										<div class="product-thumb">
+											<a href="#0" class="product-img"><img src="./images/product1.jpg" alt=""></a>
+										</div>
+										<div class="product-body">
+											<h5 class="catetgory-name"><a href="#0" title="">اسم التصنيف</a></h5>
+											<h2 class="product-name"><a href="#">اسم المنتج</a></h2>
+											<div class="info justify-content-between">
+												<div class="country">
+													<img class="ml-2" src="./images/Suppliers/5.png">
+													<span>إيطاليا</span>
+												</div>
+												<div class="product-price">$32.50</div>
+											</div>
+											<div class="product-btns">
+												<button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+												<button class="primary-btn">إرسال طلب</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Product Single -->
+		
+								<!-- Product Single -->
+								<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+									<div class="product product-single">
+										<div class="product-thumb">
+											<a href="#0" class="product-img"><img src="./images/product2.jpg" alt=""></a>
+										</div>
+										<div class="product-body">
+											<h5 class="catetgory-name"><a href="#0" title="">اسم التصنيف</a></h5>
+											<h2 class="product-name"><a href="#">اسم المنتج</a></h2>
+											<div class="info justify-content-between">
+												<div class="country">
+													<img class="ml-2" src="./images/Suppliers/5.png">
+													<span>إيطاليا</span>
+												</div>
+												<div class="product-price">$32.50</div>
+											</div>
+											<div class="product-btns">
+												<button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+												<button class="primary-btn">إرسال طلب</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Product Single -->
+		
+								<!-- Product Single -->
+								<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+									<div class="product product-single">
+										<div class="product-thumb">
+											<a href="#0" class="product-img"><img src="./images/product3.jpg" alt=""></a>
+										</div>
+										<div class="product-body">
+											<h5 class="catetgory-name"><a href="#0" title="">اسم التصنيف</a></h5>
+											<h2 class="product-name"><a href="#">اسم المنتج</a></h2>
+											<div class="info justify-content-between">
+												<div class="country">
+													<img class="ml-2" src="./images/Suppliers/5.png">
+													<span>إيطاليا</span>
+												</div>
+												<div class="product-price">$32.50</div>
+											</div>
+											<div class="product-btns">
+												<button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+												<button class="primary-btn">إرسال طلب</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Product Single -->
+		
+								<!-- Product Single -->
+								<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+									<div class="product product-single">
+										<div class="product-thumb">
+											<a href="#0" class="product-img"><img src="./images/product4.jpg" alt=""></a>
+										</div>
+										<div class="product-body">
+											<h5 class="catetgory-name"><a href="#0" title="">اسم التصنيف</a></h5>
+											<h2 class="product-name"><a href="#">اسم المنتج</a></h2>
+											<div class="info justify-content-between">
+												<div class="country">
+													<img class="ml-2" src="./images/Suppliers/5.png">
+													<span>إيطاليا</span>
+												</div>
+												<div class="product-price">$32.50</div>
+											</div>
+											<div class="product-btns">
+												<button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+												<button class="primary-btn">إرسال طلب</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Product Single -->
+
+								<!-- Product Single -->
+								<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+									<div class="product product-single">
+										<div class="product-thumb">
+											<a href="#0" class="product-img"><img src="./images/product5.jpg" alt=""></a>
+										</div>
+										<div class="product-body">
+											<h5 class="catetgory-name"><a href="#0" title="">اسم التصنيف</a></h5>
+											<h2 class="product-name"><a href="#">اسم المنتج</a></h2>
+											<div class="info justify-content-between">
+												<div class="country">
+													<img class="ml-2" src="./images/Suppliers/5.png">
+													<span>إيطاليا</span>
+												</div>
+												<div class="product-price">$32.50</div>
+											</div>
+											<div class="product-btns">
+												<button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+												<button class="primary-btn">إرسال طلب</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Product Single -->
+
+								<!-- Product Single -->
+								<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+									<div class="product product-single">
+										<div class="product-thumb">
+											<a href="#0" class="product-img"><img src="./images/product6.jpg" alt=""></a>
+										</div>
+										<div class="product-body">
+											<h5 class="catetgory-name"><a href="#0" title="">اسم التصنيف</a></h5>
+											<h2 class="product-name"><a href="#">اسم المنتج</a></h2>
+											<div class="info justify-content-between">
+												<div class="country">
+													<img class="ml-2" src="./images/Suppliers/5.png">
+													<span>إيطاليا</span>
+												</div>
+												<div class="product-price">$32.50</div>
+											</div>
+											<div class="product-btns">
+												<button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+												<button class="primary-btn">إرسال طلب</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Product Single -->
+
+								
+
+								<div class="pagination-option">
+									<a href="#0" class="arrow-pagination left-arrow">السابق</a>
+									<a href="#0" class="number-pagination">1</a>
+									<a href="#0" class="number-pagination">2</a>
+									<a href="#0" class="arrow-pagination right-arrow">التالي</a>
+								</div>
+							</div>
+	
+						</div>
+							
+							
+						</div>
+		
+					</div>
+				</div>
+			</div>
+
+			
+			
+				
+
+					
+                    
+				
+			
+		</div>
+	</div>
+
+
+
+	<!-- FOOTER -->
+	<footer id="footer" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<a href="index.html" class="logo">
+						<img src="./images/logo.png" alt="Stone Logo">
+					</a>
+					<div class="footer-links text-center mb-3 mt-2">
+						<ul class="list">
+							<li><a href="#">الرئيسية</a></li>
+							<li><a href="#">الموردون</a></li>
+							<li><a href="#">الطلبيات</a></li>
+							<li><a href="#">المعرض</a></li>
+							<li><a href="#">الخدمات</a></li>
+						</ul>
+					</div>
+					<ul class="social-icons justify-content-center">
+					  <li><a href="#0"><i class="fa fa-facebook"></i></a></li>
+					  <li><a href="#0"><i class="fa fa-instagram"></i></a></li>
+					  <li><a href="#0"><i class="fa fa-twitter"></i></a></li>
+					  <li><a href="#0"><i class="fa fa-envelope"></i></a></li>
+					  <li><a href="#0"><i class="fa fa-whatsapp"></i></a></li>
+					  
+					</ul>
+				  </div>
+			</div>
+		</div>
+	</footer>
+	<!-- /FOOTER -->
+
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/price_range_script.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$('.view-mode li a').on('click', function() {
+        var $proStyle = $(this).data('view');
+        $('.view-mode li').removeClass('active');
+        $(this).parent('li').addClass('active');
+        $('.item-view').removeClass('item-list item-grid').addClass($proStyle);
+    })
+	</script>
+
+	<script>
+		$(document).ready(function(){
+		var list = $(".location-list li a");
+		var numToShow = 5;
+		var button = $("#next");
+		var numInList = list.length;
+		list.hide();
+		if (numInList > numToShow) {
+		button.show();
+		}
+		list.slice(0, numToShow).show();
+
+		button.click(function(){
+			var showing = list.filter(':visible').length;
+			list.slice(showing - 1, showing + numToShow).fadeIn();
+			var nowShowing = list.filter(':visible').length;
+			if (nowShowing >= numInList) {
+			button.hide();
+			}
+		});
+
+		});
+	</script>
+</body>
+
+</html>
