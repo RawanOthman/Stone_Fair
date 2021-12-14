@@ -62,6 +62,9 @@ hr {
   font-size: 15px;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  background-color: #b7a07e;
+  border: 1px solid #b7a07e;
+  color: #fff;
 }
 .icon-btn.main-btn, .icon-btn.primary-btn {
   width: 34px;
@@ -112,6 +115,11 @@ hr {
   padding-top: 15px;
   box-shadow: 0 5px 10px 0 rgb(175 175 175/20%);
 }
+/* add style for row for dropdown */
+#header .row{
+  overflow: inherit;
+}
+
 /*----------------------------*\
 	logo
 \*----------------------------*/
@@ -209,6 +217,11 @@ form .search-input:focus,
 .search-container .search-btn i{
   color: #5f6b74;
 }
+.header-search .dropdown-menu{
+  left: 0;
+  top: 33px;
+
+}
 .header-bottom-link .quick-link:first-child{ 
   padding-right: 0px;
 }
@@ -300,10 +313,9 @@ form .search-input:focus,
 .menu-nav .menu-list>li>a:hover, .menu-nav .menu-list>li>a:focus, .menu-nav .menu-list>li.dropdown.open>a {
   color: #b7a07e;
 }
-.dropdown-menu {
+.lan-selector .dropdown-menu {
   min-width: 7rem !important;
 }
-
 /*----------------------------*\
 	Mobile nav
 \*----------------------------*/
@@ -454,6 +466,7 @@ form .search-input:focus,
   position: relative;
   z-index: -1;
   width: 100%;
+  height: 458px;
 }
 .banner .type {
   position: absolute;
@@ -493,7 +506,7 @@ form .search-input:focus,
 }
 .home-wrap .slick-dots{  
   position: absolute;
-  bottom: 25px;
+  bottom: 44px;
   display: block;
   width: 100%;
   padding: 0;
@@ -515,7 +528,7 @@ form .search-input:focus,
 /*=========================================================
  Category
 ===========================================================*/
-
+/*
 .catetgory-vertical > li img {
   margin-left: 10px;
   max-width: 40px !important;
@@ -532,6 +545,91 @@ form .search-input:focus,
   padding-left: .5rem;
   padding-right: .5rem;
   display: flex;
+}
+*/
+.catetgory-vertical .dropdown-menu{
+  min-width: 7rem !important;
+}
+.catetgory-vertical > li img {
+  margin-left: 10px;
+  max-width: 40px !important;
+  height: max-content;
+}
+
+.catetgory-vertical > li{
+  display: flex;
+  padding-bottom: 17px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  display: flex;
+  position: relative;
+}
+.catetgory-vertical > li > a {
+  font-weight: 400;
+  /*padding-bottom: 17px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  display: flex;*/
+  padding-top: 8px;
+  font-size: 14px;
+  font-family: 'hacen';
+}
+.catetgory-vertical > li.dropdown i {
+  float: left;
+  line-height: 20px;
+}
+.drop-category{
+  position: absolute;
+  top: -33px !important;
+  left: -101% !important;
+  right: 100% !important;
+  background: #FFF;
+  z-index: 100;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.dropdown-item,
+.cat_drop1{
+  transition: 0.5s all;
+  color: #5f6b74 !important;
+  padding: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'hacen';
+  width: 100%;
+  display: block;
+}
+.dropdown-toggle {
+  white-space: nowrap;
+}
+
+.dropdown-menu{
+  border-radius: 0 !important;
+}
+.drop-category .dropdown-item:focus, .drop-category .dropdown-item:hover {
+  background-color: transparent !important;
+  color: #b7a07e !important;
+  transition: 0.5s all;
+}
+.dropdown-toggle.cat_drop::after,
+.dropdown-toggle.cat_drop1::after{
+  display: none !important;
+}
+
+.dropdown-toggle.cat_drop i{
+  position: absolute;
+  left: 0 !important;
+}
+.dropdown-toggle.cat_drop1 i{
+  position: absolute;
+  left: 10px !important;
+}
+.drop-category1{
+  /*right: 172% !important;*/
+  left: -165% !important;
+  top: -33px !important;
+  border-right: none !important;
+  position: absolute;
 }
 .catetgory-title {
   min-width: 0;
@@ -692,7 +790,9 @@ form .search-input:focus,
 .country-carousel .owl-nav.disabled {
   display: block !important;
 }
-
+.country .container > .row,.company .container > .row{
+  overflow: inherit !important;
+  }
 /*=========================================================
   PRODUCT
 ===========================================================*/
@@ -824,6 +924,47 @@ form .search-input:focus,
 /*=========================================================
  Country News
 ===========================================================*/
+/*.country-carousel{
+  width: 98%;
+  margin: 0 1%;
+}*/
+.arnews-carousel .owl-nav .owl-prev {
+  position: absolute;
+  right: 0%;
+  top: 25%;
+  font-size: 35px;
+}
+.arnews-carousel .owl-nav .owl-prev span,
+.arnews-carousel  .owl-nav .owl-next span{
+  font-family: 'Raleway-Medium' !important;
+  font-size: 26px !important; 
+}
+.arnews-carousel  .owl-nav .owl-next {
+  position: absolute;
+  left: 0%;
+  top: 25%;
+  font-size: 35px;
+}
+.arnews-carousel  .owl-nav .owl-next {
+  font-size: 35px;
+}
+.arnews-carousel .owl-nav.disabled {
+  display: block !important;
+}
+.arnews-carousel .owl-item {
+  min-height: auto !important;
+}
+.arnews-carousel .owl-stage-outer{
+  position: relative;
+  top: 16px;
+}
+.arnews-carousel .owl-item img:hover{
+  cursor: pointer;
+}
+.arnews-pagination.pagination-option {
+  text-align: left !important;
+  padding-bottom: 20px !important;
+}
 
 .nav-tabs .nav-link img{
   max-width: 35px;
@@ -861,12 +1002,14 @@ form .search-input:focus,
   background: #e0cdaf;
 }
 .switch-field {
-  overflow: hidden;
+  /* overflow: hidden; */
   /*border: 1px solid rgba(0, 0, 0, 0.08);*/
   margin-top: 5px;
   margin-bottom: 0px;
+  padding-left: 15px;
 }
-.switch-field input {
+.switch-field input,
+.sequence-field input {
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -959,7 +1102,7 @@ form .search-input:focus,
 .btn-view{
   background: #b7a07e;
   padding: 0px 10px 3px;
-  color: #fff;
+  color: #fff !important;
   font-size: 14px;
   margin-left: 1rem !important;
 }
@@ -1915,6 +2058,10 @@ input[type="number"] {
   display: inline-block;
   margin-left: 6px;
 }
+.pagination-option .number-pagination.active{
+  background-color: #ad997d;
+  color: #fff;
+  }
 
 .content {
   position: relative;
@@ -2675,8 +2822,8 @@ input[type="number"] {
   line-height: 24px;
 }
 .mr-5{
-  margin-right: 5px;
-  margin-bottom: 5px;
+  margin-right: 5px !important;
+  margin-bottom: 5px !important;
 }
 .btn-view.ml-0{
   margin-left: 0 !important;
@@ -2853,7 +3000,9 @@ form .form-group select{
   font-size: 14px;
   color: #818181 !important;
 }
-#negotiable{
+#negotiable,
+#hideEmail,
+#hidePhone{
   margin-bottom: 0 !important;
 }
 
@@ -2890,4 +3039,122 @@ form .form-group select{
   top: 0;
   right: auto !important;
   left: 10px;
+}
+.help-img{
+  max-width: 55px;
+  position: relative;
+  right: 35%;
+  margin-bottom: 3px;
+}
+
+#homepage .row{
+  overflow: inherit !important;
+}
+
+.account-topbar .sequence-field label{
+  margin-right: 20px;
+  font-family: 'Raleway-Medium';
+}
+.help-img{
+  max-width: 55px;
+  position: relative;
+  left: 35%;
+  margin-bottom: 3px;
+}
+.sequence-field{
+  border: 1px solid #f3f4f4;
+  background-color: #fbf9fa;
+  padding: 15px 24px;
+  margin-top: 0px !important;
+}
+.sequence-field input + label{
+  font-size: 16px;
+  font-family: 'hacen';
+  color: #5f6b74;
+}
+.sequence-field i{
+  padding: 0 5px;
+}
+.sequence-field input + label:hover{
+  color: #b7a07e;
+  cursor: pointer;
+}
+.box .isotope-wrapper{
+  height: auto !important;
+}
+.finish-form{
+  position: relative;
+  width: 96%;
+  margin: 40px;
+}
+.finish-form p{
+  font-size: 16px;
+  color: #ad997d;
+}
+.form__container {
+  position: relative;
+  width: 96%;
+  margin: 20px 2%;
+  height: 200px;
+  border: 1px dashed silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #ad997d;
+}
+.form__container.active {
+  background-color: rgba(192, 192, 192, 0.2);
+}
+.form__file {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+.form__files-container {
+  display: block;
+  width: 100%;
+  font-size: 0;
+  margin-top: 20px;
+}
+.form__image-container {
+  display: inline-block;
+  /*width: 49%;*/
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.form__image-container:not(:nth-child(2n)) {
+  margin-right: 20px;
+}
+.form__image-container:after {
+  content: "✕";
+  position: absolute;
+  line-height: 200px;
+  font-size: 30px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.form__image-container:hover:after {
+  opacity: 1;
+  cursor: pointer;
+}
+.form__image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
