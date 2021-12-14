@@ -22,6 +22,7 @@
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/ar-style.css" />
+	<script src="js/bootstrap.bundle1.min.js"></script>
 </head>
 
 <body>
@@ -145,127 +146,139 @@
 				<div class="col-lg-9 col-md-8 col-sm-12">
 					<div class="box">
 						<div class="sequence-field">
-							<input type="radio" id="tab-details" name="listing_filter" value="tab-details" data-filter=".tab-details">
-							<label for="tab-details">تفاصيل الإعلان</label>
-							<i class="fa fa-angle-left"></i>
-
-							<input type="radio" id="tab-Photos" name="listing_filter" value="tab-Photos" data-filter=".tab-Photos">
-							<label for="tab-Photos">الصور</label>
-							<i class="fa fa-angle-left"></i>
-
-							<input type="radio" id="tab-payment" name="listing_filter" value="tab-payment" data-filter=".tab-payment">
-							<label for="tab-payment">الدفع</label>
-							<i class="fa fa-angle-left"></i>
-
-							
-							<input type="radio" id="tab-finish" name="listing_filter" value="tab-finish" data-filter=".tab-finish">
-							<label for="tab-finish">إنهاء</label>
+							<ul class="nav nav-tabs" id="myTab">
+								<li class="nav-item">
+									<a href="#tab-details" class="nav-link" data-bs-toggle="tab">تفاصيل الإعلان</a>
+									<i class="fa fa-angle-left"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-Photos" class="nav-link" data-bs-toggle="tab">الصور</a>
+									<i class="fa fa-angle-left"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-payment" class="nav-link" data-bs-toggle="tab">الدفع</a>
+									<i class="fa fa-angle-left"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-finish" class="nav-link" data-bs-toggle="tab">إنهاء</a>
+								</li>
+							</ul>
 						</div>
 
-						<form action="#" id="buying-form" class="buying-form" method="post">
-							<div class="form-group">
-								<label class="form-label pb-1" for="category">التصنيف<span class="needed">*</span></label><br>
-								<select data-placeholder="اختر التصنيف" class="chosen-select form-control">
-									<option>رخام وغرانيت</option> 
-									<option> آليات المصانع و المقالع </option> 
-									<option>الفسيفساء والمنحوتات </option> 
-									<option>شركات تركيب الرخام </option> 
-								</select>	
-							</div>
-
-							<div class="form-group">
-								<label class="form-label" for="title">العنوان<span class="needed">*</span></label><br>
-								<input type="text" name="title" id="title" class="form-control" required="">
-							</div>
-
-							<!--<div class="form-group mb-1">
-								<label class="form-label pb-1">النوع<span class="needed">*</span></label><br>
-								<div class="form-check form-check-inline "> 
-									<input name="post_type_id" id="postTypeId-1" value="postTypeId-1" type="radio"> 
-									<label for="postTypeId-1"> المنتجات </label> 
-								</div> 
-								
-								<div class="form-check form-check-inline"> 
-									<input name="post_type_id" id="postTypeId-2" value="postTypeId-2" type="radio"> 
-									<label for="postTypeId-2"> الخدمات </label> 
-								</div> 
-								<div class="form-check form-check-inline"> 
-									<input name="post_type_id" id="postTypeId-3" value="postTypeId-3" type="radio"> 
-									<label for="postTypeId-3"> المعرض </label> 
-								</div> 
-							 </div>-->
-
-							 <div class="form-group">
-								<label class="form-label pb-1" for="type">النوع<span class="needed">*</span></label><br>
-								<select data-placeholder="Select a Type" class="chosen-select form-control">
-									<option>المنتجات</option> 
-									<option>الخدمات</option> 
-									<option>المعرض</option> 
-								</select>	
-							</div>
-
-							<div class="form-group">
-								<label class="form-label" for="description">الوصف<span class="needed">*</span></label><br>
-								<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
-							</div>
-
-							<div class="form-group">
-								<label class="form-label pb-1" for="price">السعر</label><br>
-								<div  style="display: flex;">
-									<input type="text" id="price" name="price" class="form-control" required="">
-									<div class="input-group-append"> 
-										<span class="input-group-text"> 
-											<input id="negotiable" name="negotiable" type="checkbox" value="1">&nbsp;<small>قابل للتفاوض</small> 
-										</span> 
+						
+						<div class="tab-content">
+							<div class="tab-pane fade" id="tab-details">
+								<form action="#" id="buying-form" class="buying-form" method="post">
+									<div class="form-group">
+										<label class="form-label pb-1" for="category">التصنيف<span class="needed">*</span></label><br>
+										<select data-placeholder="اختر التصنيف" class="chosen-select form-control">
+											<option>رخام وغرانيت</option> 
+											<option> آليات المصانع و المقالع </option> 
+											<option>الفسيفساء والمنحوتات </option> 
+											<option>شركات تركيب الرخام </option> 
+										</select>	
 									</div>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="form-label pb-1" for="city">المدينة<span class="needed">*</span></label><br>
-								<select data-placeholder="اختر المدينة" class="chosen-select form-control">
-									<option>ماليزيا</option>
-									<option>فرنسا</option>
-									<option>إيطاليا</option>
-									<option>تركيا</option>
-								</select>	
-							</div>
 		
-							<div class="form-group">
-								<label class="form-label pb-1" for="tag">تاغ</label><br>
-								<input type="text" id="tag" name="tag" class="form-control" required="">
-							</div>
-
-
-							<div class="Seller-heading"><h3><i class="fa fa-user"></i>معلومات البائع</h3></div>
-							<div class="form-group">
-								<label class="form-label pb-1" for="phone">رقم الهاتف<span class="needed">*</span></label><br>
-								<div  style="display: flex;">
-									<input type="phone" id="phone" name="phone" class="form-control" required="">
-									<div class="input-group-append"> 
-										<span class="input-group-text"> 
-											<input id="hidePhone" name="hidePhone" type="checkbox" value="hidePhone">&nbsp;<small>إخفاء</small> 
-										</span> 
+									<div class="form-group">
+										<label class="form-label" for="title">العنوان<span class="needed">*</span></label><br>
+										<input type="text" name="title" id="title" class="form-control" required="">
 									</div>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="form-label pb-1" for="email">البريد الالكتروني<span class="needed">*</span></label><br>
-								<div  style="display: flex;">
-									<input type="email" id="email" name="email" class="form-control" required="">
-									<div class="input-group-append"> 
-										<span class="input-group-text"> 
-											<input id="hideEmail" name="hideEmail" type="checkbox" value="hideEmail">&nbsp;<small>إخفاء</small> 
-										</span> 
+		
+									<!--<div class="form-group mb-1">
+										<label class="form-label pb-1">النوع<span class="needed">*</span></label><br>
+										<div class="form-check form-check-inline "> 
+											<input name="post_type_id" id="postTypeId-1" value="postTypeId-1" type="radio"> 
+											<label for="postTypeId-1"> المنتجات </label> 
+										</div> 
+										
+										<div class="form-check form-check-inline"> 
+											<input name="post_type_id" id="postTypeId-2" value="postTypeId-2" type="radio"> 
+											<label for="postTypeId-2"> الخدمات </label> 
+										</div> 
+										<div class="form-check form-check-inline"> 
+											<input name="post_type_id" id="postTypeId-3" value="postTypeId-3" type="radio"> 
+											<label for="postTypeId-3"> المعرض </label> 
+										</div> 
+									 </div>-->
+		
+									 <div class="form-group">
+										<label class="form-label pb-1" for="type">النوع<span class="needed">*</span></label><br>
+										<select data-placeholder="Select a Type" class="chosen-select form-control">
+											<option>المنتجات</option> 
+											<option>الخدمات</option> 
+											<option>المعرض</option> 
+										</select>	
 									</div>
-								</div>
+		
+									<div class="form-group">
+										<label class="form-label" for="description">الوصف<span class="needed">*</span></label><br>
+										<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
+									</div>
+		
+									<div class="form-group">
+										<label class="form-label pb-1" for="price">السعر</label><br>
+										<div  style="display: flex;">
+											<input type="text" id="price" name="price" class="form-control" required="">
+											<div class="input-group-append"> 
+												<span class="input-group-text"> 
+													<input id="negotiable" name="negotiable" type="checkbox" value="1">&nbsp;<small>قابل للتفاوض</small> 
+												</span> 
+											</div>
+										</div>
+									</div>
+		
+									<div class="form-group">
+										<label class="form-label pb-1" for="city">المدينة<span class="needed">*</span></label><br>
+										<select data-placeholder="اختر المدينة" class="chosen-select form-control">
+											<option>ماليزيا</option>
+											<option>فرنسا</option>
+											<option>إيطاليا</option>
+											<option>تركيا</option>
+										</select>	
+									</div>
+				
+									<div class="form-group">
+										<label class="form-label pb-1" for="tag">تاغ</label><br>
+										<input type="text" id="tag" name="tag" class="form-control" required="">
+									</div>
+		
+		
+									<div class="Seller-heading"><h3><i class="fa fa-user"></i>معلومات البائع</h3></div>
+									<div class="form-group">
+										<label class="form-label pb-1" for="phone">رقم الهاتف<span class="needed">*</span></label><br>
+										<div  style="display: flex;">
+											<input type="phone" id="phone" name="phone" class="form-control" required="">
+											<div class="input-group-append"> 
+												<span class="input-group-text"> 
+													<input id="hidePhone" name="hidePhone" type="checkbox" value="hidePhone">&nbsp;<small>إخفاء</small> 
+												</span> 
+											</div>
+										</div>
+									</div>
+		
+									<div class="form-group">
+										<label class="form-label pb-1" for="email">البريد الالكتروني<span class="needed">*</span></label><br>
+										<div  style="display: flex;">
+											<input type="email" id="email" name="email" class="form-control" required="">
+											<div class="input-group-append"> 
+												<span class="input-group-text"> 
+													<input id="hideEmail" name="hideEmail" type="checkbox" value="hideEmail">&nbsp;<small>إخفاء</small> 
+												</span> 
+											</div>
+										</div>
+									</div>
+											
+									<div class="product-btns">
+										<button class="primary-btn" type="submit">تأكيد</button>
+									</div>
+								</form>
 							</div>
-									
-							<div class="product-btns">
-								<button class="primary-btn" type="submit">تأكيد</button>
-							</div>
-						</form>
+							<div class="tab-pane fade" id="tab-Photos"></div>
+							<div class="tab-pane fade" id="tab-payment"></div>
+							<div class="tab-pane fade" id="tab-finish"></div>
+						</div>
+
+						
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-12">
@@ -339,6 +352,11 @@
 				width: '100%'
 			}); 
 		})
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#myTab li:eq() a").tab("show"); // show second tab (0-indexed, like an array)
+		});
 	</script>
 </body>
 
