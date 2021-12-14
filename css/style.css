@@ -478,6 +478,9 @@ form .search-input:focus,
   width: 100%;
   height: 458px;
 }
+.slide-img.product-img1{
+  height: auto !important;
+}
 .banner .type {
   position: absolute;
   z-index: 1;
