@@ -304,7 +304,7 @@
 
 
   // Smooth scroll animation
-	$('.mainmenu li a, .nav-link').on('click', function () {
+	/*$('.mainmenu li a, .nav-link').on('click', function () {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
 		&& location.hostname == this.hostname) {
 		  var $target = $(this.hash);
@@ -317,7 +317,7 @@
 		   return false;
 		  }
 		}
-	});
+	});*/
 
   $(".adver-slider").owlCarousel({
     loop: true,
@@ -353,13 +353,13 @@
 
 
    // Form
-   $(window).on("load",function(){
+   /*$(window).on("load",function(){
     var $container = $('.isotope-wrapper');
     $container.isotope({ itemSelector: '.isotope-item', layoutMode: 'masonry' });
   });
   $('.sequence-field').on( 'click', 'input', 'change', function(){
     var selector = $(this).attr('data-filter');
     $('.isotope-wrapper').isotope({ filter: selector });
-  });
+  });*/
 
 })(jQuery);
