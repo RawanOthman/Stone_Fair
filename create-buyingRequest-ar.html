@@ -144,80 +144,102 @@
 			<div class="row">
 				<div class="col-lg-9 col-md-8 col-sm-12">
 					<div class="box">
-						<div class="buying-heading"><h3>إنشاء طلبية</h3></div>
-						<form action="#" id="buying-form" class="buying-form" method="post">
-							<div class="form-group">
-								<label class="form-label" for="Fullname">الاسم الكامل<span class="needed">*</span></label><br>
-								<input type="text" name="Fullname" id="Fullname" class="form-control" required="">
-							</div>
+						<div class="sequence-field">
+							<input type="radio" id="tab-order" name="listing_filter" value="tab-order" data-filter=".tab-order">
+							<label for="tab-order"> إنشاء طلبية</label>
+							<i class="fa fa-angle-left"></i>
+
+							<input type="radio" id="tab-image" name="listing_filter" value="tab-image" data-filter=".tab-image">
+							<label for="tab-image">الصور</label>
+							<i class="fa fa-angle-left"></i>
+
+							<input type="radio" id="tab-finish" name="listing_filter" value="tab-finish" data-filter=".tab-finish">
+							<label for="tab-finish">إنهاء</label>
+						</div>
+						<div class=" isotope-wrapper">
+							<div class="isotope-item tab-order">
+								<form action="#" id="buying-form" class="buying-form" method="post">
+									<div class="form-group">
+										<label class="form-label" for="Fullname">الاسم الكامل<span class="needed">*</span></label><br>
+										<input type="text" name="Fullname" id="Fullname" class="form-control" required="">
+									</div>
 		
-					
-
-							<div class="form-group">
-								<label class="form-label pb-1" for="country">البلد<span class="needed">*</span></label><br>
-								<select data-placeholder="اختر البلد" class="chosen-select form-control">
-									<option>تركيا</option> 
-									<option> إيطاليا </option> 
-									<option> السعودية </option> 
-								</select>	
-							</div>
+									<div class="form-group">
+										<label class="form-label pb-1" for="country">البلد<span class="needed">*</span></label><br>
+										<select data-placeholder="اختر البلد" class="chosen-select form-control">
+											<option>تركيا</option> 
+											<option> إيطاليا </option> 
+											<option> السعودية </option> 
+										</select>	
+									</div>
+				
+									<div class="form-group">
+										<label class="form-label" for="email">البريد الالكتروني<span class="needed">*</span></label><br>
+										<input type="email" id="email" name="email" class="form-control" required="">
+									</div>
 		
-							<div class="form-group">
-								<label class="form-label" for="email">البريد الالكتروني<span class="needed">*</span></label><br>
-								<input type="email" id="email" name="email" class="form-control" required="">
-							</div>
-
-							<div class="form-group">
-								<label class="form-label" for="phone">رقم الهاتف<span class="needed">*</span></label><br>
-								<input type="text" name="phone" id="phone" class="form-control" required="">
-							</div>
-
-							<div class="form-group">
-								<label class="form-label pb-1" for="category">التصنيف</label><br>
-								<select data-placeholder="اختر التصنيف" class="chosen-select form-control">
-									<option>رخام وغرانيت</option> 
-									<option> آليات المصانع و المقالع </option> 
-									<option>الفسيفساء والمنحوتات </option> 
-									<option>شركات تركيب الرخام </option> 
-								</select>	
-							</div>
+									<div class="form-group">
+										<label class="form-label" for="phone">رقم الهاتف<span class="needed">*</span></label><br>
+										<input type="text" name="phone" id="phone" class="form-control" required="">
+									</div>
 		
-							<div class="form-group">
-								<label class="form-label" for="quantity">الكمية<span class="needed">*</span></label><br>
-								<input type="text" id="quantity" name="quantity" class="form-control" required="">
+									<div class="form-group">
+										<label class="form-label pb-1" for="category">التصنيف</label><br>
+										<select data-placeholder="اختر التصنيف" class="chosen-select form-control">
+											<option>رخام وغرانيت</option> 
+											<option> آليات المصانع و المقالع </option> 
+											<option>الفسيفساء والمنحوتات </option> 
+											<option>شركات تركيب الرخام </option> 
+										</select>	
+									</div>
+				
+									<div class="form-group">
+										<label class="form-label" for="quantity">الكمية<span class="needed">*</span></label><br>
+										<input type="text" id="quantity" name="quantity" class="form-control" required="">
+									</div>
+		
+									<div class="form-group">
+										<label class="form-label" for="productName">اسم المنتج<span class="needed">*</span></label><br>
+										<input type="text" id="productName" name="productName" class="form-control" required="">
+									</div>
+		
+									<div class="form-group">
+										<label class="form-label" for="description">الوصف<span class="needed">*</span></label><br>
+										<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
+									</div>
+											
+									<div class="product-btns">
+										<button class="primary-btn" type="submit">عرض</button>
+									</div>
+								</form>
 							</div>
 
-							<div class="form-group">
-								<label class="form-label" for="productName">اسم المنتج<span class="needed">*</span></label><br>
-								<input type="text" id="productName" name="productName" class="form-control" required="">
+							
+							<div class="isotope-item tab-image">
+								<form action="#" id="image-form" class="image-form" method="post">
+									<label class="form__container" id="upload-container">اختر الملفات أو اسحبها  
+										<input class="form__file" id="upload-files" type="file" accept="image/*" multiple="multiple"/>
+									</label>
+									<div class="form__files-container" id="files-list-container"></div>
+								</form>
 							</div>
 
-							<!--<div class="form-group">
-								<label class="form-label pb-1" for="targetCountry">البلد المستهدف</label><br>
-								<select name="targetCountry" class="form-control"> 
-									<option value="1">لاختيار جميع الدول الرجاء ابقائه فارغاً</option>
-									<option value="2">ماليزيا</option> 
-									<option value="3">فرنسا</option> 
-									<option value="4">إيطاليا</option> 
-									<option value="5">تركيا</option> 
-								</select>
-							</div>-->
+							<div class="isotope-item tab-finish">
+								<div class="finish-form text-center">
+									<p>لقد تم انتهاء من انشاء الطلبية سيتم الموافقة على طلبيتكم قريبا.... </p>
+									<button class="primary-btn" type="submit">إنهاء</button>
+								</div>
+							</div>
+						</div>
 
-							<div class="form-group">
-								<label class="form-label" for="description">الوصف<span class="needed">*</span></label><br>
-								<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
-							</div>
-									
-							<div class="product-btns">
-								<button class="primary-btn" type="submit">عرض</button>
-							</div>
-						</form>
+						
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-12">
 					<div class="box">
 						<div class="buying-heading"><h3>إرشادات</h3></div>
 						<div class="buying-content">
+							<img class="help-img" src="./images/buying-request.png" />
 							<p> إنشاء طلبية تساعدك على طلب بضاعة حسب فئة ما من قبل الموردين المشتركين في الموقع </p>
 							<h3 class="set-up">كيفية إنشاء طلبية</h3>
 							<ul>
@@ -273,6 +295,7 @@
 	<script src="js/jquery.nicescroll.min.js"></script>
 	<script src="js/isotope.min.js"></script>
 	<script src="js/chosen.jquery.min.js"></script>
+	<script src="js/dropImage.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		$(function(){

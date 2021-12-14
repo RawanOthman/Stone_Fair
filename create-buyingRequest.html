@@ -12,6 +12,8 @@
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/chosen.css">
 
+	<link rel="stylesheet" href="css/fileinput.min.css">
+
 	<!-- Slick -->
 	<link type="text/css" rel="stylesheet" href="css/slick.css" />
 	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
@@ -144,92 +146,126 @@
 			<div class="row">
 				<div class="col-lg-9 col-md-8 col-sm-12">
 					<div class="box">
-						<div class="buying-heading"><h3>Post a Request</h3></div>
-						<form action="#" id="buying-form" class="buying-form" method="post">
-							<div class="form-group">
-								<label class="form-label" for="Fullname">Full Name<span class="needed">*</span></label><br>
-								<input type="text" name="Fullname" id="Fullname" class="form-control" required="">
+						<div class="sequence-field">
+							<input type="radio" id="tab-order" name="listing_filter" value="tab-order" data-filter=".tab-order">
+							<label for="tab-order">Order details</label>
+							<i class="fa fa-angle-right"></i>
+
+							<input type="radio" id="tab-image" name="listing_filter" value="tab-image" data-filter=".tab-image">
+							<label for="tab-image">Images</label>
+							<i class="fa fa-angle-right"></i>
+
+							<input type="radio" id="tab-finish" name="listing_filter" value="tab-finish" data-filter=".tab-finish">
+							<label for="tab-finish">Finish</label>
+						</div>
+
+						<div class=" isotope-wrapper">
+							<div class="isotope-item tab-order">
+								<form action="#" id="buying-form" class="buying-form" method="post">
+									<div class="form-group">
+										<label class="form-label" for="Fullname">Full Name<span class="needed">*</span></label><br>
+										<input type="text" name="Fullname" id="Fullname" class="form-control" required="">
+									</div>
+				
+									<div class="form-group">
+										<label class="form-label pb-1" for="country">Country<span class="needed">*</span></label><br>
+										<select data-placeholder="Select a Country" class="chosen-select form-control">
+											<option>Turkey</option>
+											<option>Malysia</option>
+											<option>KSA</option>
+											<option>Italy</option>
+										</select>	
+									</div>
+				
+									<div class="form-group">
+										<label class="form-label" for="email">Email Address<span class="needed">*</span></label><br>
+										<input type="email" id="email" name="email" class="form-control" required="">
+									</div>
+	
+									<div class="form-group">
+										<label class="form-label" for="phone">Phone Number<span class="needed">*</span></label><br>
+										<input type="text" name="phone" id="phone" class="form-control" required="">
+									</div>
+								
+									<div class="form-group">
+										<label class="form-label pb-1" for="category">Category</label><br>
+										<select data-placeholder="Select a Category" class="chosen-select form-control">
+											<option>Mosaics and Sculptues</option>
+											<option>Manufacturing Materials and Tools</option>
+											<option>Factories and Quarries Machinery</option>
+											<option>Marble and Granite</option>
+										</select>	
+									</div>
+				
+									<div class="form-group">
+										<label class="form-label" for="quantity">Quantity<span class="needed">*</span></label><br>
+										<input type="text" id="quantity" name="quantity" class="form-control" required="">
+									</div>
+	
+									<div class="form-group">
+										<label class="form-label" for="productName">Product Name<span class="needed">*</span></label><br>
+										<input type="text" id="productName" name="productName" class="form-control" required="">
+									</div>
+	
+									<div class="form-group">
+										<label class="form-label pb-1" for="targetCountry">Target Country</label><br>
+										<select data-placeholder="To select all countries please keep it empty" multiple class="chosen-select form-control">
+											<option>Malysia</option>
+											<option>France</option>
+											<option>Italy</option>
+											<option>Turkey</option>
+											<option>Canada</option>
+											<option>KSA</option>
+										</select>	
+									</div>
+											
+	
+									<!--<div class="form-group">
+										<label class="form-label pb-1" for="targetCountry">Target Country</label><br>
+										<select name="targetCountry" class="form-control"> 
+											<option value="1">To select all countries please keep it empty</option>
+											<option value="2">Malysia</option> 
+											<option value="3">France</option> 
+											<option value="4">Italy</option> 
+											<option value="5">Turkey</option> 
+										</select>
+									</div>-->
+	
+									<div class="form-group">
+										<label class="form-label" for="description">Description<span cla>*</span></label><br>
+										<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
+									</div>
+											
+									<div class="product-btns">
+										<button class="primary-btn" type="submit">View</button>
+									</div>
+								</form>
 							</div>
-		
-							<div class="form-group">
-								<label class="form-label pb-1" for="country">Country<span class="needed">*</span></label><br>
-								<select data-placeholder="Select a Country" class="chosen-select form-control">
-									<option>Turkey</option>
-									<option>Malysia</option>
-									<option>KSA</option>
-									<option>Italy</option>
-								</select>	
-							</div>
-		
-							<div class="form-group">
-								<label class="form-label" for="email">Email Address<span class="needed">*</span></label><br>
-								<input type="email" id="email" name="email" class="form-control" required="">
+	
+							<div class="isotope-item tab-image">
+								<form action="#" id="image-form" class="image-form" method="post">
+									<label class="form__container" id="upload-container">Choose or Drag & Drop Files
+										<input class="form__file" id="upload-files" type="file" accept="image/*" multiple="multiple"/>
+									</label>
+									<div class="form__files-container" id="files-list-container"></div>
+								</form>
 							</div>
 
-							<div class="form-group">
-								<label class="form-label" for="phone">Phone Number<span class="needed">*</span></label><br>
-								<input type="text" name="phone" id="phone" class="form-control" required="">
+							<div class="isotope-item tab-finish">
+								<div class="finish-form text-center">
+									<p>The order has been created, your order will be approved soon. </p>
+									<button class="primary-btn" type="submit">Finish</button>
+								</div>
 							</div>
+						</div>
 						
-							<div class="form-group">
-								<label class="form-label pb-1" for="category">Category</label><br>
-								<select data-placeholder="Select a Category" class="chosen-select form-control">
-									<option>Mosaics and Sculptues</option>
-									<option>Manufacturing Materials and Tools</option>
-									<option>Factories and Quarries Machinery</option>
-									<option>Marble and Granite</option>
-								</select>	
-							</div>
-		
-							<div class="form-group">
-								<label class="form-label" for="quantity">Quantity<span class="needed">*</span></label><br>
-								<input type="text" id="quantity" name="quantity" class="form-control" required="">
-							</div>
-
-							<div class="form-group">
-								<label class="form-label" for="productName">Product Name<span class="needed">*</span></label><br>
-								<input type="text" id="productName" name="productName" class="form-control" required="">
-							</div>
-
-							<div class="form-group">
-								<label class="form-label pb-1" for="targetCountry">Target Country</label><br>
-								<select data-placeholder="To select all countries please keep it empty" multiple class="chosen-select form-control">
-									<option>Malysia</option>
-									<option>France</option>
-									<option>Italy</option>
-									<option>Turkey</option>
-									<option>Canada</option>
-									<option>KSA</option>
-								</select>	
-							</div>
-									
-
-							<!--<div class="form-group">
-								<label class="form-label pb-1" for="targetCountry">Target Country</label><br>
-								<select name="targetCountry" class="form-control"> 
-									<option value="1">To select all countries please keep it empty</option>
-									<option value="2">Malysia</option> 
-									<option value="3">France</option> 
-									<option value="4">Italy</option> 
-									<option value="5">Turkey</option> 
-								</select>
-							</div>-->
-
-							<div class="form-group">
-								<label class="form-label" for="description">Description<span cla>*</span></label><br>
-								<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
-							</div>
-									
-							<div class="product-btns">
-								<button class="primary-btn" type="submit">View</button>
-							</div>
-						</form>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-12">
 					<div class="box">
 						<div class="buying-heading"><h3>Help Information</h3></div>
 						<div class="buying-content">
+							<img class="help-img" src="./images/buying-request.png" />
 							<p> Set up an order help you request goods by category by suppliers participating in the site</p>
 							<h3 class="set-up">How to set up an order</h3>
 							<ul>
@@ -285,7 +321,10 @@
 	<script src="js/jquery.nicescroll.min.js"></script>
 	<script src="js/isotope.min.js"></script>
 	<script src="js/popper.min.js"></script>
+	<script src="js/fileinput.min.js"></script>
+	<script src="js/sortable.min.js"></script>
 	<script src="js/chosen.jquery.min.js"></script>
+	<script src="js/dropImage.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		$(function(){
@@ -295,7 +334,6 @@
 			}); 
 		})
 	</script>
-
 </body>
 
 </html>

@@ -144,10 +144,25 @@
 			<div class="row">
 				<div class="col-lg-9 col-md-8 col-sm-12">
 					<div class="box">
-						<div class="buying-heading"><h3>إضافة إعلان</h3></div>
-						<form action="#" id="buying-form" class="buying-form" method="post">
-							
+						<div class="sequence-field">
+							<input type="radio" id="tab-details" name="listing_filter" value="tab-details" data-filter=".tab-details">
+							<label for="tab-details">تفاصيل الإعلان</label>
+							<i class="fa fa-angle-left"></i>
 
+							<input type="radio" id="tab-Photos" name="listing_filter" value="tab-Photos" data-filter=".tab-Photos">
+							<label for="tab-Photos">الصور</label>
+							<i class="fa fa-angle-left"></i>
+
+							<input type="radio" id="tab-payment" name="listing_filter" value="tab-payment" data-filter=".tab-payment">
+							<label for="tab-payment">الدفع</label>
+							<i class="fa fa-angle-left"></i>
+
+							
+							<input type="radio" id="tab-finish" name="listing_filter" value="tab-finish" data-filter=".tab-finish">
+							<label for="tab-finish">إنهاء</label>
+						</div>
+
+						<form action="#" id="buying-form" class="buying-form" method="post">
 							<div class="form-group">
 								<label class="form-label pb-1" for="category">التصنيف<span class="needed">*</span></label><br>
 								<select data-placeholder="اختر التصنيف" class="chosen-select form-control">
@@ -189,8 +204,6 @@
 								</select>	
 							</div>
 
-
-
 							<div class="form-group">
 								<label class="form-label" for="description">الوصف<span class="needed">*</span></label><br>
 								<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
@@ -208,7 +221,6 @@
 								</div>
 							</div>
 
-
 							<div class="form-group">
 								<label class="form-label pb-1" for="city">المدينة<span class="needed">*</span></label><br>
 								<select data-placeholder="اختر المدينة" class="chosen-select form-control">
@@ -224,18 +236,31 @@
 								<input type="text" id="tag" name="tag" class="form-control" required="">
 							</div>
 
+
 							<div class="Seller-heading"><h3><i class="fa fa-user"></i>معلومات البائع</h3></div>
-							
 							<div class="form-group">
-								<label class="form-label" for="phone">رقم الهاتف<span class="needed">*</span></label><br>
-								<input type="text" name="phone" id="phone" class="form-control" required="">
+								<label class="form-label pb-1" for="phone">رقم الهاتف<span class="needed">*</span></label><br>
+								<div  style="display: flex;">
+									<input type="phone" id="phone" name="phone" class="form-control" required="">
+									<div class="input-group-append"> 
+										<span class="input-group-text"> 
+											<input id="hidePhone" name="hidePhone" type="checkbox" value="hidePhone">&nbsp;<small>إخفاء</small> 
+										</span> 
+									</div>
+								</div>
 							</div>
-		
+
 							<div class="form-group">
-								<label class="form-label" for="email">البريد الالكتروني<span class="needed">*</span></label><br>
-								<input type="email" id="email" name="email" class="form-control" required="">
+								<label class="form-label pb-1" for="email">البريد الالكتروني<span class="needed">*</span></label><br>
+								<div  style="display: flex;">
+									<input type="email" id="email" name="email" class="form-control" required="">
+									<div class="input-group-append"> 
+										<span class="input-group-text"> 
+											<input id="hideEmail" name="hideEmail" type="checkbox" value="hideEmail">&nbsp;<small>إخفاء</small> 
+										</span> 
+									</div>
+								</div>
 							</div>
-							
 									
 							<div class="product-btns">
 								<button class="primary-btn" type="submit">تأكيد</button>
@@ -247,6 +272,7 @@
 					<div class="box">
 						<div class="buying-heading"><h3>إرشادات</h3></div>
 						<div class="buying-content">
+							<img class="help-img" src="./images/image.png" />
 							<p> هل لديك شيء تبيعه ، أو تستأجره ، أو أي خدمة تقدمه ، أو عرض عمل؟ انشره على موقع e-stonefair ، فهو مجاني للأعمال المحلية وسهل الاستخدام! </p>
 							<h3 class="set-up"> كيف تبيع بسرعة؟ </h3>
 							<ul>

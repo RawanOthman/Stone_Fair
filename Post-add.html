@@ -143,7 +143,24 @@
 			<div class="row">
 				<div class="col-lg-9 col-md-8 col-sm-12">
 					<div class="box">
-						<div class="buying-heading"><h3>Post free Add</h3></div>
+						<div class="sequence-field">
+							<input type="radio" id="tab-details" name="listing_filter" value="tab-details" data-filter=".tab-details">
+							<label for="tab-details">Ad Details</label>
+							<i class="fa fa-angle-right"></i>
+
+							<input type="radio" id="tab-Photos" name="listing_filter" value="tab-Photos" data-filter=".tab-Photos">
+							<label for="tab-Photos">Photos</label>
+							<i class="fa fa-angle-right"></i>
+
+							<input type="radio" id="tab-payment" name="listing_filter" value="tab-payment" data-filter=".tab-payment">
+							<label for="tab-payment">Payment</label>
+							<i class="fa fa-angle-right"></i>
+
+							
+							<input type="radio" id="tab-finish" name="listing_filter" value="tab-finish" data-filter=".tab-finish">
+							<label for="tab-finish">Finish</label>
+						</div>
+
 						<form action="#" id="buying-form" class="buying-form" method="post">
 
 							<div class="form-group">
@@ -208,7 +225,33 @@
 
 							<div class="Seller-heading"><h3><i class="fa fa-user"></i>Seller information</h3></div>
 							
+							
+
 							<div class="form-group">
+								<label class="form-label pb-1" for="phone">Phone Number<span class="needed">*</span></label><br>
+								<div  style="display: flex;">
+									<input type="phone" id="phone" name="phone" class="form-control" required="">
+									<div class="input-group-append"> 
+										<span class="input-group-text"> 
+											<input id="hidePhone" name="hidePhone" type="checkbox" value="hidePhone">&nbsp;<small>Hide</small> 
+										</span> 
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="form-label pb-1" for="email">Email Address<span class="needed">*</span></label><br>
+								<div  style="display: flex;">
+									<input type="email" id="email" name="email" class="form-control" required="">
+									<div class="input-group-append"> 
+										<span class="input-group-text"> 
+											<input id="hideEmail" name="hideEmail" type="checkbox" value="hideEmail">&nbsp;<small>Hide</small> 
+										</span> 
+									</div>
+								</div>
+							</div>
+							
+							<!--<div class="form-group">
 								<label class="form-label" for="phone">Phone Number<span class="needed">*</span></label><br>
 								<input type="text" name="phone" id="phone" class="form-control" required="">
 							</div>
@@ -216,7 +259,7 @@
 							<div class="form-group">
 								<label class="form-label" for="email">Email Address<span class="needed">*</span></label><br>
 								<input type="email" id="email" name="email" class="form-control" required="">
-							</div>
+							</div>-->
 							
 									
 							<div class="product-btns">
@@ -229,6 +272,7 @@
 					<div class="box">
 						<div class="buying-heading"><h3>Help Information</h3></div>
 						<div class="buying-content">
+							<img class="help-img" src="./images/image.png" />
 							<p> Do you have something to sell, to rent, any service to offer or a job offer? Post it at e-stonefair, its free, for local business and very easy to use! </p>
 							<h3 class="set-up"> How to sell quickly? </h3>
 							<ul>
