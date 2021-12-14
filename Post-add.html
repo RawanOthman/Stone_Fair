@@ -22,6 +22,7 @@
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<script src="js/bootstrap.bundle1.min.js"></script>
 </head>
 
 <body>
@@ -144,128 +145,140 @@
 				<div class="col-lg-9 col-md-8 col-sm-12">
 					<div class="box">
 						<div class="sequence-field">
-							<input type="radio" id="tab-details" name="listing_filter" value="tab-details" data-filter=".tab-details">
-							<label for="tab-details">Ad Details</label>
-							<i class="fa fa-angle-right"></i>
-
-							<input type="radio" id="tab-Photos" name="listing_filter" value="tab-Photos" data-filter=".tab-Photos">
-							<label for="tab-Photos">Photos</label>
-							<i class="fa fa-angle-right"></i>
-
-							<input type="radio" id="tab-payment" name="listing_filter" value="tab-payment" data-filter=".tab-payment">
-							<label for="tab-payment">Payment</label>
-							<i class="fa fa-angle-right"></i>
-
-							
-							<input type="radio" id="tab-finish" name="listing_filter" value="tab-finish" data-filter=".tab-finish">
-							<label for="tab-finish">Finish</label>
+							<ul class="nav nav-tabs" id="myTab">
+								<li class="nav-item">
+									<a href="#tab-details" class="nav-link" data-bs-toggle="tab">Ad Details</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-Photos" class="nav-link" data-bs-toggle="tab">Photos</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-payment" class="nav-link" data-bs-toggle="tab">Payment</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-finish" class="nav-link" data-bs-toggle="tab">Finish</a>
+								</li>
+							</ul>
 						</div>
 
-						<form action="#" id="buying-form" class="buying-form" method="post">
 
-							<div class="form-group">
-								<label class="form-label pb-1" for="category">Category<span class="needed">*</span></label><br>
-								<select data-placeholder="Select a Category" class="chosen-select form-control">
-									<option>Select a Category</option> 
-									<option>Mosaics and Sculptues</option> 
-									<option>Manufacturing Materials and Tools</option> 
-									<option">Factories and Quarries Machinery</option> 
-									<option>Marble and Granite</option> 
-								</select>	
-							</div>
+						<div class="tab-content">
+							<div class="tab-pane fade" id="tab-details">
+								<form action="#" id="buying-form" class="buying-form" method="post">
 
-							<div class="form-group">
-								<label class="form-label" for="title">Title<span class="needed">*</span></label><br>
-								<input type="text" name="title" id="title" class="form-control" required="">
-							</div>
-
-							<div class="form-group">
-								<label class="form-label pb-1" for="type">Type<span class="needed">*</span></label><br>
-								<select data-placeholder="Select a Type" class="chosen-select form-control">
-									<option>Products</option> 
-									<option>Services</option> 
-									<option>Gallery</option> 
-								</select>	
-							</div>
-
-
-							<div class="form-group">
-								<label class="form-label" for="description">Description<span class="needed">*</span></label><br>
-								<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
-							</div>
-
-							<div class="form-group">
-								<label class="form-label pb-1" for="price">Price</label><br>
-								<div  style="display: flex;">
-									<input type="text" id="price" name="price" class="form-control" required="">
-									<div class="input-group-append"> 
-										<span class="input-group-text"> 
-											<input id="negotiable" name="negotiable" type="checkbox" value="1">&nbsp;<small>Negotiable</small> 
-										</span> 
+									<div class="form-group">
+										<label class="form-label pb-1" for="category">Category<span class="needed">*</span></label><br>
+										<select data-placeholder="Select a Category" class="chosen-select form-control">
+											<option>Select a Category</option> 
+											<option>Mosaics and Sculptues</option> 
+											<option>Manufacturing Materials and Tools</option> 
+											<option">Factories and Quarries Machinery</option> 
+											<option>Marble and Granite</option> 
+										</select>	
 									</div>
-								</div>
-							</div>
-
-
-							<div class="form-group">
-								<label class="form-label pb-1" for="city">City<span class="needed">*</span></label><br>
-								<select data-placeholder="Select a City" class="chosen-select form-control">
-									<option>Turkey</option>
-									<option>Malysia</option>
-									<option>KSA</option>
-									<option>Italy</option>
-									<option>France</option> 
-								</select>	
-							</div>
 		
-							<div class="form-group">
-								<label class="form-label pb-1" for="tag">Tags</label><br>
-								<input type="text" id="tag" name="tag" class="form-control" required="">
-							</div>
-
-							<div class="Seller-heading"><h3><i class="fa fa-user"></i>Seller information</h3></div>
-							
-							
-
-							<div class="form-group">
-								<label class="form-label pb-1" for="phone">Phone Number<span class="needed">*</span></label><br>
-								<div  style="display: flex;">
-									<input type="phone" id="phone" name="phone" class="form-control" required="">
-									<div class="input-group-append"> 
-										<span class="input-group-text"> 
-											<input id="hidePhone" name="hidePhone" type="checkbox" value="hidePhone">&nbsp;<small>Hide</small> 
-										</span> 
+									<div class="form-group">
+										<label class="form-label" for="title">Title<span class="needed">*</span></label><br>
+										<input type="text" name="title" id="title" class="form-control" required="">
 									</div>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="form-label pb-1" for="email">Email Address<span class="needed">*</span></label><br>
-								<div  style="display: flex;">
-									<input type="email" id="email" name="email" class="form-control" required="">
-									<div class="input-group-append"> 
-										<span class="input-group-text"> 
-											<input id="hideEmail" name="hideEmail" type="checkbox" value="hideEmail">&nbsp;<small>Hide</small> 
-										</span> 
-									</div>
-								</div>
-							</div>
-							
-							<!--<div class="form-group">
-								<label class="form-label" for="phone">Phone Number<span class="needed">*</span></label><br>
-								<input type="text" name="phone" id="phone" class="form-control" required="">
-							</div>
 		
-							<div class="form-group">
-								<label class="form-label" for="email">Email Address<span class="needed">*</span></label><br>
-								<input type="email" id="email" name="email" class="form-control" required="">
-							</div>-->
-							
+									<div class="form-group">
+										<label class="form-label pb-1" for="type">Type<span class="needed">*</span></label><br>
+										<select data-placeholder="Select a Type" class="chosen-select form-control">
+											<option>Products</option> 
+											<option>Services</option> 
+											<option>Gallery</option> 
+										</select>	
+									</div>
+		
+		
+									<div class="form-group">
+										<label class="form-label" for="description">Description<span class="needed">*</span></label><br>
+										<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
+									</div>
+		
+									<div class="form-group">
+										<label class="form-label pb-1" for="price">Price</label><br>
+										<div  style="display: flex;">
+											<input type="text" id="price" name="price" class="form-control" required="">
+											<div class="input-group-append"> 
+												<span class="input-group-text"> 
+													<input id="negotiable" name="negotiable" type="checkbox" value="1">&nbsp;<small>Negotiable</small> 
+												</span> 
+											</div>
+										</div>
+									</div>
+		
+		
+									<div class="form-group">
+										<label class="form-label pb-1" for="city">City<span class="needed">*</span></label><br>
+										<select data-placeholder="Select a City" class="chosen-select form-control">
+											<option>Turkey</option>
+											<option>Malysia</option>
+											<option>KSA</option>
+											<option>Italy</option>
+											<option>France</option> 
+										</select>	
+									</div>
+				
+									<div class="form-group">
+										<label class="form-label pb-1" for="tag">Tags</label><br>
+										<input type="text" id="tag" name="tag" class="form-control" required="">
+									</div>
+		
+									<div class="Seller-heading"><h3><i class="fa fa-user"></i>Seller information</h3></div>
 									
-							<div class="product-btns">
-								<button class="primary-btn" type="submit">Submit</button>
+									
+		
+									<div class="form-group">
+										<label class="form-label pb-1" for="phone">Phone Number<span class="needed">*</span></label><br>
+										<div  style="display: flex;">
+											<input type="phone" id="phone" name="phone" class="form-control" required="">
+											<div class="input-group-append"> 
+												<span class="input-group-text"> 
+													<input id="hidePhone" name="hidePhone" type="checkbox" value="hidePhone">&nbsp;<small>Hide</small> 
+												</span> 
+											</div>
+										</div>
+									</div>
+		
+									<div class="form-group">
+										<label class="form-label pb-1" for="email">Email Address<span class="needed">*</span></label><br>
+										<div  style="display: flex;">
+											<input type="email" id="email" name="email" class="form-control" required="">
+											<div class="input-group-append"> 
+												<span class="input-group-text"> 
+													<input id="hideEmail" name="hideEmail" type="checkbox" value="hideEmail">&nbsp;<small>Hide</small> 
+												</span> 
+											</div>
+										</div>
+									</div>
+									
+									<!--<div class="form-group">
+										<label class="form-label" for="phone">Phone Number<span class="needed">*</span></label><br>
+										<input type="text" name="phone" id="phone" class="form-control" required="">
+									</div>
+				
+									<div class="form-group">
+										<label class="form-label" for="email">Email Address<span class="needed">*</span></label><br>
+										<input type="email" id="email" name="email" class="form-control" required="">
+									</div>-->
+									
+											
+									<div class="product-btns">
+										<button class="primary-btn" type="submit">Submit</button>
+									</div>
+								</form>
 							</div>
-						</form>
+							<div class="tab-pane fade" id="tab-Photos"></div>
+							<div class="tab-pane fade" id="tab-payment"></div>
+							<div class="tab-pane fade" id="tab-finish"></div>
+						</div>
+
+						
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-12">
@@ -339,6 +352,11 @@
 				width: '100%'
 			}); 
 		})
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#myTab li:eq() a").tab("show"); // show second tab (0-indexed, like an array)
+		});
 	</script>
 </body>
 
