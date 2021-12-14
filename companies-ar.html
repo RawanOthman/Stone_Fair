@@ -190,12 +190,12 @@
 						<div class="shop-topbar-left">
 							<ul class="view-mode">
 								<li class="active">
-									<a href="#company-list" data-view="company-list">
+									<a href="#item-list" data-view="item-list">
 										<i class="fa fa-list-ul"></i>
 									</a>
 								</li>
 								<li>
-									<a href="#company-grid" data-view="company-grid">
+									<a href="#item-grid" data-view="item-grid">
 										<i class="fa fa-th"></i>
 									</a>
 								</li>
@@ -207,7 +207,7 @@
 
 			
 			<div class="company-content">
-				<div class="company-list company-view">
+				<div class="item-list item-view">
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="list-content">
@@ -672,7 +672,7 @@
         var $proStyle = $(this).data('view');
         $('.view-mode li').removeClass('active');
         $(this).parent('li').addClass('active');
-        $('.company-view').removeClass('company-list company-grid').addClass($proStyle);
+        $('.item-view').removeClass('item-list item-grid').addClass($proStyle);
     })
 	</script>
 </body>
