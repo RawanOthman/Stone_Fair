@@ -25,6 +25,9 @@
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
 
+	<!--<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>-->
+	<script src="js/bootstrap.bundle1.min.js"></script>
+
 </head>
 
 <body>
@@ -147,20 +150,23 @@
 				<div class="col-lg-9 col-md-8 col-sm-12">
 					<div class="box">
 						<div class="sequence-field">
-							<input type="radio" id="tab-order" name="listing_filter" value="tab-order" data-filter=".tab-order">
-							<label for="tab-order">Order details</label>
-							<i class="fa fa-angle-right"></i>
-
-							<input type="radio" id="tab-image" name="listing_filter" value="tab-image" data-filter=".tab-image">
-							<label for="tab-image">Images</label>
-							<i class="fa fa-angle-right"></i>
-
-							<input type="radio" id="tab-finish" name="listing_filter" value="tab-finish" data-filter=".tab-finish">
-							<label for="tab-finish">Finish</label>
+							<ul class="nav nav-tabs" id="myTab">
+								<li class="nav-item">
+									<a href="#tab-order" class="nav-link" data-bs-toggle="tab">Order details</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-image" class="nav-link" data-bs-toggle="tab">Images</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-finish" class="nav-link" data-bs-toggle="tab">Finish</a>
+								</li>
+							</ul>
 						</div>
-
-						<div class=" isotope-wrapper">
-							<div class="isotope-item tab-order">
+							
+						<div class="tab-content">
+							<div class="tab-pane fade" id="tab-order">
 								<form action="#" id="buying-form" class="buying-form" method="post">
 									<div class="form-group">
 										<label class="form-label" for="Fullname">Full Name<span class="needed">*</span></label><br>
@@ -241,8 +247,8 @@
 									</div>
 								</form>
 							</div>
-	
-							<div class="isotope-item tab-image">
+
+							<div class="tab-pane fade" id="tab-image">
 								<form action="#" id="image-form" class="image-form" method="post">
 									<label class="form__container" id="upload-container">Choose or Drag & Drop Files
 										<input class="form__file" id="upload-files" type="file" accept="image/*" multiple="multiple"/>
@@ -251,14 +257,13 @@
 								</form>
 							</div>
 
-							<div class="isotope-item tab-finish">
+							<div class="tab-pane fade" id="tab-finish">
 								<div class="finish-form text-center">
-									<p>The order has been created, your order will be approved soon. </p>
-									<button class="primary-btn" type="submit">Finish</button>
-								</div>
+								<p>The order has been created, your order will be approved soon. </p>
+								<button class="primary-btn" type="submit">Finish</button>
+							</div>
 							</div>
 						</div>
-						
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-12">
@@ -334,6 +339,13 @@
 			}); 
 		})
 	</script>
+
+	<script>
+		$(document).ready(function(){
+			$("#myTab li:eq() a").tab("show"); // show second tab (0-indexed, like an array)
+		});
+	</script>
+	
 </body>
 
 </html>
