@@ -80,7 +80,7 @@
 
   // Country Carousel
   $('.country-carousel').owlCarousel({
-    loop: true,
+    loop: false,
     rtl: true,
     dots: true,
     nav: true,
@@ -108,6 +108,57 @@
       }
     }
   });
+
+
+  // News Carousel
+  $('.news-carousel').owlCarousel({
+    dots: true,
+    nav: true,
+    singleItem: true,
+    responsive:{
+      0:{
+        items:6
+      },
+      480:{
+        items:6
+      },
+      640:{
+        items:8
+      },
+      990:{
+        items:10
+      },
+      1140:{
+        items:12
+      }
+    }
+  });
+
+  // News Carousel
+  $('.arnews-carousel').owlCarousel({
+    rtl: true,
+    dots: true,
+    nav: true,
+    singleItem: true,
+    responsive:{
+      0:{
+        items:6
+      },
+      480:{
+        items:6
+      },
+      640:{
+        items:8
+      },
+      990:{
+        items:10
+      },
+      1140:{
+        items:12
+      }
+    }
+  });
+  
 
   // company Profile Carousel
   $('.certificate-carousel').owlCarousel({
@@ -299,5 +350,16 @@
       var containerEl = document.querySelector('.portfolio-gallery');
       var mixer = mixitup(containerEl);
   }
+
+
+   // Form
+   $(window).on("load",function(){
+    var $container = $('.isotope-wrapper');
+    $container.isotope({ itemSelector: '.isotope-item', layoutMode: 'masonry' });
+  });
+  $('.sequence-field').on( 'click', 'input', 'change', function(){
+    var selector = $(this).attr('data-filter');
+    $('.isotope-wrapper').isotope({ filter: selector });
+  });
 
 })(jQuery);
