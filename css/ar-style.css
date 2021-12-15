@@ -66,6 +66,12 @@ hr {
   border: 1px solid #b7a07e;
   color: #fff;
 }
+.primary-btn:hover,
+.primary-btn:focus{
+ color: #b7a07e;
+ background-color: #fff;
+ border: 1px solid #b7a07e
+}
 .icon-btn.main-btn, .icon-btn.primary-btn {
   width: 34px;
   height: 34px;
