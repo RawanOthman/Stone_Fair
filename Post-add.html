@@ -194,7 +194,6 @@
 										</select>	
 									</div>
 		
-		
 									<div class="form-group">
 										<label class="form-label" for="description">Description<span class="needed">*</span></label><br>
 										<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
@@ -211,7 +210,6 @@
 											</div>
 										</div>
 									</div>
-		
 		
 									<div class="form-group">
 										<label class="form-label pb-1" for="city">City<span class="needed">*</span></label><br>
@@ -231,8 +229,6 @@
 		
 									<div class="Seller-heading"><h3><i class="fa fa-user"></i>Seller information</h3></div>
 									
-									
-		
 									<div class="form-group">
 										<label class="form-label pb-1" for="phone">Phone Number<span class="needed">*</span></label><br>
 										<div  style="display: flex;">
@@ -257,25 +253,115 @@
 										</div>
 									</div>
 									
-									<!--<div class="form-group">
-										<label class="form-label" for="phone">Phone Number<span class="needed">*</span></label><br>
-										<input type="text" name="phone" id="phone" class="form-control" required="">
-									</div>
-				
-									<div class="form-group">
-										<label class="form-label" for="email">Email Address<span class="needed">*</span></label><br>
-										<input type="email" id="email" name="email" class="form-control" required="">
-									</div>-->
-									
 											
 									<div class="product-btns">
-										<button class="primary-btn" type="submit">Submit</button>
+										<button class="primary-btn" type="submit">Next</button>
 									</div>
 								</form>
 							</div>
-							<div class="tab-pane fade" id="tab-Photos"></div>
-							<div class="tab-pane fade" id="tab-payment"></div>
-							<div class="tab-pane fade" id="tab-finish"></div>
+
+							<div class="tab-pane fade" id="tab-Photos">
+								<form action="#" id="image-form" class="image-form" method="post">
+									<label class="form__container" id="upload-container">Choose or Drag & Drop Files
+										<input class="form__file" id="upload-files" type="file" accept="image/*" multiple="multiple"/>
+									</label>
+									<div class="form__files-container" id="files-list-container"></div>
+									<div class="text-center m-4">
+										<button class="primary-btn" type="submit">Skip</button>
+									</div>
+									
+								</form>
+							</div>
+
+							<div class="tab-pane fade" id="tab-payment">
+								<form action="#" id="payment-form" class="payment-form" method="post">
+									<div class="payment-title">
+										<img src="./images/Premium.png">
+										<h5>Premium Ad</h5>
+									</div>
+									<p class="payment-text">The Premium package help sellers to promote their products or services by giving more visibilty to their ads attract more buyers and sell faster.</p>
+
+									<ul class="payment-list">
+										<li class="payment-item"> 
+											<input type="radio" name="postedDate" value="regular" id="regular"> 
+											<label for="regular">Regular List</label> 
+											<p class="price">0.00 $ </p>
+										</li>
+										<li class="payment-item"> 
+											<input type="radio" name="postedDate" value="pageAd" id="pageAd"> 
+											<label for="pageAd">Top page Ad<span>Upgrade</span></label> 
+											<p class="price">7.50 $</p>
+										</li>
+										<li class="payment-item"> 
+											<input type="radio" name="postedDate" value="pageAd1" id="pageAd1"> 
+											<label for="pageAd1">Top page Ad+<span>Upgrade</span></label> 
+											<p class="price"> 9.00 $</p>
+										</li>
+									</ul>
+
+									<div class="paymentWay-title">
+										<h5>Select Payment Way</h5>
+									</div>
+
+									<ul class="payment-way">
+										<li> 
+											<input type="radio" name="postedDate" value="paypal" id="paypal"> 
+											<label for="paypal"><img src="./images/paypal.png"></label> 
+										</li>
+										<li> 
+											<input type="radio" name="postedDate" value="visa" id="visa"> 
+											<label for="visa"><img src="./images/visa1.png"></label> 
+										</li>
+										<li> 
+											<input type="radio" name="postedDate" value="master" id="master"> 
+											<label for="master"><img src="./images/mastercard.png"></label> 
+										</li>
+									</ul>
+
+									<!--<div class="form-group" style="padding-left: 30px;">
+										<label class="form-label pb-1" for="category"></label>
+										<select data-placeholder="Select a Category" class="chosen-select form-control">
+											<option>Select a Payment Way</option> 
+											<option>Mosaics and Sculptues</option> 
+											<option>Manufacturing Materials and Tools</option> 
+											<option">Factories and Quarries Machinery</option> 
+											<option>Marble and Granite</option> 
+										</select>	
+									</div>-->
+												
+									<div class="product-btns text-center" style="padding-top: 30px;">
+										<button class="primary-btn" type="submit">Skip</button>
+										<button class="pay-btn" onclick="showPaymentWays()">Pay</button>
+									</div>
+
+									<div id="paymentWays">
+										<div class="jobs-area">
+											<a href="#" class="job-link">
+												<div class="single-job d-flex align-items-center">
+													<div class="job-position">
+														<h6>Benefits &amp; Compensations Trainee</h6>
+														<p>Human Resources</p>
+													</div>
+												</div>
+												
+												<div class="job-details">
+													<span class="btn-primary full-time">Full Time</span>
+													<span class="btn-primary temporary">Temporary Contract</span>
+												</div>
+											</a>
+										</div>
+						
+
+									</div>
+								</form>
+							</div>
+							
+							<div class="tab-pane fade" id="tab-finish">
+								<div class="finish-form text-center">
+									<p>The Add has been created, your Post Add will be approved soon. </p>
+									<button class="primary-btn" type="submit">Finish</button>
+								</div>
+							</div>
 						</div>
 
 						
@@ -344,6 +430,7 @@
 	<script src="js/jquery.nicescroll.min.js"></script>
 	<script src="js/isotope.min.js"></script>
 	<script src="js/chosen.jquery.min.js"></script>
+	<script src="js/dropImage.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		$(function(){
@@ -358,6 +445,16 @@
 			$("#myTab li:eq() a").tab("show"); // show second tab (0-indexed, like an array)
 		});
 	</script>
+	<script>
+        function showPaymentWays () {
+            var x = document.getElementById("paymentWays");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>

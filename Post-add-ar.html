@@ -184,22 +184,6 @@
 										<input type="text" name="title" id="title" class="form-control" required="">
 									</div>
 		
-									<!--<div class="form-group mb-1">
-										<label class="form-label pb-1">النوع<span class="needed">*</span></label><br>
-										<div class="form-check form-check-inline "> 
-											<input name="post_type_id" id="postTypeId-1" value="postTypeId-1" type="radio"> 
-											<label for="postTypeId-1"> المنتجات </label> 
-										</div> 
-										
-										<div class="form-check form-check-inline"> 
-											<input name="post_type_id" id="postTypeId-2" value="postTypeId-2" type="radio"> 
-											<label for="postTypeId-2"> الخدمات </label> 
-										</div> 
-										<div class="form-check form-check-inline"> 
-											<input name="post_type_id" id="postTypeId-3" value="postTypeId-3" type="radio"> 
-											<label for="postTypeId-3"> المعرض </label> 
-										</div> 
-									 </div>-->
 		
 									 <div class="form-group">
 										<label class="form-label pb-1" for="type">النوع<span class="needed">*</span></label><br>
@@ -269,13 +253,98 @@
 									</div>
 											
 									<div class="product-btns">
-										<button class="primary-btn" type="submit">تأكيد</button>
+										<button class="primary-btn" type="submit">التالي</button>
 									</div>
 								</form>
 							</div>
-							<div class="tab-pane fade" id="tab-Photos"></div>
-							<div class="tab-pane fade" id="tab-payment"></div>
-							<div class="tab-pane fade" id="tab-finish"></div>
+
+							<div class="tab-pane fade" id="tab-Photos">
+								<form action="#" id="image-form" class="image-form" method="post">
+									<label class="form__container" id="upload-container">اختر الملفات أو اسحبها  
+										<input class="form__file" id="upload-files" type="file" accept="image/*" multiple="multiple"/>
+									</label>
+									<div class="form__files-container" id="files-list-container"></div>
+									<div class="text-center m-4">
+										<button class="primary-btn" type="submit">تخطي</button>
+									</div>
+								</form>
+							</div>
+
+							<div class="tab-pane fade" id="tab-payment">
+								<form action="#" id="payment-form" class="payment-form" method="post">
+									<div class="payment-title">
+										<img src="./images/Premium.png">
+										<h5>إعلان مميز </h5>
+									</div>
+									<p class="payment-text">تساعد الحزمة المميزة البائعين على الترويج لمنتجاتهم أو خدماتهم من خلال إعطاء رؤية أكبر لجذب إعلاناتهم </p>
+
+									<ul class="payment-list">
+										<li class="payment-item"> 
+											<input type="radio" name="postedDate" value="regular" id="regular"> 
+											<label for="regular">قائمة منتظمة </label> 
+											<p class="price">0.00 $</p>
+										</li>
+										<li class="payment-item"> 
+											<input type="radio" name="postedDate" value="pageAd" id="pageAd"> 
+											<label for="pageAd">إعلان الصفحة العليا <span>تطوير </span></label> 
+											<p class="price"> 7.50 $</p>
+										</li>
+										<li class="payment-item"> 
+											<input type="radio" name="postedDate" value="pageAd1" id="pageAd1"> 
+											<label for="pageAd1">إعلان الصفحة العليا +<span>تطوير </span></label> 
+											<p class="price"> 9.00 $</p>
+										</li>
+									</ul>
+
+									<div class="paymentWay-title">
+										<h5>حدد طريقة الدفع </h5>
+									</div>
+
+									<ul class="payment-way">
+										<li> 
+											<input type="radio" name="postedDate" value="paypal" id="paypal"> 
+											<label for="paypal"><img src="./images/paypal.png"></label> 
+										</li>
+										<li> 
+											<input type="radio" name="postedDate" value="visa" id="visa"> 
+											<label for="visa"><img src="./images/visa1.png"></label> 
+										</li>
+										<li> 
+											<input type="radio" name="postedDate" value="master" id="master"> 
+											<label for="master"><img src="./images/mastercard.png"></label> 
+										</li>
+									</ul>
+												
+									<div class="product-btns text-center" style="padding-top: 30px;">
+										<button class="primary-btn" type="submit">تخطي</button>
+										<button class="pay-btn" onclick="showPaymentWays()">الدفع</button>
+									</div>
+
+									<div id="paymentWays">
+										<ul class="payment-way">
+											<li> 
+												<input type="radio" name="postedDate" value="paypal" id="paypal"> 
+												<label for="paypal"><img src="./images/paypal.png"></label> 
+											</li>
+											<li> 
+												<input type="radio" name="postedDate" value="visa" id="visa"> 
+												<label for="visa"><img src="./images/visa1.png"></label> 
+											</li>
+											<li> 
+												<input type="radio" name="postedDate" value="master" id="master"> 
+												<label for="master"><img src="./images/mastercard.png"></label> 
+											</li>
+										</ul>
+									</div>
+								</form>
+							</div>
+
+							<div class="tab-pane fade" id="tab-finish">
+								<div class="finish-form text-center">
+									<p>لقد تم انتهاء من إضافة إعلان الطلبية الموافقة على إعلانكم قريبا.... </p>
+									<button class="primary-btn" type="submit">إنهاء</button>
+								</div>
+							</div>
 						</div>
 
 						
@@ -344,6 +413,7 @@
 	<script src="js/jquery.nicescroll.min.js"></script>
 	<script src="js/isotope.min.js"></script>
 	<script src="js/chosen.jquery.min.js"></script>
+	<script src="js/dropImage.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		$(function(){
