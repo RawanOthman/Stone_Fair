@@ -66,11 +66,16 @@ hr {
   border: 1px solid #b7a07e;
   color: #fff;
 }
+.pay-btn,
 .primary-btn:hover,
 .primary-btn:focus{
- color: #b7a07e;
- background-color: #fff;
- border: 1px solid #b7a07e
+  padding: 6px 20px;
+  text-transform: capitalize;
+  border: none;
+  font-size: 15px;
+  color: #b7a07e;
+  background-color: #fff;
+  border: 1px solid #b7a07e
 }
 .icon-btn.main-btn, .icon-btn.primary-btn {
   width: 34px;
@@ -3083,6 +3088,7 @@ form .form-group select{
 }
 .sequence-field i{
   padding: 0 5px;
+  padding-top: 5px;
 }
 .sequence-field input + label:hover{
   color: #b7a07e;
@@ -3093,7 +3099,6 @@ form .form-group select{
 }
 .finish-form{
   position: relative;
-  width: 96%;
   margin: 40px;
 }
 .finish-form p{
@@ -3173,7 +3178,7 @@ form .form-group select{
   padding: 2px 0;
 }
 #myTab li{
-  display: block ruby;
+  display: flex;
 }
 
 #myTab li a{
@@ -3191,4 +3196,81 @@ form .form-group select{
 }
 #myTab.nav-tabs .nav-link{
   padding: 0 !important;
+}
+
+.payment-form {
+  padding: 40px 35px;
+}
+.payment-title{
+  display: flex;
+}
+.payment-title img {
+  max-height: 25px;
+}
+.payment-title h5 {
+  font-size: 16px;
+  font-family: 'hacen';
+  color: #5f6b74;
+  padding-right: 7px;
+}
+.payment-text{
+  font-size: 14px;
+  color: #5f6b74;
+  font-family: 'hacen';
+  position: relative;
+  padding-right: 30px;
+  padding-top: 4px;
+}
+.payment-list{
+  padding-right: 30px;
+}
+.payment-list li {
+  padding: 7px 0;
+  border-bottom: 1px solid #f5f6f6 !important;
+}
+.payment-list li label{
+  font-size: 14px;
+  color: #5f6b74;
+  font-family: 'hacen';
+  padding-right: 5px;
+}
+.payment-list li label span{
+  font-size: 11.3px;
+  color: #fff;
+  background: #369c50;
+  font-family: 'hacen';
+  padding: 3px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.payment-item{
+  position: relative;
+  display: flex;
+}
+.payment-list li .price{
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  font-family: 'hacen';
+  color: #5f6b74;
+}
+.payment-way li label img{
+  max-height: 27px;
+  max-width: 50px;
+}
+.payment-way{
+  padding-right: 30px;
+  display: flex;
+}
+.payment-way li{
+  padding-left: 30px;
+}
+.paymentWay-title h5 {
+  padding: 35px 30px 5px;
+  font-size: 16px;
+  font-family: 'hacen';
+  color: #5f6b74;
+}
+#paymentWays {
+  display: none;
 }
