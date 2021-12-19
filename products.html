@@ -10,6 +10,7 @@
 	<link rel="icon" type="image/png" href="./images/com-img.png">
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/chosen.css">
 	<!-- Slick -->
 	<link rel="stylesheet" href="css/slick.css" />
 	<link rel="stylesheet" href="css/jquery-ui.css"/>
@@ -143,32 +144,34 @@
 			<form id="seach" name="search" action="#0" method="Post"> 
 				<div class="row"> 
 					<div class="col-lg-3 col-md-6 col-sm-12"> 
-						<select name="c" id="catSearch" class="form-control" aria-hidden="true"> 
-							<option value=""> All Categories </option> 
-							<option value="stone-granite"> Stone &amp; Granite </option> 
-							<option value="manufacturing-materials-and-tools"> Manufacturing Materials and Tools </option> 
-							<option value="services"> Services </option>
-							<option value="stone-installation-companies"> Stone Installation Companies </option>
-							<option value="marble-stone-fairs"> Marble &amp; Stone Fairs </option> <option value="machineries-for-factories-quarries"> Machineries for Factories &amp; Quarries </option> 
-						</select>
+						<select data-placeholder="Select a Category" id="MyCategory"  class="chosen-select form-control">
+							<option>All Catgories</option> 
+							<option>Mosaics and Sculptues</option> 
+							<option>Manufacturing Materials and Tools</option> 
+							<option">Factories and Quarries Machinery</option> 
+							<option>Marble and Granite</option> 
+						</select>	
 					</div> 
 					
 					<div class="col-lg-3 col-md-6 col-sm-12"> 
-						<select name="MyCountry" id="MyCountry" class="form-control" aria-hidden="true"> 
-							<option value="all"> All Country </option> 
-							<option value=""> Afghanistan </option> 
-							<option value=""> Albania </option> 
-							<option value=""> Algeria </option> 
-						</select>
+						<select data-placeholder="Select a Country" id="MyCountry"  class="chosen-select form-control">
+							<option>All Countries</option>
+							<option>Turkey</option>
+							<option>Malysia</option>
+							<option>KSA</option>
+							<option>Italy</option>
+							<option>France</option> 
+						</select>	
 					</div> 
 						
 					<div class="col-lg-3 col-md-6 col-sm-12"> 
-						<select name="MyCity" id="MyCity" class="form-control" aria-hidden="true"> 
-							<option value="all"> All Cities </option> 
-							<option value=""> Ankara </option> 
-							<option value=""> Adana </option> 
-							<option value=""> Adapazarı </option> 
-						</select>
+						<select data-placeholder="Select a City" id="MyCity" class="chosen-select form-control">
+							<option>All Cities</option>
+							<option>Malysia</option>
+							<option>KSA</option>
+							<option>Italy</option>
+							<option>France</option> 
+						</select>	
 					</div> 
 
 					<div class="col-lg-3 col-md-6 col-sm-12 search-container"> 
@@ -685,6 +688,7 @@
 	<script src="js/isotope.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/price_range_script.js"></script>
+	<script src="js/chosen.jquery.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		$('.view-mode li a').on('click', function() {
@@ -696,24 +700,6 @@
 	</script>
 
 	<script>
-		/*function toggleLocation1() {
-			var x = document.getElementsByClassName("hiddenLocation");
-			if (x.style.display === "none")
-			{
-				x.style.display = "block";
-			} else {
-				x.style.display = "none";
-			}
-		}*/
-		/*$(document).ready(function () {
-			$(".hiddenLocation").hide();
-			$(".show_hide").on("click", function () {
-				var txt = $(".hiddenLocation").is(':visible') ? 'Read More' : 'Read Less';
-				$(".show_hide").text(txt);
-				$(this).next('.hiddenLocation').slideToggle(200);
-			});
-		});*/
-
 		$(document).ready(function(){
 
 		var list = $(".location-list li a");
