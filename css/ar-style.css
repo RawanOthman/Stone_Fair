@@ -1184,7 +1184,8 @@ footer .logo img {
 ===========================================================*/
 
 .company-profile,
-.all-product{
+.all-product,
+.my-account{
   /*margin: 40px 0 60px;*/
   margin: 30px 0 40px;
 }
@@ -2286,6 +2287,9 @@ input[type="number"] {
   .all-product .list-content .product-single .product-thumb {
     height: 140px !important;
   }
+  .btn-addVideo {
+    margin-top: 26px;
+}
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .product-categories .nav-item:hover{
@@ -2333,6 +2337,9 @@ input[type="number"] {
   .adver-slider img {
     max-height: 85px !important;
   }
+  .btn-addVideo {
+    margin-top: 26px;
+}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2888,7 +2895,8 @@ input[type="number"] {
 
 
 /* Create buying request */
-.buyingRequest .box {
+.buyingRequest .box,
+.my-account .box {
   background: #fff;
   border: 1px solid #eef0ef;
   box-shadow: 0 3px 5px 0 rgb(175 175 175/10%);
@@ -3273,4 +3281,138 @@ form .form-group select{
 }
 #paymentWays {
   display: none;
+}
+
+
+/*My Account */
+.account-sidebar{
+  border: 1px solid #f3f4f4;
+}
+.account-sidebar .account-widget{
+  padding: 15px 24px;
+  background-color: #fbf9fa;
+  border-bottom: 2px solid #f6f6f6;
+}
+.account-topbar {
+  border: 1px solid #f3f4f4;
+  display: flex;
+  padding: 15px 24px;
+  background-color: #fbf9fa;
+}
+.account-catigory{
+  padding: 20px 20px 10px;
+  border-bottom: 1px solid #f6f6f6;
+}
+.header-name{
+  font-family: 'hacen';
+  font-size: 15px;
+}
+
+.account-catigory .widget-collapsible{
+  padding: 10px 0;
+  border-bottom: 1px solid #f6f6f6;
+}
+.account-catigory .widget-collapsible:last-child{
+  padding: 10px 0;
+  border-bottom: none !important;
+}
+.account-catigory .widget-title{
+  position: relative;
+  margin-top: 10px
+}
+.account-catigory .widget-title a::after {
+  color: #ad997d;
+  content: "\f107";
+  display: block;
+  font-family: 'FontAwesome';
+  font-size: 15px;
+  line-height: 1;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+.account-catigory .widget-title a.collapsed::after {
+  content: "\f106";
+}
+.categ-item i{
+  font-size: 14px;
+  margin-left: 7px;
+  color: #5f6b74 !important;
+}
+.categ-item a{
+  font-size: 14px;
+  font-family: 'univers';
+}
+.categ-item a:hover{
+  color: #5f6b74 !important;
+}
+.account-catigory .widget-collapsible .collapse {
+  margin-top: 7px;
+  /*padding-left: 5px;*/
+  transition: 0.5s all;
+}
+.account-topbar .sequence-field label{
+  margin-left: 20px;
+  font-family: 'univers';
+}
+.list-items1 li{
+  padding: 3px 0;
+}
+#contact-form .widget-title{
+  padding: 10px 24px;
+  background-color: #fbf9fa;
+  border: 2px solid #f6f6f6;
+  margin: 20px 0 0;
+}
+.contact-title{
+  font-family: 'hacen';
+  font-size: 15px;
+  color: #5f6b74 !important;
+}
+.contactInfo{
+  padding: 20px 20px 10px;
+  border: 1px solid #f6f6f6;
+  border-top: none;
+}
+.btn-addVideo{
+  background: #b7a07e;
+  padding: 4px 10px;
+  width: 73px;
+  text-align: center;
+}
+.btn-addVideo a{
+  color: #fff !important;
+  font-size: 14px;
+}
+.choose-category{
+  padding: 40px 20px;
+}
+.treejs .treejs-checkbox:hover::before {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.treejs .treejs-node__checked > .treejs-checkbox::before,
+.treejs .treejs-node__halfchecked > .treejs-checkbox::before {
+  background-color: #ad997d !important;
+  border-color: #ad997d !important;
+}
+.treejs .treejs-nodes {
+  list-style: none;
+  padding-left: 0px !important;
+  padding-right: 20px !important;
+  overflow: hidden;
+}
+.treejs .treejs-node__checked > .treejs-checkbox::after {
+  left: 0 !important;
+  right: 5px !important;
+}
+.treejs .treejs-node__halfchecked > .treejs-checkbox::after{
+  left: 0 !important;
+  right: 3px !important;
+}
+.btn-addVideo {
+  background: #b7a07e;
+  padding: 4px 10px;
+  width: 73px;
+  text-align: center;
 }

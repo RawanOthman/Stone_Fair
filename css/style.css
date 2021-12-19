@@ -472,6 +472,12 @@ form .search-input:focus,
   .entry-page{
     padding: 10px 0 5px;
   }
+  .account-sidebar{
+    margin-bottom: 20px;
+  }
+  .account-catigory .widget{
+    margin-bottom: 0px !important;
+  }
 }
 
 /*=========================================================
@@ -2314,6 +2320,9 @@ input[type="number"] {
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
+  .btn-addVideo{
+    margin-top: 26px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .product-categories .nav-item:hover{
@@ -2353,6 +2362,9 @@ input[type="number"] {
   }
   .adver-slider img {
     max-height: 85px !important;
+  }
+  .btn-addVideo{
+    margin-top: 26px;
   }
 }
 
@@ -2952,7 +2964,7 @@ form .form-group select{
   color: #b7a07e !important;
   /*color: #5f6b74 !important;*/
   font-family: 'Raleway-Medium';
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
   text-transform: capitalize;
 }
 .form-group .needed {
@@ -3048,127 +3060,6 @@ form .form-group select{
   box-shadow: 0 3px 5px 0 rgb(175 175 175/10%);
 }
 
-/*My Account */
-.account-sidebar{
-  border: 1px solid #f3f4f4;
-}
-.account-sidebar .account-widget{
-  padding: 15px 24px;
-  background-color: #fbf9fa;
-  border-bottom: 2px solid #f6f6f6;
-}
-.account-topbar {
-  border: 1px solid #f3f4f4;
-  display: flex;
-  padding: 15px 24px;
-  background-color: #fbf9fa;
-}
-.account-catigory{
-  padding: 20px 20px 10px;
-  border-bottom: 1px solid #f6f6f6;
-}
-.header-name{
-  font-family: 'Raleway-bold';
-  font-size: 15px;
-}
-
-.account-catigory .widget-collapsible{
-  padding: 10px 0;
-  border-bottom: 1px solid #f6f6f6;
-}
-.account-catigory .widget-collapsible:last-child{
-  padding: 10px 0;
-  border-bottom: none !important;
-}
-.account-catigory .widget-title{
-  position: relative;
-  margin-top: 10px
-}
-.account-catigory .widget-title a::after {
-  color: #ad997d;
-  content: "\f107";
-  display: block;
-  font-family: 'FontAwesome';
-  font-size: 15px;
-  line-height: 1;
-  position: absolute;
-  top: 10%;
-  right: 25%;
-}
-.account-catigory .widget-title a.collapsed::after {
-  content: "\f106";
-}
-.categ-item i{
-  font-size: 14px;
-  margin-right: 7px;
-  color: #5f6b74 !important;
-}
-.categ-item a{
-  font-size: 14px;
-  font-family: 'Raleway-Medium';
-}
-.categ-item a:hover{
-  font-size: 14px;
-  /*color: #5f6b74 !important;*/
-}
-.account-catigory .widget-collapsible .collapse {
-  margin-top: 7px;
-  padding-left: 5px;
-  transition: 0.5s all;
-}/*
-.account-catigory .widget-collapsible .collapse .widget-body{
-  
-}
-.account-catigory .widget-collapsible .collapse .widget-body ul li{
-}*/
-
-/*
-.switch-field label,
-.switch-field{
-  position: relative;
-}
-.switch-field label {
-  position: relative;
-  float: left;
-  height: 46px;
-  display: inline-block;
-  text-align: center;
-  padding: 0 20px 0 30px;
-  margin: 0;
-  font-size: 16px;
-  line-height: 46px;
-  background-color: #fbf9fa;
-  
-}
-.switch-field label::before {
-  position: absolute;
-  display: block;
-  border: 24px solid transparent;
-  border-left: 16px solid #d4d4d4;
-  border-right: 0;
-  top: -1px;
-  z-index: 10;
-  content: '';
-  right: -16px;
-}
-
-.switch-field label::after {
-  position: absolute;
-  display: block;
-  border: 24px solid transparent;
-  border-left: 16px solid #f1f1f1;
-  border-left: 16px solid #f9f9f9;
-  border-right: 0;
-  top: -1px;
-  z-index: 10;
-  content: '';
-  right: -15px;
-}*/
-
-.account-topbar .sequence-field label{
-  margin-right: 20px;
-  font-family: 'Raleway-Medium';
-}
 .help-img{
   max-width: 55px;
   position: relative;
@@ -3233,6 +3124,7 @@ form .form-group select{
 .finish-form p{
   font-size: 16px;
   color: #ad997d;
+  margin-bottom: 10px;
 }
 .form__container {
   position: relative;
@@ -3400,4 +3292,119 @@ form .form-group select{
 }
 #paymentWays {
   display: none;
+}
+
+
+
+/*My Account */
+.account-sidebar{
+  border: 1px solid #f3f4f4;
+}
+.account-sidebar .account-widget{
+  padding: 15px 24px;
+  background-color: #fbf9fa;
+  border-bottom: 2px solid #f6f6f6;
+}
+.account-topbar {
+  border: 1px solid #f3f4f4;
+  display: flex;
+  padding: 15px 24px;
+  background-color: #fbf9fa;
+}
+.account-catigory{
+  padding: 20px 20px 10px;
+  border-bottom: 1px solid #f6f6f6;
+}
+.header-name{
+  font-family: 'Raleway-bold';
+  font-size: 15px;
+}
+
+.account-catigory .widget-collapsible{
+  padding: 10px 0;
+  border-bottom: 1px solid #f6f6f6;
+}
+.account-catigory .widget-collapsible:last-child{
+  padding: 10px 0;
+  border-bottom: none !important;
+}
+.account-catigory .widget-title{
+  position: relative;
+  margin-top: 10px
+}
+.account-catigory .widget-title a::after {
+  color: #ad997d;
+  content: "\f107";
+  display: block;
+  font-family: 'FontAwesome';
+  font-size: 15px;
+  line-height: 1;
+  position: absolute;
+  top: 10%;
+  right: 25%;
+}
+.account-catigory .widget-title a.collapsed::after {
+  content: "\f106";
+}
+.categ-item i{
+  font-size: 14px;
+  margin-right: 7px;
+  color: #5f6b74 !important;
+}
+.categ-item a{
+  font-size: 14px;
+  font-family: 'Raleway-Medium';
+}
+.categ-item a:hover{
+  color: #5f6b74 !important;
+}
+.account-catigory .widget-collapsible .collapse {
+  margin-top: 7px;
+  /*padding-left: 5px;*/
+  transition: 0.5s all;
+}
+.account-topbar .sequence-field label{
+  margin-right: 20px;
+  font-family: 'Raleway-Medium';
+}
+.list-items1 li{
+  padding: 3px 0;
+}
+#contact-form .widget-title{
+  padding: 10px 24px;
+  background-color: #fbf9fa;
+  border: 2px solid #f6f6f6;
+  margin: 20px 0 0;
+}
+.contact-title{
+  font-family: 'Raleway-medium';
+  font-size: 15px;
+  color: #5f6b74 !important;
+}
+.contactInfo{
+  padding: 20px 20px 10px;
+  border: 1px solid #f6f6f6;
+  border-top: none;
+}
+.btn-addVideo{
+  background: #b7a07e;
+  padding: 4px 10px;
+  width: 73px;
+  text-align: center;
+}
+.btn-addVideo a{
+  color: #fff !important;
+  font-size: 14px;
+}
+.choose-category{
+  padding: 40px 20px;
+}
+.treejs .treejs-checkbox:hover::before {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.treejs .treejs-node__checked > .treejs-checkbox::before,
+.treejs .treejs-node__halfchecked > .treejs-checkbox::before {
+  background-color: #ad997d !important;
+  border-color: #ad997d !important;
 }
