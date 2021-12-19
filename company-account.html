@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Company Account</title>
+	<link rel="icon" type="image/png" href="./images/com-img.png">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/chosen.css">
+	<!-- Slick -->
+	<link rel="stylesheet" href="css/slick.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/bootstrap.bundle1.min.js"></script>
+	<script src="js/tree.min.js"></script>
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header>
+		<div id="header">
+			<div class="container">
+				<div class="row">
+					<!-- Logo -->
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<div class="header-logo">
+							<a class="logo" href="#">
+								<img src="./images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="nav-toggle">
+							<button class="nav-toggle-btn main-btn1 icon-btn"><i class="fa fa-bars"></i></button>
+						</div>
+					</div>
+					<!-- /Logo -->
+					
+					<!-- Search -->
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="header-search">
+							<form>
+								<input class="input search-input" type="text" placeholder="Search for a company, product..">
+								<button class="search-btn"><i class="fa fa-search"></i></button>
+							</form>
+						</div>
+					<!-- /Search -->
+					</div>
+
+					<!-- Login -->
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="header-dropdown-link">
+                            <a href="#0" class="login-link">
+                                <img src="./images/Login.png">
+                                <span class="login-txt">Login</span>
+                            </a>
+
+                            <a href="#0" class="suggestions-link">
+                                <img src="./images/Suggestions.png">
+                                <span class="login-txt">Suggestions</span>
+                            </a>
+
+                            <div class="lan-selector languages_dropdown d-flex">
+                                <div class="dropdown">
+                                    <a href="javascript:void(0)" class="dropdown-toggle language_drop" id="dropdownMenuButton countries" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="./images/EnFlag.png" width="30px"> En
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#" style="text-align: left;"><img src="./images/EnFlag.png" width="30px">En</a>
+                                        <a class="dropdown-item" href="index-ar.html" style="text-align: left;"><img src="./images/ArFlag.png" width="30px">AR</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+					</div>
+					<!-- /Login -->
+				</div>
+
+				<div id="navigation">
+					<div class="row">
+						<div class="col-lg-4 col-md-4">
+							<div id="responsive-nav">
+								<div class="menu-nav">
+									<span class="menu-header">Menu <i class="fa fa-close"></i></span>
+									<ul class="menu-list">
+										<li><a href="#">Home</a></li>
+										<li><a href="#">Suppliers</a></li>
+										<li><a href="#">Purchase orders</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="header-bottom-link">
+								<a href="#0" class="quick-link">
+									<img src="./images/1.png">
+									<span class="quick-txt">Add Your Company</span>
+								</a>
+				
+								<a href="#0" class="quick-link">
+									<img src="./images/2.png">
+									<span class="quick-txt">Post a Request</span>
+								</a>
+				
+								<a href="#0" class="quick-link">
+									<img src="./images/3.png">
+									<span class="quick-txt">Post free Add</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- header -->
+		</div>
+	</header>
+	<!-- /HEADER -->
+
+	<div class="breadcumb_area bg-img" style="background-image: url(images/breadcumb.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="page-title">
+                        <h2>Company Account</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<div class="my-account">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="account-sidebar">
+						<div class="account-widget">
+							<div class="header-name">Basic Info</div>
+						</div>
+
+						<div class="account-catigory">
+							<div class="widget widget-collapsible">
+								<h6 class="widget-title">
+									<a data-toggle="collapse" href="#Stone" role="button" aria-expanded="true" aria-controls="CateProduct" class="header-title">
+										My Account  
+									</a>
+								</h6>
+								<!--<div class="collapse show" id="Stone">-->
+								<div class="collapse show" id="Stone">
+									<div class="widget-body">
+										<ul class="list-items1">
+											<li class="categ-item"><i class="fa fa-user"></i><a href="#0">Personal Home</a></li>
+											<li class="categ-item"><i class="fa fa-university"></i><a href="#0">My Company</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="widget widget-collapsible">
+								<h6 class="widget-title">
+									<a data-toggle="collapse" href="#Slabs" role="button" aria-expanded="true" aria-controls="CateProduct" class="header-title">
+										My Insituation  
+									</a>
+								</h6>
+								<div class="collapse" id="Slabs">
+									<div class="widget-body">
+										<ul class="list-item1">
+											<li class="categ-item"><i class="fa fa-plus"></i><a href="#0">Add Insituation</a></li>
+											<li class="categ-item"><i class="fa fa-close"></i><a href="#0">Remove Insituation</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="widget widget-collapsible">
+								<h6 class="widget-title">
+									<a data-toggle="collapse" href="#Tiles" role="button" aria-expanded="true" aria-controls="CateProduct" class="header-title">
+										My Ads 
+									</a>
+								</h6>
+								<div class="collapse" id="Tiles">
+									<div class="widget-body">
+										<ul class="list-items1">
+											<li class="categ-item"><i class="fa fa-folder-open"></i><a href="#0"> My ads  </a></li>
+											<li class="categ-item"><i class="fa fa-heart"></i><a href="#0"> Favourite ads  </a></li>
+											<li class="categ-item"><i class="fa fa-bookmark"></i><a href="#0"> Saved searches </a></li>
+											<li class="categ-item"><i class="fa fa-hourglass-half"></i><a href="#0"> Pending approval </a></li>
+											<li class="categ-item"><i class="fa fa-archive"></i><a href="#0"> Archived ads </a></li>
+											<li class="categ-item"><i class="fa fa-envelope"></i><a href="#0"> Conversations </a></li>
+											<li class="categ-item"><i class="fa fa-cart-arrow-down"></i><a href="#0"> My buying requests </a></li>
+											<li class="categ-item"><i class="fa fa-pencil-square-o"></i><a href="#0"> Edit buying requests </a></li>
+											<li class="categ-item"><i class="fa fa-money"></i><a href="#0"> Transactions </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="widget widget-collapsible">
+								<h6 class="widget-title">
+									<a data-toggle="collapse" href="#Terminate" role="button" aria-expanded="true" aria-controls="CateProduct" class="header-title">
+										Terminate Account   
+									</a>
+								</h6>
+								<div class="collapse" id="Terminate">
+									<div class="widget-body">
+										<ul class="list-items1">
+											<li class="categ-item"><i class="fa fa-close"></i><a href="#0"> Close account </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="box">
+						<!--<div class="header-name">Product Information</div>-->
+						<div class="sequence-field">
+							<ul class="nav nav-tabs" id="myTab">
+								<li class="nav-item">
+									<a href="#tab-basic" class="nav-link" data-bs-toggle="tab">Basic</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-contact" class="nav-link" data-bs-toggle="tab">Contact</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-categories" class="nav-link" data-bs-toggle="tab">Categories</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-projectGallery" class="nav-link" data-bs-toggle="tab">Project Gallery</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-imageGallery" class="nav-link" data-bs-toggle="tab">Image Gallery</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-videoGallery" class="nav-link" data-bs-toggle="tab">Video Gallery</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-certificate" class="nav-link" data-bs-toggle="tab">Certificate</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-finish" class="nav-link" data-bs-toggle="tab">Finish</a>
+								</li>
+							</ul>
+						</div>
+
+						
+						<div class="tab-content">
+							<div class="tab-pane fade" id="tab-basic">
+								<form action="#" id="buying-form" class="buying-form" method="post">
+									<div class="form-group">
+										<label class="form-label" for="Fullname">Full Name<span class="needed">*</span></label><br>
+										<input type="text" name="Fullname" id="Fullname" class="form-control" required="">
+									</div>
+
+									<div class="form-group">
+										<label class="form-label pb-1" for="Country">Country<span class="needed">*</span></label><br>
+										<select data-placeholder="Select a Country" class="chosen-select form-control">
+											<option>Turkey</option>
+											<option>Malysia</option>
+											<option>KSA</option>
+											<option>Italy</option>
+											<option>France</option> 
+										</select>	
+									</div>
+				
+								
+				
+									<div class="form-group">
+										<label class="form-label" for="email">Email Address<span class="needed">*</span></label><br>
+										<input type="email" id="email" name="email" class="form-control" required="">
+									</div>
+	
+									<div class="form-group">
+										<label class="form-label" for="phone">Phone Number<span class="needed">*</span></label><br>
+										<input type="text" name="phone" id="phone" class="form-control" required="">
+									</div>
+								
+									<div class="form-group">
+										<label class="form-label pb-1" for="category">Category</label><br>
+										<select data-placeholder="Select a Category" class="chosen-select form-control">
+											<option>Mosaics and Sculptues</option>
+											<option>Manufacturing Materials and Tools</option>
+											<option>Factories and Quarries Machinery</option>
+											<option>Marble and Granite</option>
+										</select>	
+									</div>
+				
+									<div class="form-group">
+										<label class="form-label" for="quantity">Quantity<span class="needed">*</span></label><br>
+										<input type="text" id="quantity" name="quantity" class="form-control" required="">
+									</div>
+	
+									<div class="form-group">
+										<label class="form-label" for="productName">Product Name<span class="needed">*</span></label><br>
+										<input type="text" id="productName" name="productName" class="form-control" required="">
+									</div>
+	
+									<div class="form-group">
+										<label class="form-label" for="description">Description<span cla>*</span></label><br>
+										<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
+									</div>
+											
+									<div class="product-btns">
+										<button class="primary-btn" type="submit">View</button>
+									</div>
+								</form>
+							</div>
+
+							<div class="tab-pane fade" id="tab-contact">
+								<form action="#" id="contact-form" class="buying-form" method="post">
+								
+									<div class="mb-4 text-center">
+										<p style="color: #b7a07e;">Please fill at least one box completely </p>
+									</div>
+
+									<div class="widget widget-collapsible">
+										<h6 class="widget-title">
+											<a data-toggle="collapse" href="#contactInfo1" role="button" aria-expanded="false" aria-controls="CateProduct" class="contact-title collapsed">
+												Contact Info 1
+											</a>
+										</h6>
+										<div class="collapse contactInfo" id="contactInfo1">
+											<div class="widget-body">
+												<div class="form-group">
+													<label class="form-label mb-1" for="name1">Name 1</label><br>
+													<input type="text" name="name1" id="name1" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="adjective1">Adjective 1</label><br>
+													<input type="text" name="adjective1" id="adjective1" class="form-control" required="">
+												</div>
+													
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="phone1">Phone 1</label><br>
+													<input type="text" name="phone1" id="phone1" class="form-control" required="">
+												</div>
+													
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="email1">Email 1</label><br>
+													<input type="email" name="email1" id="email1" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="speaking1">Speaking 1</label><br>
+													<input type="text" name="speaking1" id="speaking1" class="form-control" required="">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="widget widget-collapsible">
+										<h6 class="widget-title">
+											<a data-toggle="collapse" href="#contactInfo2" role="button" aria-expanded="false" aria-controls="CateProduct" class="contact-title collapsed">
+												Contact Info 2
+											</a>
+										</h6>
+										<div class="collapse contactInfo" id="contactInfo2">
+											<div class="widget-body">
+												<div class="form-group">
+													<label class="form-label mb-1" for="name2">Name 2</label><br>
+													<input type="text" name="name2" id="name2" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="adjective2">Adjective 2</label><br>
+													<input type="text" name="adjective2" id="adjective2" class="form-control" required="">
+												</div>
+													
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="phone2">Phone 2</label><br>
+													<input type="text" name="phone2" id="phone2" class="form-control" required="">
+												</div>
+													
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="email2">Email 2</label><br>
+													<input type="email" name="email2" id="email2" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="speaking2">Speaking 2</label><br>
+													<input type="text" name="speaking2" id="speaking2" class="form-control" required="">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="widget widget-collapsible">
+										<h6 class="widget-title">
+											<a data-toggle="collapse" href="#contactInfo3" role="button" aria-expanded="false" aria-controls="CateProduct" class="contact-title collapsed">
+												Contact Info 3
+											</a>
+										</h6>
+										<div class="collapse contactInfo" id="contactInfo3">
+											<div class="widget-body">
+												<div class="form-group">
+													<label class="form-label mb-1" for="name3">Name 3</label><br>
+													<input type="text" name="name3" id="name3" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="adjective3">Adjective 3</label><br>
+													<input type="text" name="adjective3" id="adjective3" class="form-control" required="">
+												</div>
+													
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="phone3">Phone 3</label><br>
+													<input type="text" name="phone3" id="phone3" class="form-control" required="">
+												</div>
+													
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="email3">Email 3</label><br>
+													<input type="email" name="email3" id="email3" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="speaking3">Speaking 3</label><br>
+													<input type="text" name="speaking3" id="speaking3" class="form-control" required="">
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="text-center m-4">
+										<button class="primary-btn">Back</button>
+										<button class="primary-btn">Next</button>
+									</div>
+								</form>
+							</div>
+
+							<div class="tab-pane fade" id="tab-categories">
+								<div class="choose-category"></div>
+							</div>
+							<div class="tab-pane fade" id="tab-projectGallery">
+								<form action="#" id="image-form" class="image-form" method="post">
+									<label class="form__container" id="upload-container">Choose or Drag & Drop Files
+										<input class="form__file" id="upload-files" type="file" accept="image/*" multiple="multiple"/>
+									</label>
+									<div class="form__files-container" id="files-list-container"></div>
+									<div class="text-center m-4">
+										<button class="primary-btn">Back</button>
+										<button class="primary-btn">Next</button>
+									</div>
+								</form>
+							</div>
+
+							<div class="tab-pane fade" id="tab-imageGallery">
+								<form action="#" id="image-form" class="image-form" method="post">
+									<label class="form__container" id="upload-container">Choose or Drag & Drop Files
+										<input class="form__file" id="upload-files" type="file" accept="image/*" multiple="multiple"/>
+									</label>
+									<div class="form__files-container" id="files-list-container"></div>
+									<div class="text-center m-4">
+										<button class="primary-btn">Back</button>
+										<button class="primary-btn">Next</button>
+									</div>
+								</form>
+							</div>
+
+							<div class="tab-pane fade" id="tab-videoGallery">
+								<form action="#" id="buying-form" class="buying-form" method="post">
+									<div class="row">
+										<div class="col-lg-5">
+											<div class="form-group">
+												<label class="form-label mb-1" for="videoLink1">Video Link 1</label><br>
+												<input type="text" name="videoLink1" id="videoLink1" class="form-control" required="">
+											</div>
+										</div>
+										<div class="col-lg-5">
+											<div class="form-group">
+												<label class="form-label mb-1" for="videoDescription1">Video Description 1</label><br>
+												<input type="text" name="videoDescription1" id="videoDescription1" class="form-control" required="">
+											</div>
+										</div>
+										<div class="col-lg-1">
+											<div class="btn-addVideo">
+												<a href="#0">Add</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="row mt-4">
+										<div class="col-lg-5">
+											<div class="form-group">
+												<label class="form-label mb-1" for="videoLink2">Video Link 2</label><br>
+												<input type="text" name="videoLink2" id="videoLink2" class="form-control" required="">
+											</div>
+										</div>
+										<div class="col-lg-5">
+											<div class="form-group">
+												<label class="form-label mb-1" for="videoDescription2">Video Description 2</label><br>
+												<input type="text" name="videoDescription2" id="videoDescription2" class="form-control" required="">
+											</div>
+										</div>
+										<div class="col-lg-2">
+											<div class="btn-addVideo">
+												<a href="#0">Remove</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="text-center m-4">
+										<button class="primary-btn">Back</button>
+										<button class="primary-btn">Next</button>
+									</div>
+		
+									
+								</form>
+							</div>
+							
+							<div class="tab-pane fade" id="tab-certificate">
+								<form action="#" id="image-form" class="image-form" method="post">
+									<label class="form__container" id="upload-container">Choose or Drag & Drop Files
+										<input class="form__file" id="upload-files" type="file" accept="image/*" multiple="multiple"/>
+									</label>
+									<div class="form__files-container" id="files-list-container"></div>
+									<div class="text-center m-4">
+										<button class="primary-btn">Back</button>
+										<button class="primary-btn">Next</button>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="tab-finish">
+								<div class="finish-form text-center">
+									<p style="font-family: 'Raleway-medium';">Congratulation !!</p>
+									<p style="color: #5f6b74; font-size: 15px;">Now you have a wonderful facility page. To reach more customers and achieve greater spread through the Internet, add an advertisement for your products or services  </p>
+									<button class="primary-btn" > Add Listing </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+
+
+	<!-- FOOTER -->
+	<footer id="footer" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<a href="index.html" class="logo">
+						<img src="./images/logo.png" alt="Stone Logo" >
+					</a>
+					<div class="footer-links text-center mb-3 mt-2">
+						<ul class="list">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Suppliers</a></li>
+							<li><a href="#">Purchase orders</a></li>
+							<li><a href="#">Galleries</a></li>
+							<li><a href="#">Services</a></li>
+						</ul>
+					</div>
+					<ul class="social-icons justify-content-center">
+					  <li><a href="#0"><i class="fa fa-facebook"></i></a></li>
+					  <li><a href="#0"><i class="fa fa-instagram"></i></a></li>
+					  <li><a href="#0"><i class="fa fa-twitter"></i></a></li>
+					  <li><a href="#0"><i class="fa fa-envelope"></i></a></li>
+					  <li><a href="#0"><i class="fa fa-whatsapp"></i></a></li>
+					  
+					</ul>
+				  </div>
+			</div>
+		</div>
+	</footer>
+	<!-- /FOOTER -->
+
+
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/chosen.jquery.min.js"></script>
+	<script src="js/tree.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#myTab li:eq() a").tab("show"); // show second tab (0-indexed, like an array)
+		});
+	</script>
+
+	<script>
+		// prettier-ignore
+		let data = [{ "id": "0", "text": "node-0", "children": [
+					{ "id": "0-0", "text": "node-0-0", "children": [
+						{ "id": "0-0-0", "text": "node-0-0-0" },
+						{ "id": "0-0-1", "text": "node-0-0-1" },
+						{ "id": "0-0-2", "text": "node-0-0-2" }
+					]},
+					{ "id": "0-1", "text": "node-0-1", "children": [
+						{ "id": "0-1-0", "text": "node-0-1-0" },
+						{ "id": "0-1-1", "text": "node-0-1-1" },
+						{ "id": "0-1-2", "text": "node-0-1-2" }] 
+					},
+					{ "id": "0-2", "text": "node-0-2", "children": [
+						{ "id": "0-2-0", "text": "node-0-2-0" }, 
+						{ "id": "0-2-1", "text": "node-0-2-1" }, 
+						{ "id": "0-2-2", "text": "node-0-2-2" }
+					]}
+				]}, 
+
+				{ "id": "1", "text": "node-1", "children": [
+					{ "id": "1-0", "text": "node-1-0", "children": [
+						{ "id": "1-0-0", "text": "node-1-0-0" }, 
+						{ "id": "1-0-1", "text": "node-1-0-1" }, 
+						{ "id": "1-0-2", "text": "node-1-0-2" }
+					]}, 
+					{ "id": "1-1", "text": "node-1-1", "children": [
+						{ "id": "1-1-0", "text": "node-1-1-0" }, 
+						{ "id": "1-1-1", "text": "node-1-1-1" }, 
+						{ "id": "1-1-2", "text": "node-1-1-2" }
+					]}, 
+					{ "id": "1-2", "text": "node-1-2", "children": [
+						{ "id": "1-2-0", "text": "node-1-2-0" }, 
+						{ "id": "1-2-1", "text": "node-1-2-1" }, 
+						{ "id": "1-2-2", "text": "node-1-2-2" }
+					]}
+				]},
+
+				{ "id": "2", "text": "node-2", "children": [
+					{ "id": "2-0", "text": "node-2-0", "children": [
+						{ "id": "2-0-0", "text": "node-2-0-0" }, 
+						{ "id": "2-0-1", "text": "node-2-0-1" }, 
+						{ "id": "2-0-2", "text": "node-2-0-2" }
+					]}, 
+					{ "id": "2-1", "text": "node-2-1", "children": [
+						{ "id": "2-1-0", "text": "node-2-1-0" }, 
+						{ "id": "2-1-1", "text": "node-2-1-1" }, 
+						{ "id": "2-1-2", "text": "node-2-1-2" }
+					]}, 
+					{ "id": "2-2", "text": "node-2-2", "children": [
+						{ "id": "2-2-0", "text": "node-2-2-0" }, 
+						{ "id": "2-2-1", "text": "node-2-2-1" }, 
+						{ "id": "2-2-2", "text": "node-2-2-2" }
+					]}
+				]}
+			]
+	
+			let tree = new Tree('.choose-category', {
+				data: [{ id: '-1', text: 'root', children: data }],
+				closeDepth: 3
+			})
+	</script>
+</body>
+
+</html>
