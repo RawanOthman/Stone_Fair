@@ -10,6 +10,7 @@
 	<link rel="icon" type="image/png" href="./images/com-img.png">
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+	<link rel="stylesheet" href="css/chosen.css">
 
 	<!-- Slick -->
 	<link type="text/css" rel="stylesheet" href="css/slick.css" />
@@ -143,33 +144,35 @@
 			<form id="seach" name="search" action="#0" method="Post"> 
 				<div class="row"> 
 					<div class="col-lg-3 col-md-6 col-sm-12"> 
-						<select name="c" id="catSearch" class="form-control" aria-hidden="true"> 
-							<option value="">جميع التصنيفات </option> 
-							<option value="stone-granite"> رخام وغرانيت </option> 
-							<option value="manufacturing-materials-and-tools">  آليات المصانع و المقالع  </option> 
-							<option value="Factories and Quarries Machinery">  معارض الرخام و الحجر  </option>
-							<option value="Mosaics and Sculptues"> الفسيفساء والمنحوتات  </option>
-						</select>
+						<select data-placeholder="اختر التصنيف" id="MyCategory"  class="chosen-select form-control">
+							<option>جميع التصنيفات</option> 
+							<option>رخام وغرانيت</option> 
+							<option> آليات المصانع و المقالع </option> 
+							<option>الفسيفساء والمنحوتات </option> 
+							<option>شركات تركيب الرخام </option> 
+						</select>	
 					</div> 
 					
 					<div class="col-lg-3 col-md-6 col-sm-12"> 
-						<select name="MyCountry" id="MyCountry" class="form-control" aria-hidden="true"> 
-							<option value="all"> جميع البلدان </option> 
-							<option value=""> تركيا </option> 
-							<option value=""> السعودية </option> 
-							<option value=""> الإمارات </option> 
-						</select>
+						<select data-placeholder="اختر البلد" id="MyCountry"  class="chosen-select form-control">
+							<option>جميع البلدان</option>
+							<option>ماليزيا</option>
+							<option>فرنسا</option>
+							<option>إيطاليا</option>
+							<option>تركيا</option>
+						</select>	
 					</div> 
 						
 					<div class="col-lg-3 col-md-6 col-sm-12"> 
-						<select name="MyCity" id="MyCity" class="form-control" aria-hidden="true"> 
-							<option value="all"> جميع المدن </option> 
-							<option value=""> اسطنبول </option> 
-							<option value=""> جدة </option> 
-							<option value=""> الرياض </option> 
-						</select>
+						<select data-placeholder="اختر مدينة" id="MyCity" class="chosen-select form-control">
+							<option>جميع المدن</option>
+							<option>ماليزيا</option>
+							<option>فرنسا</option>
+							<option>إيطاليا</option>
+							<option>تركيا</option>
+						</select>	
 					</div> 
-
+					
 					<div class="col-lg-3 col-md-6 col-sm-12 search-container"> 
 						<input class="input search-input" type="text" placeholder="اكتب ما تريد البحث عنه">
 						<button class="search-btn"><i class="fa fa-search"></i></button>
@@ -666,6 +669,7 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.nicescroll.min.js"></script>
 	<script src="js/isotope.min.js"></script>
+	<script src="js/chosen.jquery.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		$('.view-mode li a').on('click', function() {
