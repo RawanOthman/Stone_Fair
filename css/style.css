@@ -2445,6 +2445,9 @@ input[type="number"] {
   .adver-slider img {
     max-height: 75px !important;
   }
+  .account-sidebar{
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2560,6 +2563,9 @@ input[type="number"] {
   }
   .drop-category{
     left: 42% !important;
+  }
+  .account-sidebar{
+    margin-bottom: 20px;
   }
 }
 

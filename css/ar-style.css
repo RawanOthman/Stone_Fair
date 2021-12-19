@@ -462,6 +462,7 @@ form .search-input:focus,
   .entry-page{
     padding: 10px 0 5px;
   }
+  
 }
 
 /*=========================================================
@@ -2419,6 +2420,9 @@ input[type="number"] {
   .adver-slider img {
     max-height: 75px !important;
   }
+  .account-sidebar{
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2531,6 +2535,9 @@ input[type="number"] {
   }
   .adver-details{
     margin-bottom: 30px;
+  }
+  .account-sidebar{
+    margin-bottom: 20px;
   }
 }
 
