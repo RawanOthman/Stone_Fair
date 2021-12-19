@@ -125,6 +125,32 @@
 	</header>
 	<!-- /HEADER -->
 
+	<div class="modal" id="myModal" tabindex="-1">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">تواصل مع المعلن</h5>
+			  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<form action="#" class="message-form"  method="post">
+				<div class="form-group">
+					<label class="form-label" for="phone">رقم الهاتف</label><br>
+					<input type="text" name="phone" id="phone" class="form-control" required="">
+				</div>
+		
+				<div class="form-group">
+					<label class="form-label" for="description">الرسالة <span style="font-size: 12px;">(500 max)</span><span class="needed">*</span></label><br>
+					<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
+				</div>
+			</form>
+			<div class="modal-footer">
+				<button type="button" class="primary-btn mr-5 ">إرسال الرسالة</button>
+				<button type="button" class="pay-btn" data-dismiss="modal">إلغاء</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
 	<!-- Breadcrumb Begin -->
     <div class="breadcumb_area bg-img" style="background-image: url(images/breadcumb.jpg);">
         <div class="container h-100">
@@ -171,7 +197,7 @@
 						</p>
 					</div>
 					<div class="product-contact product-btns">
-						<button class="primary-btn mr-5"><i class="fa fa-envelope"></i>إرسال رسالة</button>
+						<button class="primary-btn mr-5"  data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope"></i>إرسال رسالة</button>
 						<button class="primary-btn mr-5"><i class="fa fa-bookmark"></i>حفظ المنتج</button>
 						<button class="primary-btn mr-5"><i class="fa fa-info-circle"></i>إبلاغ عن سوء معاملة</button>
 					</div>
