@@ -2924,7 +2924,9 @@ input[type="number"] {
 }
 .buying-form .form-group,
 .buying-form .form-group input,
-.buying-form .form-group textarea{
+.buying-form .form-group textarea,
+.message-form .form-group input,
+.message-form .form-group textarea{
   position: relative;
   font-size: 14px !important;
   color: #818181 !important;
@@ -2937,7 +2939,8 @@ form .form-group select{
   font-size: 14px !important;
   color: #999 !important;
 }
-.buying-form .form-group .form-control {
+.buying-form .form-group .form-control,
+.message-form .form-group .form-control {
   /*width: 95%;*/
   position: relative;
   height: 35px;
@@ -2948,13 +2951,15 @@ form .form-group select{
   border: 1px solid #eee !important;
   color: #5f5f5f;
 }
-.buying-form .form-group .form-control:focus{
+.buying-form .form-group .form-control:focus,
+.message-form .form-group .form-control:focus{
   outline: none;
   box-shadow: 0 0 0 1px rgba(183,160,126,.5) !important;
   /*box-shadow: 0 0 0 1px rgba(238,240,239,.5) !important;
   border: 1px solid #eef0ef;*/
 }
-.buying-form .form-group .form-label {
+.buying-form .form-group .form-label,
+.message-form .form-group .form-label {
   color: #b7a07e !important;
   /*color: #5f6b74 !important;*/
   font-family: 'univers';
@@ -3415,4 +3420,20 @@ form .form-group select{
   padding: 4px 10px;
   width: 73px;
   text-align: center;
+}
+.message-form{
+  padding: 1rem 1rem;
+}
+.message-form .form-group .form-label{
+  font-size: 14px !important;
+}
+.modal-title{
+  font-family: 'hacen';
+  font-size: 17px;
+}
+.btn-close:focus {
+  outline: 0;
+  box-shadow: 0 0 0 1px rgba(183,160,126,.5) !important;
+  opacity: 1;
+  border-radius: 0 !important;
 }
