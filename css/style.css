@@ -2840,6 +2840,21 @@ input[type="number"] {
   /*max-height: 280px;*/
   max-height: 400px;
   overflow: hidden;
+  position: relative;
+}
+.thumbnail-container .marker {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  padding: 3px 5px;
+  font-size: 13px;
+  border: 1px solid #f3f4f4;
+  background: #fff;
+}
+.thumbnail-container .marker img {
+  width: 40px;
+  padding-top: 5px;
 }
 .adver-slider img {
   max-height: 108px;
@@ -2964,7 +2979,8 @@ form .form-group select{
   color: #999;
 }
 .buying-form .form-group .form-control:focus,
-.message-form .form-group .form-control:focus{
+.message-form .form-group .form-control:focus,
+.comment-form .form-group .form-control:focus{
   outline: none;
   box-shadow: 0 0 0 1px rgba(183,160,126,.5) !important;
   /*box-shadow: 0 0 0 1px rgba(238,240,239,.5) !important;
@@ -3077,7 +3093,10 @@ form .form-group select{
   position: relative;
   left: 35%;
   margin-bottom: 3px;
-}
+}/*
+.sequence-field{
+  display: none;
+}*/
 .sequence-field{
   border: 1px solid #f3f4f4;
   background-color: #fbf9fa;
@@ -3476,4 +3495,36 @@ form .form-group select{
 }
 .nav.list-items1{
   display: block !important;
+}
+.breadcrumb-item a,
+.breadcrumb-item{
+  font-size: 15px;
+  font-family: 'Raleway-medium';
+}
+.comment-form .form-group .form-control{
+  position: relative;
+  background: none;
+  border-radius: 0 !important;
+  padding: 5px 10px;
+  transition: all 0.4s;
+  border: 1px solid #eee !important;
+  border-radius: 0 !important;
+  font-size: 15px;
+  color: #5f6b74 !important;
+}
+.card-content{
+  margin-left: 10px;
+}
+.sub-categories{
+  margin-top: 20px;
+}
+.sub-categories .list-inline li a{
+  font-size: 15px;
+  color: #5f6b74 ;
+  font-family: 'Raleway-medium';
+  padding: 5px;
+  /*background-color: #fbf9fa;*/
+}
+.sub-categories .list-inline li a:hover{
+  color: #b7a07e;
 }
