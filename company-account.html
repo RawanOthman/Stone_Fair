@@ -159,9 +159,14 @@
 								<!--<div class="collapse show" id="Stone">-->
 								<div class="collapse show" id="Stone">
 									<div class="widget-body">
-										<ul class="list-items1">
-											<li class="categ-item"><i class="fa fa-user"></i><a href="#0">Personal Home</a></li>
-											<li class="categ-item"><i class="fa fa-university"></i><a href="#0">My Company</a></li>
+										<ul class="nav nav-tabs list-items1" id="myTab">
+											<li class="nav-item categ-item">
+												<i class="fa fa-user mt-1"></i>
+												<a href="#tab-profile" class="nav-link" data-bs-toggle="tab">Personal Home</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-university mt-1"></i><a href="#tab-basic" class="nav-link" data-bs-toggle="tab">My Company</a>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -175,9 +180,14 @@
 								</h6>
 								<div class="collapse" id="Slabs">
 									<div class="widget-body">
-										<ul class="list-item1">
-											<li class="categ-item"><i class="fa fa-plus"></i><a href="#0">Add Insituation</a></li>
-											<li class="categ-item"><i class="fa fa-close"></i><a href="#0">Remove Insituation</a></li>
+										<ul class="nav nav-tabs list-items1" id="myTab">
+											<li class="nav-item categ-item">
+												<i class="fa fa-plus mt-1"></i>
+												<a href="#tab-addInsituation" class="nav-link" data-bs-toggle="tab">Add Insituation</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-close mt-1"></i><a href="#tab-delInsituation" class="nav-link" data-bs-toggle="tab">Remove Insituation</a>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -191,16 +201,36 @@
 								</h6>
 								<div class="collapse" id="Tiles">
 									<div class="widget-body">
-										<ul class="list-items1">
-											<li class="categ-item"><i class="fa fa-folder-open"></i><a href="#0"> My ads  </a></li>
-											<li class="categ-item"><i class="fa fa-heart"></i><a href="#0"> Favourite ads  </a></li>
-											<li class="categ-item"><i class="fa fa-bookmark"></i><a href="#0"> Saved searches </a></li>
-											<li class="categ-item"><i class="fa fa-hourglass-half"></i><a href="#0"> Pending approval </a></li>
-											<li class="categ-item"><i class="fa fa-archive"></i><a href="#0"> Archived ads </a></li>
-											<li class="categ-item"><i class="fa fa-envelope"></i><a href="#0"> Conversations </a></li>
-											<li class="categ-item"><i class="fa fa-cart-arrow-down"></i><a href="#0"> My buying requests </a></li>
-											<li class="categ-item"><i class="fa fa-pencil-square-o"></i><a href="#0"> Edit buying requests </a></li>
-											<li class="categ-item"><i class="fa fa-money"></i><a href="#0"> Transactions </a></li>
+									
+										<ul class="nav nav-tabs list-items1" id="myTab">
+											<li class="nav-item categ-item">
+												<i class="fa fa-folder-open mt-1"></i><a href="#tab-favouriteAds" class="nav-link" data-bs-toggle="tab">My ads</a>
+											</li>
+										
+											<li class="nav-item categ-item">
+												<i class="fa fa-heart mt-1"></i><a href="#tab-favouriteAds" class="nav-link" data-bs-toggle="tab">Favourite ads</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-bookmark mt-1"></i><a href="#tab-savedSearches" class="nav-link" data-bs-toggle="tab">Saved searches</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-hourglass-half mt-1"></i><a href="#tab-pendingApproval" class="nav-link" data-bs-toggle="tab">Pending approval</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-archive mt-1"></i><a href="#tab-archivedAds" class="nav-link" data-bs-toggle="tab">Archived ads</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-envelope mt-1"></i><a href="#tab-conversations" class="nav-link" data-bs-toggle="tab">Conversations</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-cart-arrow-down mt-1"></i><a href="#tab-buyingRequests" class="nav-link" data-bs-toggle="tab">My buying requests</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-pencil-square-o mt-1"></i><a href="#tab-editBuyingRequests" class="nav-link" data-bs-toggle="tab">Edit buying requests</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-money mt-1"></i><a href="#tab-transactions" class="nav-link" data-bs-toggle="tab">Transactions</a>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -266,62 +296,98 @@
 						
 						<div class="tab-content">
 							<div class="tab-pane fade" id="tab-basic">
-								<form action="#" id="buying-form" class="buying-form" method="post">
-									<div class="form-group">
-										<label class="form-label" for="Fullname">Full Name<span class="needed">*</span></label><br>
-										<input type="text" name="Fullname" id="Fullname" class="form-control" required="">
+								<form action="#" id="basic-form" class="buying-form" method="post">
+									<div class="widget widget-collapsible">
+										<h6 class="widget-title mt-0">
+											<a data-toggle="collapse" href="#companyDetails" role="button" aria-expanded="false" aria-controls="CateProduct" class="contact-title collapsed">
+												Company Details 
+											</a>
+										</h6>
+										<div class="collapse contactInfo show" id="companyDetails">
+											<div class="widget-body">
+												<div class="form-group">
+													<label class="form-label" for="Fullname">Full Name<span class="needed">*</span></label><br>
+													<input type="text" name="Fullname" id="Fullname" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label pb-1" for="type">Company Type<span class="needed">*</span></label><br>
+													<select data-placeholder="Select a Company Type" class="chosen-select form-control">
+														<option> factory </option>
+														<option> factory </option>
+														<option> factory </option>
+														<option> factory </option>
+														<option> factory </option> 
+													</select>	
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label pb-1" for="City">City<span class="needed">*</span></label><br>
+													<select data-placeholder="Select a City" class="chosen-select form-control">
+														<option>Turkey</option>
+														<option>Malysia</option>
+														<option>KSA</option>
+														<option>Italy</option>
+														<option>France</option> 
+													</select>	
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label" for="address">Address<span class="needed">*</span></label><br>
+													<input type="text" name="address" id="address" class="form-control" required="">
+												</div>
+							
+												<div class="form-group">
+													<label class="form-label" for="phone">Phone Number</label><br>
+													<input type="text" name="phone" id="phone" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label" for="person">Person<span class="needed">*</span></label><br>
+													<input type="text" name="person" id="person" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label" for="website">Website</label><br>
+													<input type="text" name="website" id="website" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label" for="email">Email Address<span class="needed">*</span></label><br>
+													<input type="email" id="email" name="email" class="form-control" required="">
+												</div>
+				
+												<div class="form-group">
+													<label class="form-label" for="description">Description<span class="needed">*</span></label><br>
+													<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
+												</div>
+											</div>
+										</div>
 									</div>
+									<div class="widget widget-collapsible">
+										<h6 class="widget-title">
+											<a data-toggle="collapse" href="#companyLogo" role="button" aria-expanded="false" aria-controls="CateProduct" class="contact-title collapsed">
+												Company Logo and Banner
+											</a>
+										</h6>
+										<div class="collapse contactInfo" id="companyLogo">
+											<div class="widget-body">
+												<label class="form__container" id="upload-container">Choose or Drag & Drop Logo
+													<input class="form__file" id="upload-files" type="file" accept="image/*" multiple="multiple" />
+												</label>
+												<div class="form__files-container" id="files-list-container"></div>
+												
 
-									<div class="form-group">
-										<label class="form-label pb-1" for="Country">Country<span class="needed">*</span></label><br>
-										<select data-placeholder="Select a Country" class="chosen-select form-control">
-											<option>Turkey</option>
-											<option>Malysia</option>
-											<option>KSA</option>
-											<option>Italy</option>
-											<option>France</option> 
-										</select>	
-									</div>
-				
-								
-				
-									<div class="form-group">
-										<label class="form-label" for="email">Email Address<span class="needed">*</span></label><br>
-										<input type="email" id="email" name="email" class="form-control" required="">
-									</div>
-	
-									<div class="form-group">
-										<label class="form-label" for="phone">Phone Number<span class="needed">*</span></label><br>
-										<input type="text" name="phone" id="phone" class="form-control" required="">
-									</div>
-								
-									<div class="form-group">
-										<label class="form-label pb-1" for="category">Category</label><br>
-										<select data-placeholder="Select a Category" class="chosen-select form-control">
-											<option>Mosaics and Sculptues</option>
-											<option>Manufacturing Materials and Tools</option>
-											<option>Factories and Quarries Machinery</option>
-											<option>Marble and Granite</option>
-										</select>	
-									</div>
-				
-									<div class="form-group">
-										<label class="form-label" for="quantity">Quantity<span class="needed">*</span></label><br>
-										<input type="text" id="quantity" name="quantity" class="form-control" required="">
-									</div>
-	
-									<div class="form-group">
-										<label class="form-label" for="productName">Product Name<span class="needed">*</span></label><br>
-										<input type="text" id="productName" name="productName" class="form-control" required="">
-									</div>
-	
-									<div class="form-group">
-										<label class="form-label" for="description">Description<span cla>*</span></label><br>
-										<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
-									</div>
+												<label class="form__container" id="upload-container">Choose or Drag & Drop Banner
+													<input class="form__file" id="upload-files" type="file" accept="image/*" multiple="multiple" />
+												</label>
+												<div class="form__files-container" id="files-list-container"></div>
 											
-									<div class="product-btns">
-										<button class="primary-btn" type="submit">View</button>
+											</div>
+										</div>
+									</div>
+									<div class="ml-4 mt-4">
+										<button class="primary-btn">Next</button>
 									</div>
 								</form>
 							</div>
@@ -335,11 +401,11 @@
 
 									<div class="widget widget-collapsible">
 										<h6 class="widget-title">
-											<a data-toggle="collapse" href="#contactInfo1" role="button" aria-expanded="false" aria-controls="CateProduct" class="contact-title collapsed">
+											<a data-toggle="collapse" href="#contactInfo1" role="button" aria-expanded="true" aria-controls="CateProduct" class="contact-title">
 												Contact Info 1
 											</a>
 										</h6>
-										<div class="collapse contactInfo" id="contactInfo1">
+										<div class="collapse contactInfo show" id="contactInfo1">
 											<div class="widget-body">
 												<div class="form-group">
 													<label class="form-label mb-1" for="name1">Name 1</label><br>
@@ -426,14 +492,12 @@
 													<label class="form-label mb-1" for="adjective3">Adjective 3</label><br>
 													<input type="text" name="adjective3" id="adjective3" class="form-control" required="">
 												</div>
-													
 			
 												<div class="form-group">
 													<label class="form-label mb-1" for="phone3">Phone 3</label><br>
 													<input type="text" name="phone3" id="phone3" class="form-control" required="">
 												</div>
 													
-			
 												<div class="form-group">
 													<label class="form-label mb-1" for="email3">Email 3</label><br>
 													<input type="email" name="email3" id="email3" class="form-control" required="">
@@ -458,6 +522,7 @@
 							<div class="tab-pane fade" id="tab-categories">
 								<div class="choose-category"></div>
 							</div>
+
 							<div class="tab-pane fade" id="tab-projectGallery">
 								<form action="#" id="image-form" class="image-form" method="post">
 									<label class="form__container" id="upload-container">Choose or Drag & Drop Files
@@ -547,6 +612,7 @@
 									</div>
 								</form>
 							</div>
+
 							<div class="tab-pane fade" id="tab-finish">
 								<div class="finish-form text-center">
 									<p style="font-family: 'Raleway-medium';">Congratulation !!</p>
@@ -554,6 +620,187 @@
 									<button class="primary-btn" > Add Listing </button>
 								</div>
 							</div>
+
+							<div class="tab-pane fade" id="tab-profile">
+								<form action="#" id="contact-form" class="buying-form" method="post">
+									<div class="widget widget-collapsible">
+										<h6 class="widget-title mt-0">
+											<a data-toggle="collapse" href="#profilePhoto" role="button" aria-expanded="" aria-controls="" class="contact-title collapsed">
+												Photo or Avatar
+											</a>
+										</h6>
+										<div class="collapse contactInfo show" id="profilePhoto">
+											<div class="widget-body">
+												<label class="form__container" id="upload-container">Choose or Drag & Drop Personal Photo
+													<input class="form__file" id="upload-files" type="file" accept="image/*" multiple="multiple"/>
+												</label>
+												<div class="form__files-container" id="files-list-container"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="widget widget-collapsible">
+										<h6 class="widget-title">
+											<a data-toggle="collapse" href="#accountDetails" role="button" aria-expanded="false" aria-controls="CateProduct" class="contact-title collapsed">
+												Account Details
+											</a>
+										</h6>
+										<div class="collapse contactInfo" id="accountDetails">
+											<div class="widget-body">
+												<div class="form-group"> 
+													<p class="gender-title mb-1">Gender</p>
+													<div style="padding-right: 10px; display: inline;">
+														<input type="radio" name="postedDate" value="Mr" id="Mr" class="mb-1"> 
+														<label for="Mr">Mr </label> 
+													</div>
+													<input type="radio" name="postedDate" value="Mrs" id="Mrs" class="mb-1"> 
+													<label for="Mrs">Mrs </label> 
+												</div>
+										
+												<div class="form-group">
+													<label class="form-label mb-1" for="name">Name<span class="needed">*</span></label><br>
+													<input type="text" name="name" id="name" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="username">Username</label><br>
+													<input type="text" name="username" id="username" class="form-control" required="">
+												</div>
+											
+									
+
+												<div class="form-group">
+													<label class="form-label pb-1" for="phone">Phone Number</label><br>
+													<div  style="display: flex;">
+														<input type="phone" id="phone" name="phone" class="form-control" required="">
+														<div class="input-group-append"> 
+															<span class="input-group-text"> 
+																<input id="hidePhone" name="hidePhone" type="checkbox" class="form-check-input" value="hidePhone">&nbsp;<small>Hide</small> 
+															</span> 
+														</div>
+													</div>
+												</div>
+			
+												<div class="form-group mb-0">
+													<label class="form-label pb-1" for="email">Email Address</label><br>
+													<div  style="display: flex;">
+														<input type="email" id="email" name="email" class="form-control" required="">
+														<div class="input-group-append"> 
+															<span class="input-group-text"> 
+																<input id="hideEmail" name="hideEmail" type="checkbox" class="form-check-input" value="hideEmail">&nbsp;<small>Hide</small> 
+															</span> 
+														</div>
+													</div>
+												</div>
+
+											</div>
+											<div class="ml-4 mb-3">
+												<button class="primary-btn">Update</button>
+											</div>
+										</div>
+										
+
+									</div>
+
+									<div class="widget widget-collapsible">
+										<h6 class="widget-title">
+											<a data-toggle="collapse" href="#settings" role="button" aria-expanded="false" aria-controls="CateProduct" class="contact-title collapsed">
+												Settings
+											</a>
+										</h6>
+										<div class="collapse contactInfo" id="settings">
+											<div class="widget-body">
+												
+												<div class="form-group">
+													<label class="form-label mb-1" for="password">password</label><br>
+													<input type="password" name="password" id="password" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="confirmPassword">Confirm Password</label><br>
+													<input type="text" name="confirmPassword" id="confirmPassword" class="form-control" required="">
+												</div>
+
+												<div class="form-check1"> 
+													<div class="check1">
+														<input name="accept_terms" id="acceptTerms" class="form-check-input" value="" type="checkbox"> 
+														<label class="form-check-label" for="acceptTerms"> 
+															I have read and agree to the 
+															<a href="#0">Terms &amp; Conditions</a>
+														</label> 
+													</div>
+
+													<div class="check1">
+														<input name="accept_terms" id="acceptMarketingOffers" class="form-check-input" value="" type="checkbox"> 
+														<label class="form-check-label" for="acceptMarketingOffers"> 
+															I accept to receive marketing emails 
+														 </label> 
+													</div>
+													
+												</div>
+
+											</div>
+											<div class="ml-4 mt-3 mb-3">
+												<button class="primary-btn">Update</button>
+											</div>
+										</div>
+									</div>
+
+
+									
+								</form>
+
+
+								<form action="#" id="image-form" class="image-form" method="post">
+									
+									
+								</form>
+							</div>
+
+							<div class="tab-pane fade" id="tab-addInsituation">
+								<form action="#" id="buying-form" class="buying-form" method="post">
+
+									<div class="form-group">
+										<label class="form-label" for="name">Name<span class="needed">*</span></label><br>
+										<input type="text" name="name" id="name" class="form-control" required="">
+									</div>
+
+									<div class="form-group">
+										<label class="form-label pb-1" for="type">Company Type<span class="needed">*</span></label><br>
+										<select data-placeholder="Select a Company Type" class="chosen-select form-control">
+											<option> factory </option>
+											<option> factory </option>
+											<option> factory </option>
+											<option> factory </option>
+											<option> factory </option> 
+										</select>	
+									</div>
+		
+									<div class="form-group">
+										<label class="form-label" for="description">Description<span class="needed">*</span></label><br>
+										<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
+									</div>
+
+									
+									<div class="form-group">
+										<label class="form-label" for="address">Address<span class="needed">*</span></label><br>
+										<input type="text" name="address" id="address" class="form-control" required="">
+									</div>
+											
+									<div class="product-btns">
+										<button class="primary-btn" type="submit">Next</button>
+									</div>
+								</form>
+							</div>
+
+							<div class="tab-pane fade" id="tab-delInsituation">
+								<div class="finish-form text-center" style="font-family: 'Raleway-medium';">
+									<p >Please Wait !!</p>
+									<p style="color: #5f6b74; font-size: 15px;">Are you sure to delete this Insituation </p>
+									<button class="primary-btn" > Confirm Delete </button>
+								</div>
+							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -606,6 +853,7 @@
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/chosen.jquery.min.js"></script>
 	<script src="js/tree.min.js"></script>
+	<script src="js/dropImage.js"></script>
 	<script src="js/main.js"></script>
 
 	<script>
