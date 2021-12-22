@@ -205,7 +205,7 @@
 											<input type="text" id="price" name="price" class="form-control" required="">
 											<div class="input-group-append"> 
 												<span class="input-group-text"> 
-													<input id="negotiable" name="negotiable" type="checkbox" value="1">&nbsp;<small>Negotiable</small> 
+													<input id="negotiable" name="negotiable" type="checkbox" class="form-check-input" value="1">&nbsp;<small>Negotiable</small> 
 												</span> 
 											</div>
 										</div>
@@ -235,7 +235,7 @@
 											<input type="phone" id="phone" name="phone" class="form-control" required="">
 											<div class="input-group-append"> 
 												<span class="input-group-text"> 
-													<input id="hidePhone" name="hidePhone" type="checkbox" value="hidePhone">&nbsp;<small>Hide</small> 
+													<input id="hidePhone" name="hidePhone" type="checkbox" class="form-check-input" value="hidePhone">&nbsp;<small>Hide</small> 
 												</span> 
 											</div>
 										</div>
@@ -247,7 +247,7 @@
 											<input type="email" id="email" name="email" class="form-control" required="">
 											<div class="input-group-append"> 
 												<span class="input-group-text"> 
-													<input id="hideEmail" name="hideEmail" type="checkbox" value="hideEmail">&nbsp;<small>Hide</small> 
+													<input id="hideEmail" name="hideEmail" type="checkbox" class="form-check-input" value="hideEmail">&nbsp;<small>Hide</small> 
 												</span> 
 											</div>
 										</div>
@@ -432,14 +432,6 @@
 	<script src="js/chosen.jquery.min.js"></script>
 	<script src="js/dropImage.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		$(function(){
-			$(".chosen-select").chosen({
-				max_selected_options: 5,
-				width: '100%'
-			}); 
-		})
-	</script>
 	<script>
 		$(document).ready(function(){
 			$("#myTab li:eq() a").tab("show"); // show second tab (0-indexed, like an array)
