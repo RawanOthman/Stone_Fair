@@ -3029,6 +3029,7 @@ form .form-group select{
   background-color: #fff !important;
   border: 1px solid #eee !important;
   border-radius: 0 !important;
+  border-right: none !important;
 }
 .input-group-text small{
   font-size: 14px;
@@ -3370,7 +3371,8 @@ form .form-group select{
 .list-items1 li{
   padding: 3px 0;
 }
-#contact-form .widget-title{
+#contact-form .widget-title,
+#basic-form .widget-title{
   padding: 10px 24px;
   background-color: #fbf9fa;
   border: 2px solid #f6f6f6;
@@ -3443,4 +3445,27 @@ form .form-group select{
   box-shadow: 0 0 0 1px rgba(183,160,126,.5) !important;
   opacity: 1;
   border-radius: 0 !important;
+}
+.form-check-input:hover{
+  cursor: pointer;
+}
+.form-check-input:focus {
+  border-color: rgba(183,160,126,.5) !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.form-check-input:checked {
+  background-color: rgba(183,160,126,.8) !important;
+  border-color: rgba(183,160,126,.8) !important;
+}
+.form-check-input[type="checkbox"]{
+  border-radius: 0 !important;
+}
+.form-check-input {
+  width: 0.9em !important;
+  height: 0.9em !important;
+  margin-top: 0.4em !important;
+}
+.input-group-append .form-check-input{
+  margin-top: 0 !important;
 }

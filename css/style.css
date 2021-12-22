@@ -2971,7 +2971,8 @@ form .form-group select{
   border: 1px solid #eef0ef;*/
 }
 .buying-form .form-group .form-label,
-.message-form  .form-group .form-label{
+.message-form  .form-group .form-label,
+.gender-title{
   color: #b7a07e !important;
   /*color: #5f6b74 !important;*/
   font-family: 'Raleway-Medium';
@@ -3214,9 +3215,10 @@ form .form-group select{
 
 #myTab li a{
   font-size: 15px;
-  font-family: 'Raleway-Bold';
   color: #5f6b74 !important;
+  font-family: 'Raleway-Bold';
 }
+
 #myTab.nav-tabs .nav-link.active,
 #myTab.nav-tabs .nav-link:hover,
 #myTab.nav-tabs .nav-link:focus{
@@ -3381,12 +3383,21 @@ form .form-group select{
 .list-items1 li{
   padding: 3px 0;
 }
-#contact-form .widget-title{
+.list-items1 li a{
+  font-family: 'Raleway-Medium' !important;
+}
+#contact-form .widget-title,
+#basic-form .widget-title{
   padding: 10px 24px;
   background-color: #fbf9fa;
   border: 2px solid #f6f6f6;
   margin: 20px 0 0;
 }
+/*
+#contact-form .widget-title:first-child,
+#basic-form .widget-title:first-child{
+  margin-top: 0 !important;
+}*/
 .contact-title{
   font-family: 'Raleway-medium';
   font-size: 15px;
@@ -3434,4 +3445,35 @@ form .form-group select{
   box-shadow: 0 0 0 1px rgba(183,160,126,.5) !important;
   opacity: 1;
   border-radius: 0 !important;
+}
+.check1 label{
+  font-size: 15px;
+  font-weight: normal;
+  padding-left: 5px;
+}
+.form-check-input:hover{
+  cursor: pointer;
+}
+.form-check-input:focus {
+  border-color: rgba(183,160,126,.5) !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.form-check-input:checked {
+  background-color: rgba(183,160,126,.8) !important;
+  border-color: rgba(183,160,126,.8) !important;
+}
+.form-check-input[type="checkbox"]{
+  border-radius: 0 !important;
+}
+.form-check-input {
+  width: 0.9em !important;
+  height: 0.9em !important;
+  margin-top: 0.4em !important;
+}
+.input-group-append .form-check-input{
+  margin-top: 0 !important;
+}
+.nav.list-items1{
+  display: block !important;
 }
