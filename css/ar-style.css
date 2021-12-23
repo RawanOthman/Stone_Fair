@@ -753,7 +753,8 @@ form .search-input:focus,
   /*padding: 15px 0 5px;*/
 }
 .country-title .btn-suppliers,
-.company-title .btn-suppliers{
+.company-title .btn-suppliers,
+.btn-del{
   background: #b7a07e;
   padding: 0px 10px 4px;
   color: #fff;

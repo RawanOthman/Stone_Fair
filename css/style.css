@@ -2448,6 +2448,9 @@ input[type="number"] {
   .account-sidebar{
     margin-bottom: 20px;
   }
+  .myAds tr td span{
+    display: none !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2566,6 +2569,15 @@ input[type="number"] {
   }
   .account-sidebar{
     margin-bottom: 20px;
+  }
+  /*#tab-myAds{
+    overflow: auto;
+    width: max-content !important;
+  }*/
+  .myAds {
+    margin: 20px !important;
+    overflow-x: scroll;
+    width: max-content !important;
   }
 }
 
@@ -3527,4 +3539,114 @@ form .form-group select{
 }
 .sub-categories .list-inline li a:hover{
   color: #b7a07e;
+}
+#tab-myAds{
+  overflow: auto;
+}
+.myAds{
+  width: 90%;
+  border: 1px solid #f6f6f6;
+  margin: 30px 5%;
+  
+}
+.myAds tr th {
+  font-size: 15px;
+  color: #b7a07e !important;
+  padding: 8px 16px;
+}
+.myAds tbody td{
+  font-size: 15px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*padding: 8px 16px;*/
+  /*min-height: 50px;
+  line-height: 25px;*/
+}
+.myAds  tbody td img {
+  max-width: 90px;
+}
+/*
+.option ul {
+  list-style: none;
+  display: inline-flex;
+}
+*/
+.myAds tr {
+  border-bottom: 1px solid #f6f6f6;
+}
+.myAds tbody td ul li i{
+  color: #b7a07e !important;
+  padding-right: 5px;
+  width: 19px;
+}
+.myAds tbody td ul li{
+  padding-bottom: 4px;
+}
+.myAds tr:hover{
+  background-color: #fbf9fa;
+}
+.sub-title{
+  border: 1px solid #f3f4f4;
+  background-color: #fbf9fa;
+  padding: 15px 24px;
+}
+.sub-title h4{
+  font-size: 15px;
+  color: #5f6b74 !important;
+  font-family: 'Raleway-Bold';
+}
+.table-action label{
+  font-size: 14px;
+}
+.btn-del{
+  background: #b7a07e;
+  color: #fff;
+  font-size: 14px;
+  border: none !important;
+  padding: 2px 5px;
+  margin-left: 5px;
+}
+.search-container1{
+  position: relative;
+  display: inline-block;
+}
+.search-container1 .search-input {
+  padding: 2px 10px;
+  font-size: 14px;
+  color: #5f6b74;
+  margin-top: -5px;
+  min-width: 230px;
+}
+.search-container1 .search-input {
+  border: 1px solid #ced4da !important;
+}
+.search-container1 .btn-del{
+  position: absolute;
+  right: 0px;
+  /*width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;*/
+}
+.search-container1 .search-btn i {
+  color: #5f6b74;
+  font-size: 14px;
+}
+.search-container1 .search-input:focus {
+  outline: none;
+  border: 1px solid #ced4da !important;
+  box-shadow: none !important;
+}
+.pad-contnet{
+  padding: 30px;
+}
+.myAds tbody td ul li span{
+  font-size: 14px;
+  padding-right: 5px;
+  font-family: 'Raleway-Bold';
+}
+.btn-click{
+  font-size: 14px;
+  color: #b7a07e !important;
 }
