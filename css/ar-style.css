@@ -3631,8 +3631,8 @@ form .form-group select{
 }
 .myAds tbody td ul li span,
 .sender-name{
-  font-size: 14px;
-  padding-right: 5px;
+  font-size: 15px;
+  padding-left: 5px;
   font-family: 'hacen';
 }
 .btn-click{
