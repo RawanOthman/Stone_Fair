@@ -160,9 +160,14 @@
 								<!--<div class="collapse show" id="Stone">-->
 								<div class="collapse show" id="Stone">
 									<div class="widget-body">
-										<ul class="list-items1">
-											<li class="categ-item"><i class="fa fa-user"></i><a href="#0">الصفحة الشخصية</a></li>
-											<li class="categ-item"><i class="fa fa-university"></i><a href="#0">شركتي</a></li>
+										<ul class="nav nav-tabs list-items1" id="myTab">
+											<li class="nav-item categ-item">
+												<i class="fa fa-user mt-1"></i>
+												<a href="#tab-profile" class="nav-link" data-bs-toggle="tab">الصفحة الشخصية</a>
+											</li>
+											<li class="nav-item categ-item" id="topBar">
+												<i class="fa fa-university mt-1"></i><a href="#tab-basic" class="nav-link" data-bs-toggle="tab">شركتي</a>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -176,10 +181,16 @@
 								</h6>
 								<div class="collapse" id="Slabs">
 									<div class="widget-body">
-										<ul class="list-item1">
-											<li class="categ-item"><i class="fa fa-plus"></i><a href="#0">إضافة منشأة</a></li>
-											<li class="categ-item"><i class="fa fa-close"></i><a href="#0">حذف منشأة</a></li>
+										<ul class="nav nav-tabs list-items1" id="myTab">
+											<li class="nav-item categ-item">
+												<i class="fa fa-plus mt-1"></i>
+												<a href="#tab-addInsituation" class="nav-link" data-bs-toggle="tab">إضافة منشأة</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-trash mt-1"></i><a href="#tab-delInsituation" class="nav-link" data-bs-toggle="tab">حذف منشأة</a>
+											</li>
 										</ul>
+
 									</div>
 								</div>
 							</div>
@@ -192,16 +203,36 @@
 								</h6>
 								<div class="collapse" id="Tiles">
 									<div class="widget-body">
-										<ul class="list-items1">
-											<li class="categ-item"><i class="fa fa-folder-open"></i><a href="#0"> إعلاناتي </a></li>
-											<li class="categ-item"><i class="fa fa-heart"></i><a href="#0"> الإعلانات المفضلة </a></li>
-											<li class="categ-item"><i class="fa fa-bookmark"></i><a href="#0">  الأبحاثالمحفوظة</a></li>
-											<li class="categ-item"><i class="fa fa-hourglass-half"></i><a href="#0"> في انتظار الموافقة </a></li>
-											<li class="categ-item"><i class="fa fa-archive"></i><a href="#0"> الإعلانات المؤرشفة </a></li>
-											<li class="categ-item"><i class="fa fa-envelope"></i><a href="#0"> المحادثات </a></li>
-											<li class="categ-item"><i class="fa fa-cart-arrow-down"></i><a href="#0"> طلبياتي </a></li>
-											<li class="categ-item"><i class="fa fa-pencil-square-o"></i><a href="#0"> الطلبيات المعدلة </a></li>
-											<li class="categ-item"><i class="fa fa-money"></i><a href="#0"> المعاملات </a></li>
+								
+										<ul class="nav nav-tabs list-items1" id="myTab">
+											<li class="nav-item categ-item">
+												<i class="fa fa-folder-open mt-1"></i><a href="#tab-myAds" class="nav-link" data-bs-toggle="tab">إعلاناتي</a>
+											</li>
+										
+											<li class="nav-item categ-item">
+												<i class="fa fa-heart mt-1"></i><a href="#tab-favouriteAds" class="nav-link" data-bs-toggle="tab">الإعلانات المفضلة</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-bookmark mt-1"></i><a href="#tab-savedSearches" class="nav-link" data-bs-toggle="tab">الأبحاث المحفوظة</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-hourglass-half mt-1"></i><a href="#tab-pendingApproval" class="nav-link" data-bs-toggle="tab">في انتظار الموافقة</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-archive mt-1"></i><a href="#tab-archivedAds" class="nav-link" data-bs-toggle="tab">الإعلانات المؤرشفة</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-envelope mt-1"></i><a href="#tab-conversations" class="nav-link" data-bs-toggle="tab">المحادثات</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-cart-arrow-down mt-1"></i><a href="#tab-buyingRequests" class="nav-link" data-bs-toggle="tab">طلبياتي</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-pencil-square-o mt-1"></i><a href="#tab-editBuyingRequests" class="nav-link" data-bs-toggle="tab">الطلبيات المعدلة</a>
+											</li>
+											<li class="nav-item categ-item">
+												<i class="fa fa-money mt-1"></i><a href="#tab-transactions" class="nav-link" data-bs-toggle="tab">المعاملات</a>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -215,9 +246,18 @@
 								</h6>
 								<div class="collapse" id="Terminate">
 									<div class="widget-body">
-										<ul class="list-items1">
-											<li class="categ-item"><i class="fa fa-close"></i><a href="#0"> إغلاق الحساب </a></li>
+										<ul class="nav nav-tabs list-items1" id="myTab">
+											<li class="nav-item categ-item">
+												<i class="fa fa-close mt-1"></i>
+												<a href="#tab-closeAccount" class="nav-link" data-bs-toggle="tab">إنهاء الحساب</a>
+											</li>
+
+											<li class="nav-item categ-item">
+												<i class="fa fa-envelope mt-1"></i>
+												<a href="#tab-message" class="nav-link" data-bs-toggle="tab"> الرسائل</a>
+											</li>
 										</ul>
+
 									</div>
 								</div>
 							</div>
@@ -228,7 +268,7 @@
 				<div class="col-lg-9">
 					<div class="box">
 						<!--<div class="header-name">Product Information</div>-->
-						<div class="sequence-field">
+						<div class="sequence-field"  id="sequence-field">
 							<ul class="nav nav-tabs" id="myTab">
 								<li class="nav-item">
 									<a href="#tab-basic" class="nav-link" data-bs-toggle="tab">الأساسية</a>
@@ -651,6 +691,1025 @@
 								</div>
 							</div>
 
+
+							<div class="tab-pane fade" id="tab-profile">
+								<div class="sub-title"><h4>الصفحة الشخصية</h4></div>
+								<form action="#" id="contact-form" class="buying-form" method="post">
+									<div class="widget widget-collapsible">
+										<h6 class="widget-title mt-0">
+											<a data-toggle="collapse" href="#profilePhoto" role="button" aria-expanded="" aria-controls="" class="contact-title collapsed">
+												صورة أو رسوم 
+											</a>
+										</h6>
+										<div class="collapse contactInfo show" id="profilePhoto">
+											<div class="widget-body">
+												<label class="form__container" id="upload-container">اختر أو اسحب صورة شخصية
+													<input class="form__file" id="upload-files" type="file" accept="image/*" multiple="multiple"/>
+												</label>
+												<div class="form__files-container" id="files-list-container"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="widget widget-collapsible">
+										<h6 class="widget-title">
+											<a data-toggle="collapse" href="#accountDetails" role="button" aria-expanded="false" aria-controls="CateProduct" class="contact-title collapsed">
+												معلومات الحساب
+											</a>
+										</h6>
+										<div class="collapse contactInfo" id="accountDetails">
+											<div class="widget-body">
+												<div class="form-group"> 
+													<p class="gender-title mb-1">الجنس</p>
+													<div style="padding-right: 10px; display: inline;">
+														<input type="radio" name="postedDate" value="Mr" id="Mr" class="mb-1"> 
+														<label for="Mr">السيد </label> 
+													</div>
+													<input type="radio" name="postedDate" value="Mrs" id="Mrs" class="mb-1"> 
+													<label for="Mrs">السيدة </label> 
+												</div>
+										
+												<div class="form-group">
+													<label class="form-label mb-1" for="name">الاسم<span class="needed">*</span></label><br>
+													<input type="text" name="name" id="name" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="username">اسم المستخدم</label><br>
+													<input type="text" name="username" id="username" class="form-control" required="">
+												</div>
+											
+									
+
+												<div class="form-group">
+													<label class="form-label pb-1" for="phone">رقم الهاتف</label><br>
+													<div  style="display: flex;">
+														<input type="phone" id="phone" name="phone" class="form-control" required="">
+														<div class="input-group-append"> 
+															<span class="input-group-text"> 
+																<input id="hidePhone" name="hidePhone" type="checkbox" class="form-check-input" value="hidePhone">&nbsp;<small>إخفاء</small> 
+															</span> 
+														</div>
+													</div>
+												</div>
+			
+												<div class="form-group mb-0">
+													<label class="form-label pb-1" for="email">البريد الالكتروني</label><br>
+													<div  style="display: flex;">
+														<input type="email" id="email" name="email" class="form-control" required="">
+														<div class="input-group-append"> 
+															<span class="input-group-text"> 
+																<input id="hideEmail" name="hideEmail" type="checkbox" class="form-check-input" value="hideEmail">&nbsp;<small>إخفاء</small> 
+															</span> 
+														</div>
+													</div>
+												</div>
+
+											</div>
+											<div class="ml-4 mb-3">
+												<button class="primary-btn">تحديث</button>
+											</div>
+										</div>
+										
+
+									</div>
+
+									<div class="widget widget-collapsible">
+										<h6 class="widget-title">
+											<a data-toggle="collapse" href="#settings" role="button" aria-expanded="false" aria-controls="CateProduct" class="contact-title collapsed">
+												الإعدادات
+											</a>
+										</h6>
+										<div class="collapse contactInfo" id="settings">
+											<div class="widget-body">
+												
+												<div class="form-group">
+													<label class="form-label mb-1" for="password">كلمة المرور</label><br>
+													<input type="password" name="password" id="password" class="form-control" required="">
+												</div>
+			
+												<div class="form-group">
+													<label class="form-label mb-1" for="confirmPassword">تأكيد كلمة المرور</label><br>
+													<input type="text" name="confirmPassword" id="confirmPassword" class="form-control" required="">
+												</div>
+
+												<div class="form-check1"> 
+													<div class="check1">
+														<input name="accept_terms" id="acceptTerms" class="form-check-input" value="" type="checkbox"> 
+														<label class="form-check-label" for="acceptTerms"> 
+															لقد قرأت البنود السابقة وأوافق عليها
+															<a href="#0">الخصوصية &amp; الشروط</a>
+														</label> 
+													</div>
+
+													<div class="check1">
+														<input name="accept_terms" id="acceptMarketingOffers" class="form-check-input" value="" type="checkbox"> 
+														<label class="form-check-label" for="acceptMarketingOffers"> 
+															I accept to receive marketing emails 
+														 </label> 
+													</div>
+													
+												</div>
+
+											</div>
+											<div class="ml-4 mt-3 mb-3">
+												<button class="primary-btn">Update</button>
+											</div>
+										</div>
+									</div>
+								</form>
+								<form action="#" id="image-form" class="image-form" method="post">
+								</form>
+							</div>
+
+							<div class="tab-pane fade" id="tab-addInsituation">
+								<!--<div class="sub-title"><h4>Add Insituation</h4></div>-->
+								<form action="#" id="buying-form" class="buying-form" method="post">
+
+									<div class="form-group">
+										<label class="form-label" for="name">Name<span class="needed">*</span></label><br>
+										<input type="text" name="name" id="name" class="form-control" required="">
+									</div>
+
+									<div class="form-group">
+										<label class="form-label pb-1" for="type">Company Type<span class="needed">*</span></label><br>
+										<select data-placeholder="Select a Company Type" class="chosen-select form-control">
+											<Options> factory </Options>
+											<Options> factory </Options>
+											<Options> factory </Options>
+											<Options> factory </Options>
+											<Options> factory </Options> 
+										</select>	
+									</div>
+		
+									<div class="form-group">
+										<label class="form-label" for="description">Description<span class="needed">*</span></label><br>
+										<textarea type="text" name="description" id="description" class="form-control" cols="30" rows="4" style="min-height: 100px;" required=""></textarea>
+									</div>
+
+									
+									<div class="form-group">
+										<label class="form-label" for="address">Address<span class="needed">*</span></label><br>
+										<input type="text" name="address" id="address" class="form-control" required="">
+									</div>
+											
+									<div class="product-btns">
+										<button class="primary-btn" type="submit">Next</button>
+									</div>
+								</form>
+							</div>
+
+							<div class="tab-pane fade" id="tab-delInsituation">
+								<div class="sub-title"><h4>Remove Insituation</h4></div>
+								<div class="finish-form text-center" style="font-family: 'Raleway-medium';">
+									<p >Please Wait !!</p>
+									<p style="color: #5f6b74; font-size: 15px;">Are you sure to delete this Insituation </p>
+									<button class="primary-btn" > Confirm Delete </button>
+								</div>
+							</div>
+							
+							<div class="tab-pane fade" id="tab-myAds">
+								<div class="sub-title"><h4>My ads</h4>
+									<div class="table-action"> 
+										<label for="checkAll"> 
+											<input type="checkbox" id="checkAll" class="form-check-input"> Select: All 
+											<button type="submit" class="btn-del"> 
+												<i class="fa fa-trash"></i> Delete 
+											</button> 
+										</label> 
+
+										<div class="pull-left"> 
+											<div class="form-group"> 
+												<div class="search-container1"> 
+													<input class="input search-input" type="text" placeholder="Search">
+													<button type="submit" class="btn-del"> 
+														<i class="fa fa-trash"></i> Clear 
+													</button> 
+												</div>
+											</div>
+										</div>
+									</div>
+								
+								</div>
+								<table class="myAds">
+									<thead>
+										<tr>
+											<th class="selectt"></th>
+											<th class="Photo">Photo</th>
+											<th class="details">Ads Details</th>
+											<th class="price">Price</th>
+											<th class="Options">Options</th>
+									   
+										</tr>
+									</thead>
+									<tbody>
+										<!--First row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+
+											<td class="Photo" >
+												<img src="./images/product1.jpg">
+											</td>
+
+											<td class="details">
+												<ul> 
+													<li><i class="fa fa-user" title="Posted On"></i><a href="#0">Test walid</a> </li>
+													<li><i class="fa fa-clock-o" title="Posted On"></i>14 December 2021</li> 
+													<li><i class="fa fa-eye" title="Visitors"></i>10</li> 
+													<li><i class="fa fa-map-marker" title="Located In"></i><a href="#0">Istanbul</a></li> 
+												</ul> 
+											</td>
+										
+											<td class="price">₺3,000 </td>
+												
+											<td class="Options" >
+												<ul>
+													<li><a href="#"><i class="fa fa-edit"></i>Edit</a></li>
+													<li><a href="#"><i class="fa fa-eye-slash"></i>Offline</a></li>
+													<li><a href="#"><i class="fa fa-trash"></i>Delete</a></li>
+												</ul>
+											</td>
+										</tr>
+
+										<!--Second row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+
+											<td class="Photo" >
+												<img src="./images/product1.jpg">
+											</td>
+
+											<td class="details">
+												<ul> 
+													<li><i class="fa fa-user" title="Posted On"></i><a href="#0">Test walid</a> </li>
+													<li><i class="fa fa-clock-o" title="Posted On"></i>14 December 2021</li> 
+													<li><i class="fa fa-eye" title="Visitors"></i>10</li> 
+													<li><i class="fa fa-map-marker" title="Located In"></i><a href="#0">Istanbul</a></li> 
+												</ul> 
+											</td>
+										
+											<td class="price">₺3,000 </td>
+												
+											<td class="Options" >
+												<ul>
+													<li><a href="#"><i class="fa fa-edit"></i>Edit</a></li>
+													<li><a href="#"><i class="fa fa-eye-slash"></i>Offline</a></li>
+													<li><a href="#"><i class="fa fa-trash"></i>Delete</a></li>
+												</ul>
+											</td>
+										</tr>
+
+										<!--Third row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+
+											<td class="Photo" >
+												<img src="./images/product1.jpg">
+											</td>
+
+											<td class="details">
+												<ul> 
+													<li><i class="fa fa-user" title="Posted On"></i><a href="#0">Test walid</a> </li>
+													<li><i class="fa fa-clock-o" title="Posted On"></i>14 December 2021</li> 
+													<li><i class="fa fa-eye" title="Visitors"></i>10</li> 
+													<li><i class="fa fa-map-marker" title="Located In"></i><a href="#0">Istanbul</a></li> 
+												</ul> 
+											</td>
+										
+											<td class="price">₺3,000 </td>
+												
+											<td class="Options" >
+												<ul>
+													<li><a href="#"><i class="fa fa-edit"></i>Edit</a></li>
+													<li><a href="#"><i class="fa fa-eye-slash"></i>Offline</a></li>
+													<li><a href="#"><i class="fa fa-trash"></i>Delete</a></li>
+												</ul>
+											</td>
+										</tr>
+				
+									
+									</tbody>
+								</table>
+							</div>
+
+							<div class="tab-pane fade" id="tab-favouriteAds">
+								<div class="sub-title">
+									<h4>Favourite ads</h4>
+									<div class="table-action"> 
+										<label for="checkAll"> 
+											<input type="checkbox" id="checkAll" class="form-check-input"> Select: All 
+											<button type="submit" class="btn-del"> 
+												<i class="fa fa-trash"></i> Delete 
+											</button> 
+										</label> 
+
+										<div class="pull-left"> 
+											<div class="form-group"> 
+												<div class="search-container1"> 
+													<input class="input search-input" type="text" placeholder="Search">
+													<button type="submit" class="btn-del"> 
+														<i class="fa fa-trash"></i> Clear 
+													</button> 
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<table class="myAds">
+									<thead>
+										<tr>
+											<th class="selectt"></th>
+											<th class="Photo">Photo</th>
+											<th class="details">Ads Details</th>
+											<th class="price">Price</th>
+											<th class="Options">Options</th>
+									
+										</tr>
+									</thead>
+									<tbody>
+										<!--First row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+
+											<td class="Photo" >
+												<img src="./images/product1.jpg">
+											</td>
+
+											<td class="details">
+												<ul> 
+													<li><i class="fa fa-user" title="Posted On"></i><a href="#0">Test walid</a> </li>
+													<li><i class="fa fa-clock-o" title="Posted On"></i>14 December 2021</li> 
+													<li><i class="fa fa-eye" title="Visitors"></i>10</li> 
+													<li><i class="fa fa-map-marker" title="Located In"></i><a href="#0">Istanbul</a></li> 
+												</ul> 
+											</td>
+										
+											<td class="price">₺3,000 </td>
+												
+											<td class="Options" >
+												<ul class="">
+													<li><a href="#"><i class="fa fa-trash"></i>Delete</a></li>
+												</ul>
+											</td>
+										</tr>
+
+										<!--Second row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+
+											<td class="Photo" >
+												<img src="./images/product1.jpg">
+											</td>
+
+											<td class="details">
+												<ul> 
+													<li><i class="fa fa-user" title="Posted On"></i><a href="#0">Test walid</a> </li>
+													<li><i class="fa fa-clock-o" title="Posted On"></i>14 December 2021</li> 
+													<li><i class="fa fa-eye" title="Visitors"></i>10</li> 
+													<li><i class="fa fa-map-marker" title="Located In"></i><a href="#0">Istanbul</a></li> 
+												</ul> 
+											</td>
+										
+											<td class="price">₺3,000 </td>
+												
+											<td class="Options" >
+												<ul class="">
+													<li><a href="#"><i class="fa fa-trash"></i>Delete</a></li>
+												</ul>
+											</td>
+										</tr>
+
+										<!--Third row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+
+											<td class="Photo" >
+												<img src="./images/product1.jpg">
+											</td>
+
+											<td class="details">
+												<ul> 
+													<li><i class="fa fa-user" title="Posted On"></i><a href="#0">Test walid</a> </li>
+													<li><i class="fa fa-clock-o" title="Posted On"></i>14 December 2021</li> 
+													<li><i class="fa fa-eye" title="Visitors"></i>10</li> 
+													<li><i class="fa fa-map-marker" title="Located In"></i><a href="#0">Istanbul</a></li> 
+												</ul> 
+											</td>
+										
+											<td class="price">₺3,000 </td>
+												
+											<td class="Options" >
+												<ul class="">
+													<li><a href="#"><i class="fa fa-trash"></i>Delete</a></li>
+												</ul>
+											</td>
+										</tr>
+				
+									
+									</tbody>
+								</table>
+							</div>
+
+							<div class="tab-pane fade" id="tab-savedSearches">
+								<div class="sub-title"><h4>Saved Searches</h4></div>
+								<div class="pad-contnet">
+									You have no saved search. 
+								</div>
+								
+							</div>
+
+							<div class="tab-pane fade" id="tab-pendingApproval">
+								<div class="sub-title">
+									<h4>Pending Approval</h4>
+									<div class="table-action"> 
+										<label for="checkAll"> 
+											<input type="checkbox" id="checkAll" class="form-check-input"> Select: All 
+											<button type="submit" class="btn-del"> 
+												<i class="fa fa-trash"></i> Delete 
+											</button> 
+										</label> 
+
+										<div class="pull-left"> 
+											<div class="form-group"> 
+												<div class="search-container1"> 
+													<input class="input search-input" type="text" placeholder="Search">
+													<button type="submit" class="btn-del"> 
+														<i class="fa fa-trash"></i> Clear 
+													</button> 
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<table class="myAds">
+									<thead>
+										<tr>
+											<th class="selectt"></th>
+											<th class="Photo">Photo</th>
+											<th class="details">Ads Details</th>
+											<th class="price">Price</th>
+											<th class="Options">Options</th>
+									
+										</tr>
+									</thead>
+									<tbody>
+										<!--First row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+
+											<td class="Photo" >
+												<img src="./images/product1.jpg">
+											</td>
+
+											<td class="details">
+												<ul> 
+													<li><i class="fa fa-user" title="Posted On"></i><a href="#0">Test walid</a> </li>
+													<li><i class="fa fa-clock-o" title="Posted On"></i>14 December 2021</li> 
+													<li><i class="fa fa-eye" title="Visitors"></i>10</li> 
+													<li><i class="fa fa-map-marker" title="Located In"></i><a href="#0">Istanbul</a></li> 
+												</ul> 
+											</td>
+										
+											<td class="price">₺3,000 </td>
+												
+											<td class="Options" >
+												<ul class="">
+													<li><a href="#"><i class="fa fa-trash"></i>Delete</a></li>
+												</ul>
+											</td>
+										</tr>
+
+										<!--Second row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+
+											<td class="Photo" >
+												<img src="./images/product1.jpg">
+											</td>
+
+											<td class="details">
+												<ul> 
+													<li><i class="fa fa-user" title="Posted On"></i><a href="#0">Test walid</a> </li>
+													<li><i class="fa fa-clock-o" title="Posted On"></i>14 December 2021</li> 
+													<li><i class="fa fa-eye" title="Visitors"></i>10</li> 
+													<li><i class="fa fa-map-marker" title="Located In"></i><a href="#0">Istanbul</a></li> 
+												</ul> 
+											</td>
+										
+											<td class="price">₺3,000 </td>
+												
+											<td class="Options" >
+												<ul class="">
+													<li><a href="#"><i class="fa fa-trash"></i>Delete</a></li>
+												</ul>
+											</td>
+										</tr>
+
+										<!--Third row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+
+											<td class="Photo" >
+												<img src="./images/product1.jpg">
+											</td>
+
+											<td class="details">
+												<ul> 
+													<li><i class="fa fa-user" title="Posted On"></i><a href="#0">Test walid</a> </li>
+													<li><i class="fa fa-clock-o" title="Posted On"></i>14 December 2021</li> 
+													<li><i class="fa fa-eye" title="Visitors"></i>10</li> 
+													<li><i class="fa fa-map-marker" title="Located In"></i><a href="#0">Istanbul</a></li> 
+												</ul> 
+											</td>
+										
+											<td class="price">₺3,000 </td>
+												
+											<td class="Options" >
+												<ul class="">
+													<li><a href="#"><i class="fa fa-trash"></i>Delete</a></li>
+												</ul>
+											</td>
+										</tr>
+				
+									
+									</tbody>
+								</table>
+							</div>
+
+							<div class="tab-pane fade" id="tab-archivedAds">
+								<div class="sub-title">
+									<h4>Archived Ads</h4>
+									<div class="table-action"> 
+										<label for="checkAll"> 
+											<input type="checkbox" id="checkAll" class="form-check-input"> Select: All 
+											<button type="submit" class="btn-del"> 
+												<i class="fa fa-trash"></i> Delete 
+											</button> 
+										</label> 
+
+										<div class="pull-left"> 
+											<div class="form-group"> 
+												<div class="search-container1"> 
+													<input class="input search-input" type="text" placeholder="Search">
+													<button type="submit" class="btn-del"> 
+														<i class="fa fa-trash"></i> Clear 
+													</button> 
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<table class="myAds">
+									<thead>
+										<tr>
+											<th class="selectt"></th>
+											<th class="Photo">Photo</th>
+											<th class="details">Ads Details</th>
+											<th class="price">Price</th>
+											<th class="Options">Options</th>
+										</tr>
+									</thead>
+									
+								</table>
+							</div>
+
+							<div class="tab-pane fade" id="tab-conversations">
+								<div class="sub-title"><h4>Conversations</h4>
+									<div class="table-action"> 
+										<label for="checkAll"> 
+											<input type="checkbox" id="checkAll" class="form-check-input"> Select: All 
+											<button type="submit" class="btn-del"> 
+												<i class="fa fa-trash"></i> Delete 
+											</button> 
+										</label> 
+
+										<div class="pull-left"> 
+											<div class="form-group"> 
+												<div class="search-container1"> 
+													<input class="input search-input" type="text" placeholder="Search">
+													<button type="submit" class="btn-del"> 
+														<i class="fa fa-trash"></i> Clear 
+													</button> 
+												</div>
+											</div>
+										</div>
+									</div>
+								
+								</div>
+								<table class="myAds">
+									<thead>
+										<tr>
+											<th class="selectt"></th>
+											<th class="Photo">Conversations</th>
+											<th class="Options">Options</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!--First row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+
+
+											<td class="details">
+												<ul> 
+													<li><span>Received at:</span>01 December 2021 06:43</li>
+													<li><span>Subject: </span>Çift bölmeli Elvas çimstone tezgah</li> 
+													<li><span>Started by: </span>Mamoun 
+														<a href="#tab-message" class="btn-click"> 
+															Click here to read the messages  
+														</a>  
+													</li> 
+												</ul> 
+											</td>
+										
+											<td class="Options" >
+												<ul>
+													<li><a href="#"><i class="fa fa-eye"></i>View</a></li>
+													<li><a href="#"><i class="fa fa-trash"></i>Delete</a></li>
+												</ul>
+											</td>
+										</tr>
+
+
+										<!--Second row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+
+
+											<td class="details">
+												<ul> 
+													<li><span>Received at:</span>01 December 2021 06:43</li>
+													<li><span>Subject: </span>Çift bölmeli Elvas çimstone tezgah</li> 
+													<li><span>Started by: </span>Mamoun 
+														<a href="#tab-message" class="btn-click"> 
+															Click here to read the messages  
+														</a>  
+													</li> 
+												</ul> 
+											</td>
+										
+											<td class="Options" >
+												<ul>
+													<li><a href="#"><i class="fa fa-eye"></i>View</a></li>
+													<li><a href="#"><i class="fa fa-trash"></i>Delete</a></li>
+												</ul>
+											</td>
+										</tr>
+
+										<!--Third row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+
+
+											<td class="details">
+												<ul> 
+													<li><span>Received at:</span>01 December 2021 06:43</li>
+													<li><span>Subject: </span>Çift bölmeli Elvas çimstone tezgah</li> 
+													<li><span>Started by: </span>Mamoun 
+														<a href="#tab-message" class="btn-click"> 
+															Click here to read the messages  
+														</a>  
+													</li> 
+												</ul> 
+											</td>
+										
+											<td class="Options" >
+												<ul>
+													<li><a href="#"><i class="fa fa-eye"></i>View</a></li>
+													<li><a href="#"><i class="fa fa-trash"></i>Delete</a></li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						
+							<div class="tab-pane fade" id="tab-buyingRequests">
+								<div class="sub-title"><h4>Buying Requests</h4></div>
+								<table class="myAds">
+									<tbody>
+										<!--First row-->
+										<tr>
+											<td class="details">
+												<ul> 
+													<li><span>created at:</span>October 2021 08:27 </li>
+													<li><span>Request number : </span>#14</li> 
+													<li><span>Request Address : </span>  Raw granite rocks</li> 
+													<li><span>Request From : </span>Mamoun </li> 
+													<li><span>Directed Classification : </span> Other Blocks </li> 
+													<li><a href="#0" class="btn-click">View customer orders</a>  
+													</li>
+												</ul> 
+											</td>
+										</tr>
+
+
+										<!--Second row-->
+										<tr>
+											<td class="details">
+												<ul> 
+													<li><span>created at:</span>October 2021 08:27 </li>
+													<li><span>Request number : </span>#14</li> 
+													<li><span>Request Address : </span>  Raw granite rocks</li> 
+													<li><span>Request From : </span>Mamoun </li> 
+													<li><span>Directed Classification : </span> Other Blocks </li> 
+													<li><a href="#0" class="btn-click">View customer orders</a>  
+													</li>
+												</ul> 
+											</td>
+										</tr>
+
+										<!--Third row-->
+										<tr>
+											<td class="details">
+												<ul> 
+													<li><span>created at:</span>October 2021 08:27 </li>
+													<li><span>Request number : </span>#14</li> 
+													<li><span>Request Address : </span>  Raw granite rocks</li> 
+													<li><span>Request From : </span>Mamoun </li> 
+													<li><span>Directed Classification : </span> Other Blocks </li> 
+													<li><a href="#0" class="btn-click">View customer orders</a>  
+													</li>
+												</ul> 
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="tab-pane fade" id="tab-editBuyingRequests">
+								<div class="sub-title"><h4>Edit Buying Requests</h4></div>
+								<table class="myAds">
+									<tbody>
+										<!--First row-->
+										<tr>
+											<td class="details">
+												<ul> 
+													<li><span>created at:</span>October 2021 08:27 </li>
+													<li><span>Request number : </span>#14</li> 
+													<li><span>Request Address : </span>  Raw granite rocks</li> 
+													<li><span>Request From : </span>Mamoun </li> 
+													<li><span>Directed Classification : </span> Other Blocks </li> 
+													<li><a href="#0" class="btn-click">View customer orders</a>  
+													</li>
+												</ul> 
+											</td>
+										</tr>
+
+
+										<!--Second row-->
+										<tr>
+											<td class="details">
+												<ul> 
+													<li><span>created at:</span>October 2021 08:27 </li>
+													<li><span>Request number : </span>#14</li> 
+													<li><span>Request Address : </span>  Raw granite rocks</li> 
+													<li><span>Request From : </span>Mamoun </li> 
+													<li><span>Directed Classification : </span> Other Blocks </li> 
+													<li><a href="#0" class="btn-click">View customer orders</a>  
+													</li>
+												</ul> 
+											</td>
+										</tr>
+
+										<!--Third row-->
+										<tr>
+											<td class="details">
+												<ul> 
+													<li><span>created at:</span>October 2021 08:27 </li>
+													<li><span>Request number : </span>#14</li> 
+													<li><span>Request Address : </span>  Raw granite rocks</li> 
+													<li><span>Request From : </span>Mamoun </li> 
+													<li><span>Directed Classification : </span> Other Blocks </li> 
+													<li><a href="#0" class="btn-click">View customer orders</a>  
+													</li>
+												</ul> 
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="tab-pane fade" id="tab-transactions">
+								<div class="sub-title"><h4>Transactions</h4></div>
+								<table class="myAds">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Description</th>
+											<th>Payment Method</th>
+											<th>Value</th>
+											<th>Date</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									
+								</table>
+							</div>
+
+				
+							<div class="tab-pane fade" id="tab-closeAccount">
+								<div class="sub-title"><h4>Remove Insituation</h4></div>
+								<div class="finish-form text-center" style="font-family: 'Raleway-medium';">
+									<p >Please Wait !!</p>
+									<p style="color: #5f6b74; font-size: 15px;">You are sure you want to close your account?  </p>
+									<button class="primary-btn" > Confirm Close </button>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="tab-message">
+								<div class="sub-title"><h4>Message</h4>
+									<div class="table-action"> 
+										<div style="display: inline-block;"> </div> 
+										<div class="pull-left"> 
+											<div class="form-group"> 
+												<div class="search-container1"> 
+													<input class="input search-input" type="text" placeholder="Search">
+													<button type="submit" class="btn-del"> 
+														<i class="fa fa-trash"></i> Clear 
+													</button> 
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<table class="myAds">
+									<thead> 
+										<tr> 
+											<th colspan="" style="color: #5f6b74;"> 
+												<a href="#0"><i class="fa fa-reply"></i> Back</a>&nbsp;|&nbsp; Conversation #6&nbsp;|&nbsp; Çift bölmeli Elvas çimstone tezgah 
+											</th> 
+										</tr> 
+									</thead>
+									<tbody>
+										<!--First row-->
+										<tr>
+											<td class="details">
+												<ul> 
+													<li><span>Sender's Name:</span>Mamoun</li>
+													<li><span>Sender's Email : </span>mamounjamous@gmail.com</li> 
+													<li><span>Sender's Phone: </span>5526750645</li> 
+												</ul> 
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								
+								<table class="myAds">
+									
+									<tbody>
+										<!--First row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+											<td class="details">
+												<h5 class="sender-name"><i class="fa fa-reply mt-1"></i>Mamoun</h5>
+												<div>
+													<p>Lets walk through a 5-step process for building a paragraph that illustrates a point in an argument. For each step there is an explanation and example. Our example paragraph will be about human misconceptions of piranhas.</p>
+													<p class="mt-2">Related to the ad: <a href="#0" class="btn-click">Click here to see</a></p>
+												</div>
+												
+											</td>
+											
+											<td class="Options" >
+												<a href="#" class="single-icon"><i class="fa fa-trash mt-1"></i>Delete</a>
+											</td>
+										</tr>
+
+										<!--Second row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+											<td class="details">
+												<h5 class="sender-name"><i class="fa fa-reply mt-1"></i>Mamoun</h5>
+												<div>
+													<p>Lets walk through a 5-step process for building a paragraph that illustrates a point in an argument. For each step there is an explanation and example. Our example paragraph will be about human misconceptions of piranhas.</p>
+													<p class="mt-2">Related to the ad: <a href="#0" class="btn-click">Click here to see</a></p>
+												</div>
+											</td>
+											
+											<td class="Options" >
+												<a href="#" class="single-icon"><i class="fa fa-trash  mt-1"></i>Delete</a>
+											</td>
+										</tr>
+
+										<!--Third row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+											<td class="details">
+												<h5 class="sender-name"><i class="fa fa-reply mt-1"></i>Mamoun</h5>
+												<div>
+													<p>Lets walk through a 5-step process for building a paragraph that illustrates a point in an argument. For each step there is an explanation and example. Our example paragraph will be about human misconceptions of piranhas.</p>
+													<p class="mt-2">Related to the ad: <a href="#0" class="btn-click">Click here to see</a></p>
+												</div>
+											</td>
+											
+											<td class="Options" >
+												<a href="#" class="single-icon"><i class="fa fa-trash  mt-1"></i>Delete</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="sub-title">
+									<div class="table-action"> 
+										<label for="checkAll"> 
+											<input type="checkbox" id="checkAll" class="form-check-input"> Select: All 
+											<button type="submit" class="btn-del"> 
+												<i class="fa fa-trash"></i> Delete 
+											</button> 
+										</label> 
+									</div>
+								</div>
+							</div>
 							
 
 						</div>
@@ -775,6 +1834,25 @@
 				closeDepth: 3
 			})
 	</script>
+	<script>
+		/*$("#topBar").click(function(){
+		   $(".sequence-field").css('display', 'block');
+	   });*/
+	   
+	   const targetDiv = document.getElementById("sequence-field");
+	   const tabProfile = document.getElementById("tab-profile");
+	   
+	   const btn = document.getElementById("topBar");
+	   btn.onclick = function () {
+		   if (targetDiv.style.display == "none") {
+			   targetDiv.style.display = "block";
+		   } else {
+			   targetDiv.style.display = "none";
+			   
+		   }
+	   };
+
+   </script>
 </body>
 
 </html>

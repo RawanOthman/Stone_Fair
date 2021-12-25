@@ -249,6 +249,11 @@
 												<i class="fa fa-close mt-1"></i>
 												<a href="#tab-closeAccount" class="nav-link" data-bs-toggle="tab"> Close account</a>
 											</li>
+
+											<li class="nav-item categ-item">
+												<i class="fa fa-envelope mt-1"></i>
+												<a href="#tab-message" class="nav-link" data-bs-toggle="tab"> message</a>
+											</li>
 										</ul>
 									</div>
 
@@ -757,7 +762,7 @@
 							</div>
 
 							<div class="tab-pane fade" id="tab-addInsituation">
-								<div class="sub-title"><h4>Add Insituation</h4></div>
+								<!--<div class="sub-title"><h4>Add Insituation</h4></div>-->
 								<form action="#" id="buying-form" class="buying-form" method="post">
 
 									<div class="form-group">
@@ -1528,25 +1533,124 @@
 							</div>
 
 							<div class="tab-pane fade" id="tab-message">
-								<div class="sub-title"><h4>Edit Buying Requests</h4></div>
+								<div class="sub-title"><h4>Message</h4>
+									<div class="table-action"> 
+										<div style="display: inline-block;"> </div> 
+										<div class="pull-right"> 
+											<div class="form-group"> 
+												<div class="search-container1"> 
+													<input class="input search-input" type="text" placeholder="Search">
+													<button type="submit" class="btn-del"> 
+														<i class="fa fa-trash"></i> Clear 
+													</button> 
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 								<table class="myAds">
+									<thead> 
+										<tr> 
+											<th colspan="" style="color: #5f6b74;"> 
+												<a href="#0"><i class="fa fa-reply"></i> Back</a>&nbsp;|&nbsp; Conversation #6&nbsp;|&nbsp; Çift bölmeli Elvas çimstone tezgah 
+											</th> 
+										</tr> 
+									</thead>
 									<tbody>
 										<!--First row-->
 										<tr>
 											<td class="details">
 												<ul> 
-													<li><span>created at:</span>October 2021 08:27 </li>
-													<li><span>Request number : </span>#14</li> 
-													<li><span>Request Address : </span>  Raw granite rocks</li> 
-													<li><span>Request From : </span>Mamoun </li> 
-													<li><span>Directed Classification : </span> Other Blocks </li> 
-													<li><a href="#0" class="btn-click">View customer orders</a>  
-													</li>
+													<li><span>Sender's Name:</span>Mamoun</li>
+													<li><span>Sender's Email : </span>mamounjamous@gmail.com</li> 
+													<li><span>Sender's Phone: </span>5526750645</li> 
 												</ul> 
 											</td>
 										</tr>
 									</tbody>
 								</table>
+								
+								<table class="myAds">
+									
+									<tbody>
+										<!--First row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+											<td class="details">
+												<h5 class="sender-name"><i class="fa fa-reply mt-1"></i>Mamoun</h5>
+												<div>
+													<p>Lets walk through a 5-step process for building a paragraph that illustrates a point in an argument. For each step there is an explanation and example. Our example paragraph will be about human misconceptions of piranhas.</p>
+													<p class="mt-2">Related to the ad: <a href="#0" class="btn-click">Click here to see</a></p>
+												</div>
+												
+											</td>
+											
+											<td class="Options" >
+												<a href="#" class="single-icon"><i class="fa fa-trash mt-1"></i>Delete</a>
+											</td>
+										</tr>
+
+										<!--Second row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+											<td class="details">
+												<h5 class="sender-name"><i class="fa fa-reply mt-1"></i>Mamoun</h5>
+												<div>
+													<p>Lets walk through a 5-step process for building a paragraph that illustrates a point in an argument. For each step there is an explanation and example. Our example paragraph will be about human misconceptions of piranhas.</p>
+													<p class="mt-2">Related to the ad: <a href="#0" class="btn-click">Click here to see</a></p>
+												</div>
+											</td>
+											
+											<td class="Options" >
+												<a href="#" class="single-icon"><i class="fa fa-trash  mt-1"></i>Delete</a>
+											</td>
+										</tr>
+
+										<!--Third row-->
+										<tr>
+											<td class="add-img-selector"> 
+												<div class="checkbox"> 
+													<label>
+														<input type="checkbox" class="form-check-input" name="" value="">
+													</label> 
+												</div> 
+											</td>
+											<td class="details">
+												<h5 class="sender-name"><i class="fa fa-reply mt-1"></i>Mamoun</h5>
+												<div>
+													<p>Lets walk through a 5-step process for building a paragraph that illustrates a point in an argument. For each step there is an explanation and example. Our example paragraph will be about human misconceptions of piranhas.</p>
+													<p class="mt-2">Related to the ad: <a href="#0" class="btn-click">Click here to see</a></p>
+												</div>
+											</td>
+											
+											<td class="Options" >
+												<a href="#" class="single-icon"><i class="fa fa-trash  mt-1"></i>Delete</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="sub-title">
+									<div class="table-action"> 
+										<label for="checkAll"> 
+											<input type="checkbox" id="checkAll" class="form-check-input"> Select: All 
+											<button type="submit" class="btn-del"> 
+												<i class="fa fa-trash"></i> Delete 
+											</button> 
+										</label> 
+									</div>
+								</div>
 							</div>
 						</div>
 						
@@ -1678,15 +1782,18 @@
 				$(".sequence-field").css('display', 'block');
 			});*/
 			
-			/*const targetDiv = document.getElementById("sequence-field");
+			const targetDiv = document.getElementById("sequence-field");
+			const tabProfile = document.getElementById("tab-profile");
+			
 			const btn = document.getElementById("topBar");
 			btn.onclick = function () {
 				if (targetDiv.style.display == "none") {
 					targetDiv.style.display = "block";
 				} else {
 					targetDiv.style.display = "none";
+					
 				}
-			};*/
+			};
 
 		</script>
 
