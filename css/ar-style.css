@@ -3114,6 +3114,9 @@ form .form-group select{
   margin-bottom: 3px;
 }
 .sequence-field{
+  display: none;
+}
+.sequence-field{
   border: 1px solid #f3f4f4;
   background-color: #fbf9fa;
   padding: 15px 24px;
@@ -3210,7 +3213,9 @@ form .form-group select{
   width: 100%;
   height: 100%;
 }
-
+.nav.list-items1 {
+  display: block !important;
+}
 #myTab.nav-tabs{
   border-bottom: none !important;
   padding: 2px 0;
@@ -3517,4 +3522,135 @@ form .form-group select{
 }
 .sub-categories .list-inline li a:hover{
   color: #b7a07e;
+}
+
+/* tabs content */
+
+#tab-myAds{
+  overflow: auto;
+}
+.myAds{
+  width: 90%;
+  border: 1px solid #f6f6f6;
+  margin: 30px 5%;
+  
+}
+.myAds tr th {
+  font-size: 15px;
+  color: #b7a07e !important;
+  padding: 8px 16px;
+}
+.myAds tbody td{
+  font-size: 15px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*padding: 8px 16px;*/
+  /*min-height: 50px;
+  line-height: 25px;*/
+}
+.myAds  tbody td img {
+  max-width: 90px;
+}
+/*
+.option ul {
+  list-style: none;
+  display: inline-flex;
+}
+*/
+.myAds tr {
+  border-bottom: 1px solid #f6f6f6;
+}
+.myAds tbody td ul li i{
+  color: #b7a07e !important;
+  padding-left: 5px;
+  width: 19px;
+}
+.myAds tbody td ul li{
+  padding-bottom: 4px;
+}
+.myAds tr:hover{
+  background-color: #fbf9fa;
+}
+.sub-title{
+  border: 1px solid #f3f4f4;
+  background-color: #fbf9fa;
+  padding: 15px 24px;
+}
+.sub-title h4{
+  font-size: 15px;
+  color: #5f6b74 !important;
+  font-family: 'hacen';
+}
+.table-action label{
+  font-size: 14px;
+}
+.btn-del{
+  background: #b7a07e;
+  color: #fff;
+  font-size: 14px;
+  border: none !important;
+  padding: 3px 5px;
+  margin-right: 5px;
+}
+.search-container1{
+  position: relative;
+  display: inline-block;
+}
+.search-container1 .search-input {
+  padding: 0px;
+  padding-right: 10px;
+  font-size: 14px;
+  color: #5f6b74;
+  margin-top: -5px;
+  min-width: 230px;
+}
+.search-container1 .search-input {
+  border: 1px solid #ced4da !important;
+}
+.search-container1 .btn-del{
+  position: absolute;
+  left: 0px;
+  margin-left: 0px !important;
+  /*width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;*/
+}
+.search-container1 .search-btn i {
+  color: #5f6b74;
+  font-size: 14px;
+}
+.search-container1 .search-input:focus {
+  outline: none;
+  border: 1px solid #ced4da !important;
+  box-shadow: none !important;
+}
+.pad-contnet{
+  padding: 30px;
+}
+.myAds tbody td ul li span,
+.sender-name{
+  font-size: 14px;
+  padding-right: 5px;
+  font-family: 'hacen';
+}
+.btn-click{
+  font-size: 14px;
+  color: #b7a07e !important;
+}
+.details p{
+  margin-bottom:5px !important;
+}
+.single-icon{
+  display: flex;
+  margin-left: 10px;
+}
+.single-icon i{
+  color: #b7a07e !important;
+  padding-left: 5px;
+  width: 19px;
+}
+.sender-name i{
+  padding-left: 5px;
 }

@@ -3105,10 +3105,10 @@ form .form-group select{
   position: relative;
   left: 35%;
   margin-bottom: 3px;
-}/*
+}
 .sequence-field{
   display: none;
-}*/
+}
 .sequence-field{
   border: 1px solid #f3f4f4;
   background-color: #fbf9fa;
@@ -3641,7 +3641,8 @@ form .form-group select{
 .pad-contnet{
   padding: 30px;
 }
-.myAds tbody td ul li span{
+.myAds tbody td ul li span,
+.sender-name{
   font-size: 14px;
   padding-right: 5px;
   font-family: 'Raleway-Bold';
@@ -3649,4 +3650,19 @@ form .form-group select{
 .btn-click{
   font-size: 14px;
   color: #b7a07e !important;
+}
+.details p{
+  margin-bottom:5px !important;
+}
+.single-icon{
+  display: flex;
+  margin-right: 10px;
+}
+.single-icon i{
+  color: #b7a07e !important;
+  padding-right: 5px;
+  width: 19px;
+}
+.sender-name i{
+  padding-right: 5px;
 }
