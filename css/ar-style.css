@@ -2341,7 +2341,7 @@ input[type="number"] {
   }
   .btn-addVideo {
     margin-top: 26px;
-}
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2539,6 +2539,11 @@ input[type="number"] {
   }
   .account-sidebar{
     margin-bottom: 20px;
+  }
+  .myAds {
+    margin: 20px !important;
+    overflow-x: scroll;
+    width: max-content !important;
   }
 }
 
@@ -3112,10 +3117,10 @@ form .form-group select{
   position: relative;
   left: 35%;
   margin-bottom: 3px;
-}
+}/*
 .sequence-field{
   display: none;
-}
+}*/
 .sequence-field{
   border: 1px solid #f3f4f4;
   background-color: #fbf9fa;
@@ -3590,7 +3595,7 @@ form .form-group select{
   color: #fff;
   font-size: 14px;
   border: none !important;
-  padding: 3px 5px;
+  padding: 0px 5px 5px;
   margin-right: 5px;
 }
 .search-container1{
@@ -3653,4 +3658,59 @@ form .form-group select{
 }
 .sender-name i{
   padding-left: 5px;
+}
+
+.inner-box{
+  border: 1px solid #f3f4f4;
+  margin-bottom: 20px;
+  padding: 15px 24px;
+}
+.useradmin img {
+  max-width: 90px;
+  padding: 5px;
+  border: 1px dashed silver;
+}
+.inner-box .userInfo{
+  font-family: 'hacen';
+  font-size: 15px;
+  margin-top: 10px;
+}
+.userInfo.font-m{
+  font-family: 'univers';
+}
+.useradminIcon{
+  padding: 5px;
+  width: 38px;
+  background-color: #fbf9fa;
+  border: 1px dashed silver;
+  /*border: 1px solid #f6f6f6;
+  width: 40px;
+  height: 40px;*/
+}
+.useradminIcon i{
+  font-size: 19px;
+  padding-top: 1px;
+  padding-right: 3px;
+}
+
+.inner-box .userInfo span{
+  padding: 0 12px; 
+  font-family: 'hacen';
+  font-size: 17px;
+}
+.header-data{
+  display: flex;
+}
+.header-data .single-data{
+  margin: 10px auto;
+}
+.buying-content i{
+  color: #ae9a7e;
+  font-size: 50px;
+  /*margin: 0 40% 10px;*/
+  margin-bottom: 10px;
+}
+.help-img1{
+  max-width: 55px;
+  margin-bottom: 10px;
 }

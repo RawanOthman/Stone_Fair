@@ -3105,10 +3105,10 @@ form .form-group select{
   position: relative;
   left: 35%;
   margin-bottom: 3px;
-}
+}/*
 .sequence-field{
   display: none;
-}
+}*/
 .sequence-field{
   border: 1px solid #f3f4f4;
   background-color: #fbf9fa;
@@ -3665,4 +3665,61 @@ form .form-group select{
 }
 .sender-name i{
   padding-right: 5px;
+}
+.inner-box{
+  border: 1px solid #f3f4f4;
+  margin-bottom: 20px;
+  padding: 15px 24px;
+}
+.useradmin img {
+  max-width: 90px;
+  padding: 5px;
+  border: 1px dashed silver;
+}
+.inner-box .userInfo{
+  font-family: 'Raleway-bold';
+  font-size: 15px;
+  margin-top: 10px;
+}
+.userInfo.font-m{
+  font-family: 'Raleway-medium';
+}
+.useradminIcon{
+  padding: 5px;
+  width: 38px;
+  background-color: #fbf9fa;
+  border: 1px dashed silver;
+  /*border: 1px solid #f6f6f6;
+  width: 40px;
+  height: 40px;*/
+}
+.useradminIcon i{
+  font-size: 19px;
+  padding-top: 1px;
+  padding-left: 3px;
+}
+
+.inner-box .userInfo span{
+  padding: 0 12px; 
+  font-family: 'Raleway-bold';
+}
+.header-data{
+  display: flex;
+}
+.header-data .single-data{
+  margin: 13px auto;
+  /*max-width: 75px;*/
+  /*min-width: 110px;*/
+  inline-size: 100px;
+    overflow-wrap: break-word;
+}
+.buying-content i{
+  color: #ae9a7e;
+  font-size: 50px;
+  /*margin: 0 40% 10px;*/
+  margin-bottom: 10px;
+}
+.help-img1{
+  max-width: 55px;
+  margin-bottom: 10px;
 }
