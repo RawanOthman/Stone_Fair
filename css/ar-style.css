@@ -3586,6 +3586,7 @@ form .form-group select{
   font-size: 15px;
   color: #5f6b74 !important;
   font-family: 'hacen';
+  margin-bottom: 0 !important;
 }
 .table-action label{
   font-size: 14px;
@@ -3713,4 +3714,86 @@ form .form-group select{
 .help-img1{
   max-width: 55px;
   margin-bottom: 10px;
+}
+
+.other-page{
+  margin: 40px 0 20px;
+}
+.other-page .box{
+  border: 1px solid #eef0ef;
+  box-shadow: 0 3px 5px 0 rgb(175 175 175/10%);
+  border-radius: 0;
+  margin-bottom: 40px;
+}
+.other-page .country-flag {
+  width: auto !important;
+  max-height: 20px !important;
+  margin: 0 auto;
+}
+.other-page ul li{
+  padding-bottom: 10px;
+}
+.other-page .country-name{
+  padding: 5px 4px;
+  font-size: 13px;
+  font-family: 'hacen';
+}
+.other-page  .text-content p{
+  font-size: 15px;
+  font-family: 'univers';
+  margin-bottom: 26px;
+}
+.term-title{
+  font-size: 15px;
+  font-family: 'hacen';
+  color: #b7a07e;
+  padding-bottom: 3px;
+  display: block;
+}
+.other-page  .terms-list{
+  list-style: circle !important;
+  padding-right: 25px;
+}
+.other-page  .terms-list li{
+  font-size: 15px;
+  font-family: 'univers';
+  margin-bottom: 16px;
+}
+.accordion details {
+  border: 1px solid #eef0ef;
+  box-shadow: 0 1px 1px 0 rgb(175 175 175/10%);
+  padding: 15px;
+  margin-bottom: 20px;
+  /*border-left: 5px solid #5f6b74 ;*/
+  transition: all 0.4s;
+}
+.accordion details summary {
+  padding: 5px;
+  padding-top: 0;
+  font-size: 15px;
+  font-family: 'hacen';
+  color: #b7a07e;
+}
+.accordion details p {
+  font-size: 14px;
+  font-family: 'univers';
+  padding-right: 20px;
+  margin-bottom: 5px !important;
+}
+.contactForm{
+  padding: 40px 55px;
+}
+.other-page .cat-title a{
+  font-size: 15px;
+  font-family: 'hacen';
+  color: #b7a07e !important;
+  margin-bottom: 10px;
+}
+.other-page  .cat-list ul{
+  list-style: circle !important;
+  padding-right: 20px;
+}
+.other-page  .cat-list ul li{
+  font-size: 14px;
+  font-family: 'univers';
 }
