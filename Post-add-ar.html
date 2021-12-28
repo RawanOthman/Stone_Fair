@@ -126,6 +126,26 @@
 	</header>
 	<!-- /HEADER -->
 
+	<div class="modal" id="myCode" tabindex="-1">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">الكود</h5>
+			  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<form action="#" class="message-form"  method="post">
+				<div class="form-group">
+					<label class="form-label" for="code">من فضلك اكتب الكود الذي استلمته على البريد الالكتروني أو برسالة نصية</label><br>
+					<input type="text" name="code" id="code" class="form-control" required="">
+				</div>
+			</form>
+			<div class="modal-footer">
+				<button type="button" class="primary-btn" type="submit">تأكيد</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+
 	<!-- Breadcrumb Begin -->
     <div class="breadcumb_area bg-img" style="background-image: url(images/breadcumb.jpg);">
         <div class="container h-100">
@@ -253,7 +273,8 @@
 									</div>
 											
 									<div class="product-btns">
-										<button class="primary-btn" type="submit">التالي</button>
+										<button class="primary-btn" data-toggle="modal" data-target="#myCode">التالي</button>
+
 									</div>
 								</form>
 							</div>
