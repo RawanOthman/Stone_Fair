@@ -478,6 +478,9 @@ form .search-input:focus,
   .account-catigory .widget{
     margin-bottom: 0px !important;
   }
+  .mt-30{
+    margin-top: 30px;
+  }
 }
 
 /*=========================================================
@@ -3863,4 +3866,76 @@ form .form-group select{
 }
 .form-check1.d-content label{
   display: contents !important;
+}
+.forbidden-head{
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #ad997d !important;
+  font-family: 'Raleway-bold';
+}
+.forbidden-title{
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ad997d !important;
+  font-family: 'Raleway-medium';
+}
+.cart-img{
+  max-height: 50px;
+}
+.back-color{
+  border: 1px solid #f3f4f4;
+  background-color: #fbf9fa;
+  padding: 10px 20px;
+}
+.payment-list1{
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed silver;
+}
+.payment-list1 li{
+  display: flex;
+  padding: 7px 0;
+  justify-content: space-between; 
+}
+.payment-list1 li span{
+  font-size: 14px;
+  color: #ad997d !important;
+  font-family: 'Raleway-medium';
+}
+.payment-list1 li a{
+  font-size: 14px;
+  font-family: 'Raleway-medium';
+}
+.cartPeice{
+  font-size: 20px;
+  font-family: 'Raleway-bold';
+  color: #ad997d !important;
+}
+.cartPeice span{
+  font-size: 14px;
+  padding-left: 5px;
+  color: #5f6b74 !important;
+  font-family: 'Raleway-medium';
+}
+.cartFooter{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.cartFooter img{
+  max-height: 30px;
+}
+.cartName{
+  font-size: 15px;
+  color: #5f6b74 !important;
+  font-family: 'Raleway-Bold';
+}
+.cartNum span{
+  font-size: 18px;
+  position: relative;
+  top: -10px;
+  padding-left: 5px;
+}
+.cartDate{
+  font-size: 18px;
 }
