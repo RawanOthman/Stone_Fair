@@ -3806,3 +3806,58 @@ form .form-group select{
   font-size: 14px;
   font-family: 'Raleway-Medium';
 }
+.line-or {
+  border-top: 1px solid rgb(203, 210, 214);
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+.paymentPaypal .line-or p {
+  color: rgb(108, 115, 120);
+  font-size: 13px;
+  line-height: 1.38;
+  background-color: white;
+  bottom: 10px;
+  display: inline;
+  padding: 0px 8px;
+  position: relative;
+}
+.paymentPaypal{
+  padding: 40px 55px;
+}
+.set-up1{
+  /*border: 1px solid #f3f4f4;
+  background-color: #fbf9fa;
+  padding: 15px 24px;
+  font-size: 16px;
+  font-family: 'Raleway-Bold';
+  color: #ad997d*/
+  background-color: #fbf9fa;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Raleway-Bold';
+  color: #ad997d;
+}
+.buying-form a{
+  color: #ad997d !important;
+}
+.buying-form p{
+  font-size: 14px !important;
+}
+.b-text{
+  font-size: 15px;
+  color: #5f6b74 !important;
+  font-family: 'Raleway-medium';
+}
+.payment-way1 li img {
+  max-height: 27px;
+  max-width: 50px;
+}
+.payment-way1 {
+  display: flex;
+  margin: 20px 0px;
+  background-color: #fbf9fa;
+  padding: 5px 10px;
+}
+.payment-way1 li {
+  padding-right: 30px;
+}
