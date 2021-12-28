@@ -3861,3 +3861,6 @@ form .form-group select{
 .payment-way1 li {
   padding-right: 30px;
 }
+.form-check1.d-content label{
+  display: contents !important;
+}
