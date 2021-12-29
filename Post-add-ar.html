@@ -180,6 +180,14 @@
 									<i class="fa fa-angle-left"></i>
 								</li>
 								<li class="nav-item">
+									<a href="#tab-paymentPaypal" class="nav-link" data-bs-toggle="tab">بايبال</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#tab-paymentCart" class="nav-link" data-bs-toggle="tab">كارت</a>
+									<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="nav-item">
 									<a href="#tab-finish" class="nav-link" data-bs-toggle="tab">إنهاء</a>
 								</li>
 							</ul>
@@ -362,6 +370,237 @@
 										</ul>
 									</div>
 								</form>
+							</div>
+
+							<div class="tab-pane fade paymentPaypal" id="tab-paymentPaypal">
+								<div class="text-center">
+									<p class="b-text">هل لديك حساب بايبال ؟  </p>
+									<a href="#0" class="primary-btn mb-5">تسجيل الدخول</a>
+									<div class="line-or">
+										<p>أو</p>
+									</div>
+								</div>
+								<form action="#" id="buying-form" class="buying-form" method="post" style="padding:0;">
+									<div class="row">
+										<div class="col-lg-12 col-sm-12">
+											<h2 class="set-up1 mt-4">الدفع ببطاقة الخصم أو الائتمان</h2>
+											<p class="mt-3">نحن لا نشارك تفاصيلك المالية مع التاجر.</p>
+											<div class="form-group">
+												<label class="form-label pb-1" for="country">المنطقة</label><br>
+												<select data-placeholder="Select a Country" class="chosen-select form-control">
+													<option>تركيا</option>
+													<option>ماليزيا</option>
+													<option>السعودية</option>
+													<option>إيطاليا</option>
+												</select>	
+											</div>
+
+											<ul class="payment-way1">
+												<li> <img src="./images/paypal.png"></li>
+												<li> <img src="./images/visa1.png"></li>
+												<li> <img src="./images/mastercard.png"> </li>
+												<li> <img src="./images/iyzico.png"></li>
+												<li> <img src="./images/paypal.png"></li>
+												<li> <img src="./images/visa1.png"></li>
+											</ul>
+
+											<div class="form-group">
+												<label class="form-label" for="cardNumber">رقم البطاقة</label><br>
+												<input type="text" name="cardNumber" id="cardNumber" class="form-control" required="">
+											</div>
+
+											<div class="form-group">
+												<label class="form-label" for="phone">الشهر / السنة</label><br>
+												<input type="text" name="phone" id="phone" class="form-control" required="">
+											</div>
+
+											<div class="form-group">
+												<label class="form-label" for="phone">CVV</label><br>
+												<input type="text" name="phone" id="phone" class="form-control" required="">
+											</div>
+
+
+											<h2 class="set-up1 mt-4">عنوان وصول الفواتير</h2>
+											<div class="form-group">
+												<label class="form-label" for="Firstname">الاسم الأول</label><br>
+												<input type="text" name="Firstname" id="Firstname" class="form-control" required="">
+											</div>
+
+											<div class="form-group">
+												<label class="form-label" for="Lastname">الاسم الأخير</label><br>
+												<input type="text" name="Lastname" id="Lastname" class="form-control" required="">
+											</div>
+										
+
+											<div class="form-group">
+												<label class="form-label" for="streetAddress">عنوان الشارع</label><br>
+												<input type="text" name="streetAddress" id="streetAddress" class="form-control" required="">
+											</div>
+
+											<div class="form-group">
+												<label class="form-label" for="town">بلدة / قرية / مكتب بريد (اختياري)</label><br>
+												<input type="text" name="town" id="town" class="form-control" required="">
+											</div>
+
+											<div class="form-group">
+												<label class="form-label" for="postalCode">الرمز البريدي</label><br>
+												<input type="text" name="postalCode" id="postalCode" class="form-control" required="">
+											</div>
+
+											<div class="form-group">
+												<label class="form-label pb-1" for="city">المدينة</label><br>
+												<select data-placeholder="Select a city" class="chosen-select form-control">
+													<option>تركيا</option>
+													<option>ماليزيا</option>
+													<option>السعودية</option>
+													<option>إيطاليا</option>
+												</select>	
+											</div>
+
+											<div class="form-check1"> 
+												<div class="check1">
+													<input name="shippingAddress" id="shippingAddress" class="form-check-input" value="" type="checkbox"> 
+													<label class="form-check-label" for="shippingAddress"> الشحن نفس عنوان الفواتير</label> 
+												</div>
+											</div>
+										
+									
+											<h2 class="set-up1 mt-5">إنشاء حساب بايبال</h2>
+											<p class="mt-3">احصل على حماية PayPal للمشتري على <a href="#0">مشتريات مؤهلة.</a></p>
+											
+											<div class="form-group">
+												<label class="form-label" for="phone">رقم الهاتف</label><br>
+												<input type="text" name="phone" id="phone" class="form-control" required="">
+											</div>
+
+											<div class="form-group">
+												<label class="form-label" for="email">البريد الالكتروني</label><br>
+												<input type="email" id="email" name="email" class="form-control" required="">
+											</div>
+
+											<div class="form-group">
+												<label class="form-label mb-1" for="password">كلمة المرور</label><br>
+												<input type="password" name="password" id="password" class="form-control" required="">
+											</div>
+		
+
+											<div class="form-group">
+												<label class="form-label mb-1" for="dateBirth">تاريخ الميلاد</label><br>
+												<input type="date" name="dateBirth" id="dateBirth" class="form-control" required="">
+											</div>
+	
+											<div class="form-group">
+												<label class="form-label pb-1" for="nationality">الجنسية</label><br>
+												<select class="chosen-select form-control">
+													<option>تركيا</option>
+													<option>ماليزيا</option>
+													<option>السعودية</option>
+													<option>إيطاليا</option>
+												</select>	
+											</div>
+
+											<div class="form-check1 mb-4 d-content"> 
+												<div class="check1">
+													<input name="accept_terms" id="acceptTerms" class="form-check-input" value="" type="checkbox"> 
+													<label class="form-check-label" for="acceptTerms"  > 
+														احصل على العروض والعروض الترويجية عبر البريد الإلكتروني من PayPal. يمكنك تغيير ما تحصل عليه وقتما تشاء. 
+														<a href="#0">معلومات أخرى</a>
+													</label> 
+												</div>
+
+												<div class="check1">
+													<input name="accept_terms" id="acceptMarketingOffers" class="form-check-input" value="" type="checkbox"> 
+													<label class="form-check-label" for="acceptMarketingOffers" > 
+														من خلال إنشاء حساب ، فإنك توافق على PayPal  <a href="#0">اتفاقية المستخدم</a> و 
+														<a href="#0">بيان الخصوصية</a>,تأكيد أن عمرك لا يقل عن 18 عامًا وأنك المالك أو المستخدم الأساسي<br /> من رقم الهاتف المحمول أعلاه. اقرأ المزيد عن PayPal في
+														<a href="#0">معلومات الدفع والخدمة الرئيسية</a>
+													 </label> 
+												</div>
+											</div>
+
+											<div class="product-btns">
+												<button class="primary-btn" type="submit">الموافقة و الدفع</button>
+											</div>
+
+										</div>
+									</div>
+								</form>
+								<div class="text-center">
+									<hr class="mt-4 mb-3" />
+									<a href="#0" style="color: #ad997d;">إلغاء والعودة إلى التاجر</a>
+									
+								</div>
+								
+							</div>
+
+							<div class="tab-pane fade paymentPaypal" id="tab-paymentCart">
+								<div class="row">
+									<div class="col-lg-8 col-sm-12">
+										<form action="#" id="buying-form" class="buying-form" method="post" style="padding:0;">
+											<img class="cart-img mb-4" src="./images/mastercard.png" />
+
+											<div class="form-group">
+												<label class="form-label mb-1" for="cardNumber">رقم البطاقة</label><br>
+												<input type="text" name="cardNumber" id="cardNumber" class="form-control mb-0" required="">
+												<small>أدخل رقم البطاقة المكون من 16 رقمًا على البطاقة</small>
+											</div>
+
+											<div class="form-group">
+												<label class="form-label mb-1" for="cvv">CVV</label><br>
+												<input type="text" name="cvv" id="cvv" class="form-control mb-0" required="">
+												<small>أدخل الرقم المكون من 3 أو 4 أرقام على البطاقة</small>
+											</div>
+
+											<div class="form-group">
+												<label class="form-label mb-1" for="expiry">تاريخ الانتهاء</label><br>
+												<div style="display: flex;">
+													<input type="text" name="expiry" id="expiry" class="form-control mb-0" style="width: 50%;" required="">
+													<span style="margin:5px 15px 0;"> / </span>
+													<input type="text" name="expiry" id="expiry" class="form-control mb-0" style="width: 50%;" required="">
+												</div>
+												<small>أدخل تاريخ انتهاء الصلاحية على البطاقة</small>
+											</div>
+
+											<div class="form-group">
+												<label class="form-label mb-1" for="password">كلمة المرور</label><br>
+												<input type="password" name="password" id="password" class="form-control mb-0" required="">
+												<small>أدخل الرقم المكون من 3 أو 4 أرقام على البطاقة</small>
+											</div>
+
+											<div class="product-btns">
+												<button class="primary-btn" type="submit">ادفع الآن</button>
+											</div>
+										</form>
+										
+
+									</div>
+
+									<div class="col-lg-4 col-sm-12 mt-30">
+										<div class="back-color">
+											<p class="cartName">ماستر كارد</p>
+											<h4 class="cartNum">*****<span>3456</span></h4>
+											<div class="cartFooter">
+												<h4 class="cartDate">9<span>/</span>22</h4>
+												<img src="./images/mastercard.png" />
+											</div>
+											
+										</div>
+										<div class="back-color">
+											<ul class="payment-list1">
+												<li><span>الشركة</span><a href="#">Apple</a></li>
+												<li><span>رقم الطلب</span><a href="#">911412228955</a></li>
+												<li><span>المنتج</span><a href="#">Electric Planer</a></li>
+												<li><span>الخصم</span><a href="#">$100.00</a></li>
+											</ul>
+
+											<p class="mb-1">عليك أن تدفع مبلغ</p>
+											<h4 class="cartPeice">595.44<span>USD</span></h4>
+										</div>
+									</div>
+
+								</div>
+							
+								
 							</div>
 
 							<div class="tab-pane fade" id="tab-finish">
