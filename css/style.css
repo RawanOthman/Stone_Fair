@@ -3879,6 +3879,9 @@ form .form-group select{
   color: #ad997d !important;
   font-family: 'Raleway-medium';
 }
+
+
+
 .cart-img{
   max-height: 50px;
 }
@@ -3907,12 +3910,12 @@ form .form-group select{
   font-family: 'Raleway-medium';
 }
 .cartPeice{
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Raleway-bold';
   color: #ad997d !important;
 }
 .cartPeice span{
-  font-size: 14px;
+  font-size: 12px;
   padding-left: 5px;
   color: #5f6b74 !important;
   font-family: 'Raleway-medium';

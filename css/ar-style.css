@@ -462,7 +462,9 @@ form .search-input:focus,
   .entry-page{
     padding: 10px 0 5px;
   }
-  
+  .mt-30 {
+    margin-top: 30px;
+  }
 }
 
 /*=========================================================
@@ -3808,4 +3810,123 @@ form .form-group select{
   margin-bottom: 10px;
   color: #ad997d !important;
   font-family: 'hacen';
+}
+.line-or {
+  border-top: 1px solid rgb(203, 210, 214);
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+.paymentPaypal .line-or p {
+  color: rgb(108, 115, 120);
+  font-size: 13px;
+  line-height: 1.38;
+  background-color: white;
+  bottom: 10px;
+  display: inline;
+  padding: 0px 8px;
+  position: relative;
+}
+.paymentPaypal{
+  padding: 40px 55px;
+}
+.set-up1{
+  /*border: 1px solid #f3f4f4;
+  background-color: #fbf9fa;
+  padding: 15px 24px;
+  font-size: 16px;
+  font-family: 'hacen';
+  color: #ad997d*/
+  background-color: #fbf9fa;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'hacen';
+  color: #ad997d;
+}
+.buying-form a{
+  color: #ad997d !important;
+}
+.buying-form p{
+  font-size: 14px !important;
+}
+.b-text{
+  font-size: 15px;
+  color: #5f6b74 !important;
+  font-family: 'hacen';
+}
+.payment-way1 li img {
+  max-height: 27px;
+  max-width: 50px;
+}
+.payment-way1 {
+  display: flex;
+  margin: 20px 0px;
+  background-color: #fbf9fa;
+  padding: 5px 10px;
+}
+.payment-way1 li {
+  padding-left: 30px;
+}
+.form-check1.d-content label{
+  display: contents !important;
+  font-size: 14px;
+}
+.cart-img{
+  max-height: 50px;
+}
+.back-color{
+  border: 1px solid #f3f4f4;
+  background-color: #fbf9fa;
+  padding: 10px 20px;
+}
+.payment-list1{
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed silver;
+}
+.payment-list1 li{
+  display: flex;
+  padding: 7px 0;
+  justify-content: space-between; 
+}
+.payment-list1 li span{
+  font-size: 14px;
+  color: #ad997d !important;
+  font-family: 'univers';
+}
+.payment-list1 li a{
+  font-size: 14px;
+  font-family: 'univers';
+}
+.cartPeice{
+  font-size: 18px;
+  font-family: 'hacen';
+  color: #ad997d !important;
+}
+.cartPeice span{
+  font-size: 12px;
+  padding-left: 5px;
+  color: #5f6b74 !important;
+  font-family: 'univers';
+}
+.cartFooter{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.cartFooter img{
+  max-height: 30px;
+}
+.cartName{
+  font-size: 15px;
+  color: #5f6b74 !important;
+  font-family: 'hacen';
+}
+.cartNum span{
+  font-size: 18px;
+  position: relative;
+  top: -10px;
+  padding-left: 5px;
+}
+.cartDate{
+  font-size: 18px;
 }
